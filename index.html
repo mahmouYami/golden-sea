@@ -1,0 +1,3181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جولدن سي لتوريد الأسماك وسلاسل الإمداد | Golden Sea Supply Chain</title>
+
+  <!-- Google Fonts: Cairo with crisp Arabic system fallbacks for offline use -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    if (window.tailwind) {
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                950: '#071A30',
+                900: '#0A2540',
+                800: '#133A63',
+                700: '#1A4B7C',
+                footer: '#0A192F',
+                50: '#EEF4FA'
+              },
+              gold: {
+                600: '#C59B27',
+                500: '#EAB308',
+                amber: '#F59E0B',
+                100: '#FEF9C3'
+              },
+              ice: {
+                600: '#0284C7',
+                500: '#0EA5E9',
+                50: '#E0F2FE'
+              },
+              whatsapp: {
+                600: '#16A34A',
+                700: '#15803D'
+              },
+              alabaster: '#F8FAFC'
+            },
+            fontFamily: {
+              cairo: ['Cairo', 'Segoe UI', 'Tahoma', 'Arial', 'sans-serif']
+            },
+            boxShadow: {
+              corporate: '0 4px 24px rgba(10, 37, 64, 0.06)',
+              'corporate-lg': '0 14px 36px rgba(10, 37, 64, 0.12)'
+            }
+          }
+        }
+      };
+    }
+  </script>
+
+  <!-- Executive Corporate Maritime Stylesheet -->
+  <style>
+    :root {
+      --bg-alabaster: #F8FAFC;
+      --surface-white: #FFFFFF;
+      --border-light: #E2E8F0;
+      --navy-deep: #0A2540;
+      --navy-mid: #133A63;
+      --navy-footer: #0A192F;
+      --gold-primary: #EAB308;
+      --gold-accent: #C59B27;
+      --gold-amber: #F59E0B;
+      --ice-blue: #0284C7;
+      --wa-green: #16A34A;
+      --status-amber: #D97706;
+      --status-crimson: #DC2626;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-alabaster);
+      color: var(--text-main);
+      font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Widescreen Corporate Container (AZAFCO Proportions) */
+    .corp-container {
+      width: 100%;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media (max-width: 768px) {
+      .corp-container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    /* Sticky Clean White Corporate Navbar */
+    .corp-navbar {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: 0 2px 16px rgba(10, 37, 64, 0.04);
+    }
+
+    /* Active Nav Link Underline */
+    .nav-link {
+      position: relative;
+      padding: 8px 4px;
+      color: #334155;
+      font-weight: 700;
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover {
+      color: var(--navy-deep);
+    }
+    .nav-link.active {
+      color: var(--navy-deep);
+      font-weight: 900;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #EAB308, #F59E0B);
+      transition: width 0.25s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    /* Hero Majestic Maritime Gradient */
+    .hero-azafco-bg {
+      background: linear-gradient(135deg, #071A30 0%, #0F2F57 55%, #1A4B7C 100%);
+    }
+
+    /* Golden Partnership CTA Banner */
+    .gold-banner-bg {
+      background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    }
+
+    /* Clean Blue Corporate Sub-Page Header */
+    .subpage-header-bg {
+      background: linear-gradient(135deg, #0A2540 0%, #133A63 60%, #1D4E89 100%);
+    }
+
+    /* Elevated Crisp White Card */
+    .corp-card {
+      background: var(--surface-white);
+      border: 1px solid var(--border-light);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(10, 37, 64, 0.05);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+    .corp-card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 34px rgba(10, 37, 64, 0.10);
+      border-color: #CBD5E1;
+    }
+
+    /* Glassmorphic Stat Card inside Hero */
+    .hero-stat-card {
+      background: rgba(255, 255, 255, 0.10);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .hero-stat-card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Live Pulse Animations */
+    @keyframes pulseEmerald {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.65);
+      }
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 7px rgba(22, 163, 74, 0);
+      }
+    }
+    .pulse-emerald {
+      animation: pulseEmerald 2.2s infinite;
+    }
+
+    @keyframes pulseAmber {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.45);
+      }
+      50% {
+        box-shadow: 0 0 0 6px rgba(217, 119, 6, 0);
+      }
+    }
+    .pulse-fefo {
+      animation: pulseAmber 2s infinite;
+    }
+
+    /* Page View Entrance */
+    @keyframes pageReveal {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .page-reveal {
+      animation: pageReveal 0.35s ease forwards;
+    }
+
+    /* Floating WhatsApp FAB */
+    .wa-fab-wrap:hover .wa-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
+    .wa-tooltip {
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: all 0.25s ease;
+      pointer-events: none;
+    }
+
+    /* Custom Executive Range Slider */
+    input[type="range"].corp-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      background: #E2E8F0;
+      outline: none;
+      cursor: pointer;
+    }
+    input[type="range"].corp-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #0A2540;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 2px 10px rgba(10, 37, 64, 0.3);
+      cursor: pointer;
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+    input[type="range"].corp-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.12);
+      background: #0284C7;
+    }
+
+    /* Chart & Stock Bar Transitions */
+    .bar-smooth {
+      transition: height 0.55s cubic-bezier(0.22, 1, 0.36, 1), width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* Highlight newly added shipment row */
+    @keyframes flashRow {
+      0% { background-color: #FEF9C3; }
+      100% { background-color: #FFFFFF; }
+    }
+    .shipment-new-row {
+      animation: flashRow 3.5s ease forwards;
+    }
+
+    /* Modal Backdrop */
+    .modal-overlay {
+      background: rgba(7, 26, 48, 0.62);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .tabular-nums { font-variant-numeric: tabular-nums; }
+    .hidden { display: none !important; }
+
+    /* Clean Scrollbars */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #F1F5F9; }
+    ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+  </style>
+</head>
+<body class="bg-alabaster text-slate-900 min-h-screen flex flex-col">
+
+  <!-- ===================================================================== -->
+  <!-- 1. STICKY CLEAN WHITE CORPORATE NAVBAR                                -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 corp-navbar">
+    <div class="corp-container">
+      <div class="flex items-center justify-between h-[78px] gap-4">
+
+        <!-- Right: GOLDEN SEA | جولدن سي Executive Emblem + Wordmark -->
+        <button type="button" onclick="navigateTo('home')" class="flex items-center gap-3 text-right focus:outline-none group shrink-0">
+          <div class="w-12 h-12 rounded-xl bg-[#0A2540] flex items-center justify-center shadow-md border border-[#EAB308]/45 group-hover:scale-105 transition">
+            <!-- Custom Maritime Anchor & Crown Crest SVG -->
+            <svg class="w-9 h-9" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="شعار جولدن سي">
+              <circle cx="24" cy="24" r="21" stroke="#EAB308" stroke-width="1.5" stroke-opacity="0.75"/>
+              <path d="M18 13L21 16L24 11L27 16L30 13L29 18H19L18 13Z" fill="#EAB308"/>
+              <path d="M24 18V33" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M18 22H30" stroke="#EAB308" stroke-width="2.1" stroke-linecap="round"/>
+              <path d="M13.5 27C13.5 32 18.2 35.2 24 35.2C29.8 35.2 34.5 32 34.5 27" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M10 39.2C13.5 37.2 16.5 37.2 20 39.2C23.5 41.2 26.5 41.2 30 39.2C33.5 37.2 36.5 37.2 39 38.8" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl sm:text-2xl font-black tracking-tight text-[#0A2540]">جولدن سي</span>
+              <span class="hidden sm:inline-block text-[11px] font-black tracking-widest uppercase text-[#C59B27] border-r-2 border-slate-200 pr-2">GOLDEN SEA</span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-bold -mt-0.5">لتوريد الأسماك وسلاسل الإمداد المبردة</p>
+          </div>
+        </button>
+
+        <!-- Center: Dedicated Multi-Page Navigation Links (Desktop) -->
+        <nav id="desktop-nav" class="hidden lg:flex items-center gap-7 text-[15px]" aria-label="التنقل الرئيسي">
+          <button type="button" data-page="home" onclick="navigateTo('home')" class="nav-link active">الرئيسية</button>
+          <button type="button" data-page="products" onclick="navigateTo('products')" class="nav-link">المنتجات</button>
+          <button type="button" data-page="ai" onclick="navigateTo('ai')" class="nav-link">مساعد المشتريات AI</button>
+          <button type="button" data-page="contact" onclick="navigateTo('contact')" class="nav-link">اتصل بنا</button>
+        </nav>
+
+        <!-- Left Actions: Live B2B Cart Pill + Executive AI Ops Toggle Button -->
+        <div class="flex items-center gap-2.5 sm:gap-3">
+          <!-- B2B Cart Pill Button -->
+          <button
+            type="button"
+            onclick="openOmsModal()"
+            class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200/80 text-[#0A2540] border border-slate-200 px-3 sm:px-4 py-2.5 rounded-full font-extrabold text-xs sm:text-sm transition"
+            title="مراجعة طلب التوريد (OMS)"
+          >
+            <svg class="w-4 h-4 text-[#0284C7] shrink-0" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+            <span class="hidden sm:inline">سلة التوريد</span>
+            <span id="nav-cart-kg" class="text-slate-600 font-bold tabular-nums text-xs">0 كجم</span>
+            <span id="nav-cart-count" class="bg-[#0A2540] text-[#EAB308] text-[11px] font-black min-w-[22px] h-[22px] inline-flex items-center justify-center rounded-full px-1.5 tabular-nums">0</span>
+          </button>
+
+          <!-- Prominent Navy-Gold Executive Toggle: غرفة عمليات الإدارة (AI Ops) -->
+          <button
+            id="btn-ops-toggle"
+            type="button"
+            onclick="toggleAdminOps()"
+            class="inline-flex items-center gap-2.5 bg-[#0A2540] hover:bg-[#133A63] text-white border border-[#EAB308]/60 px-3.5 sm:px-4 py-2.5 rounded-full text-xs sm:text-sm font-extrabold transition shadow-md"
+          >
+            <span class="w-2.5 h-2.5 rounded-full bg-[#16A34A] pulse-emerald shrink-0"></span>
+            <span id="btn-ops-label" class="whitespace-nowrap">غرفة عمليات الإدارة (AI Ops)</span>
+            <span class="hidden xl:inline-flex items-center gap-1.5 bg-white/10 border border-white/15 px-2.5 py-0.5 rounded-full text-[11px] font-bold text-sky-200 tabular-nums">
+              <span dir="ltr">-18.4°C</span>
+              <span class="text-white/30">|</span>
+              <span id="nav-live-orders" class="text-[#EAB308]">2 شحنات</span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile/Tablet Sub-Navigation Strip (Zero Cramping, Full Access) -->
+      <div class="lg:hidden border-t border-slate-200/80 py-2 flex items-center justify-between gap-1 overflow-x-auto">
+        <button type="button" data-page="home" onclick="navigateTo('home')" class="mobile-nav-link flex-1 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-extrabold bg-[#0A2540] text-white">الرئيسية</button>
+        <button type="button" data-page="products" onclick="navigateTo('products')" class="mobile-nav-link flex-1 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:bg-slate-100">المنتجات</button>
+        <button type="button" data-page="ai" onclick="navigateTo('ai')" class="mobile-nav-link flex-1 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:bg-slate-100">مساعد الـ AI</button>
+        <button type="button" data-page="contact" onclick="navigateTo('contact')" class="mobile-nav-link flex-1 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:bg-slate-100">اتصل بنا</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- MAIN APPLICATION VIEWS                                                -->
+  <!-- ===================================================================== -->
+  <main class="flex-1">
+
+    <!-- =================================================================== -->
+    <!-- PAGE 1: الرئيسية (HOME — EXACT AZAFCO CORPORATE ARCHITECTURE)       -->
+    <!-- =================================================================== -->
+    <section id="view-home" class="page-reveal">
+
+      <!-- 1.1 Full-Width Majestic Hero Section -->
+      <div class="relative overflow-hidden hero-azafco-bg text-white">
+        <!-- Subtle Architectural Maritime Wave SVG Overlay -->
+        <svg class="absolute inset-0 w-full h-full opacity-[0.14] pointer-events-none" viewBox="0 0 1440 620" fill="none" preserveAspectRatio="none">
+          <path d="M-40 460C220 380 460 540 760 440C1060 340 1240 480 1490 390" stroke="#38BDF8" stroke-width="2.2"/>
+          <path d="M-40 510C260 420 500 580 820 480C1120 390 1290 520 1490 440" stroke="#F59E0B" stroke-width="1.6"/>
+          <path d="M-40 400C200 320 440 470 720 380C1010 290 1210 420 1490 330" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="7 9"/>
+          <circle cx="180" cy="140" r="210" stroke="#EAB308" stroke-width="1" stroke-opacity="0.3"/>
+          <circle cx="1270" cy="160" r="170" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.35"/>
+        </svg>
+
+        <div class="relative z-10 corp-container pt-14 pb-16 sm:pt-20 sm:pb-20 text-center">
+          <!-- Top Translucent Gold-Bordered Pill -->
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-[#EAB308]/60 text-[#FDE047] px-5 py-2 rounded-full text-xs sm:text-sm font-extrabold mb-7 shadow-sm">
+            <span>★ رواد توريد المأكولات البحرية الفاخرة وسلاسل الإمداد المبردة في مصر</span>
+          </div>
+
+          <!-- Large 2-Line Display Title -->
+          <h1 class="text-3xl sm:text-5xl lg:text-[58px] font-black leading-[1.22] tracking-tight max-w-4xl mx-auto">
+            <span class="block text-white">جولدن سي لتوريد الأسماك</span>
+            <span class="block text-[#F59E0B] mt-1.5">وسلاسل الإمداد المبردة</span>
+          </h1>
+
+          <!-- Executive Subtitle -->
+          <p class="mt-6 text-slate-200 text-base sm:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed font-medium">
+            الشريك الاستراتيجي الأول في مصر لتوريد الأسماك الطازجة والأنواع البحرية النادرة للفنادق الخمس نجوم، كبرى المطاعم، وسلاسل الهايبر ماركت. طاقة استيعابية <strong class="text-white">+2,500 طن شهرياً</strong> بشهادات <strong class="text-white">ISO 22000</strong> و <strong class="text-white">HACCP</strong> من المنطقة الصناعية بمدينة العبور.
+          </p>
+
+          <!-- Two Prominent Hero CTA Buttons -->
+          <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
+            <button
+              type="button"
+              onclick="navigateTo('products')"
+              class="inline-flex items-center gap-2.5 bg-[#EAB308] hover:bg-[#D99F06] text-[#0A2540] font-black px-8 py-4 rounded-xl text-base transition shadow-lg"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+              </svg>
+              تصفح المنتجات الفاخرة
+            </button>
+
+            <button
+              type="button"
+              onclick="navigateTo('contact')"
+              class="inline-flex items-center gap-2.5 bg-white/12 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm font-extrabold px-8 py-4 rounded-xl text-base transition"
+            >
+              <svg class="w-5 h-5 text-[#FDE047]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              تواصل معنا / طلب تعاقد
+            </button>
+          </div>
+
+          <!-- 4 Glassmorphic Stat Cards Row -->
+          <div class="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 max-w-5xl mx-auto">
+            <div class="hero-stat-card px-5 py-6 text-center">
+              <div class="text-3xl sm:text-4xl font-black text-[#F59E0B] tabular-nums" dir="ltr">+18</div>
+              <div class="text-xs sm:text-sm font-bold text-slate-100 mt-1.5">سنة خبرة في التوريد</div>
+            </div>
+            <div class="hero-stat-card px-5 py-6 text-center">
+              <div class="text-3xl sm:text-4xl font-black text-[#F59E0B] tabular-nums" dir="ltr">99.4%</div>
+              <div class="text-xs sm:text-sm font-bold text-slate-100 mt-1.5">دقة مواعيد التسليم</div>
+            </div>
+            <div class="hero-stat-card px-5 py-6 text-center">
+              <div class="text-3xl sm:text-4xl font-black text-[#F59E0B] tabular-nums" dir="ltr">+2,500</div>
+              <div class="text-xs sm:text-sm font-bold text-slate-100 mt-1.5">طن توريد وتبريد شهري</div>
+            </div>
+            <div class="hero-stat-card px-5 py-6 text-center">
+              <div class="text-2xl sm:text-3xl font-black text-[#F59E0B] tabular-nums mt-1">ISO 22000</div>
+              <div class="text-xs sm:text-sm font-bold text-slate-100 mt-2">شهادات سلامة وجودة الغذاء</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1.2 "لماذا جولدن سي؟" (Why Golden Sea?) Section -->
+      <div class="py-16 sm:py-20 bg-white border-b border-slate-200/80">
+        <div class="corp-container">
+          <div class="text-center max-w-2xl mx-auto mb-12 space-y-2.5">
+            <span class="inline-block text-xs font-black tracking-wider uppercase text-[#0284C7] bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">معايير التميز المؤسسي</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-[#0A2540]">لماذا جولدن سي؟</h2>
+            <p class="text-slate-600 text-base sm:text-lg font-semibold">الشريك الموثوق لقطاع الضيافة والمطاعم الفاخرة في مصر</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+            <!-- Card 1 -->
+            <div class="corp-card corp-card-hover p-8 text-center space-y-4">
+              <div class="w-16 h-16 mx-auto rounded-full bg-sky-50 border border-sky-200/80 text-[#0284C7] flex items-center justify-center">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-black text-[#0A2540]">مصادر بحرية ونادرة موثوقة</h3>
+              <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-medium">
+                صيد بحر أحمر ومتوسط طازج يومياً بجانب استيراد جوي وبحري مباشر لأندر الأصناف العالمية مثل كينج كراب ألاسكا، تونة الزعنفة الزرقاء، والسلمون النرويجي.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="corp-card corp-card-hover p-8 text-center space-y-4">
+              <div class="w-16 h-16 mx-auto rounded-full bg-sky-50 border border-sky-200/80 text-[#0284C7] flex items-center justify-center">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m0-18l-3 3m3-3l3 3m-3 15l-3-3m3 3l3-3M3 12h18M3 12l3-3m-3 3l3 3m15-3l-3-3m3 3l-3 3"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-black text-[#0A2540]">سلسلة تبريد متكاملة (Cold Chain)</h3>
+              <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-medium">
+                ثلاجات المنطقة الصناعية بالعبور المجهزة بدرجات حفظ دقيقة من <span dir="ltr" class="font-bold text-[#0A2540]">0°C</span> للمبرد حتى <span dir="ltr" class="font-bold text-[#0A2540]">-18°C</span> للمجمد الفوري مع تتبع حراري حي حتى باب مطبخك.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="corp-card corp-card-hover p-8 text-center space-y-4">
+              <div class="w-16 h-16 mx-auto rounded-full bg-sky-50 border border-sky-200/80 text-[#0284C7] flex items-center justify-center">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-black text-[#0A2540]">متخصصون في تعاقدات B2B</h3>
+              <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-medium">
+                نلبي احتياجات الشيفات ومديري المشتريات بأوزان مخصصة، تجهيز وتفليه احترافي وفق معايير الفنادق، وأسعار جملة تنافسية مع فواتير ضريبية رسمية.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1.3 Featured Rare & Luxury Seafood Preview -->
+      <div class="py-16 sm:py-20 bg-alabaster">
+        <div class="corp-container">
+          <div class="text-center max-w-3xl mx-auto mb-12 space-y-2.5">
+            <span class="inline-block text-xs font-black tracking-wider text-[#C59B27] bg-amber-50 border border-amber-200 px-3.5 py-1 rounded-full">إصدارات الـ VIP والمطاعم الفاخرة</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-[#0A2540]">نخبة المأكولات البحرية والأنواع النادرة</h2>
+            <p class="text-slate-600 text-base sm:text-lg font-semibold">تشكيلة حصرية من أغلى وأندر الكنوز البحرية العالمية والمحلية جاهزة للتوريد الفوري من ثلاجات العبور</p>
+          </div>
+
+          <!-- 4-Card Rare Seafood Preview Grid -->
+          <div id="home-featured-grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+            <!-- Dynamically rendered via JS -->
+          </div>
+
+          <!-- Centered Navy CTA -->
+          <div class="mt-12 text-center">
+            <button
+              type="button"
+              onclick="navigateTo('products')"
+              class="inline-flex items-center gap-3 bg-[#0A2540] hover:bg-[#133A63] text-white font-black px-9 py-4 rounded-xl text-base transition shadow-lg"
+            >
+              <span>عرض الكتالوج الكامل (8 أصناف فاخرة)</span>
+              <svg class="w-5 h-5 text-[#EAB308]" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1.4 Full-Width Golden Partnership Banner (Exact AZAFCO Style) -->
+      <div class="gold-banner-bg text-white py-16">
+        <div class="corp-container text-center space-y-5">
+          <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-white">مستعد تبدأ شراكتك مع جولدن سي؟</h2>
+          <p class="text-amber-50 text-base sm:text-lg max-w-2xl mx-auto font-bold">
+            انضم لأكثر من 120 فندقاً ومطعماً فاخراً يعتمدون على دقة توريداتنا اليومية وسلاسل التبريد الذكية من مدينة العبور
+          </p>
+          <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
+            <button
+              type="button"
+              onclick="navigateTo('contact')"
+              class="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 text-[#0A2540] font-black px-8 py-4 rounded-full text-base transition shadow-lg"
+            >
+              <svg class="w-5 h-5 text-[#D97706]" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              ابدأ التعاقد الآن
+            </button>
+            <button
+              type="button"
+              onclick="openWhatsAppOrder()"
+              class="inline-flex items-center gap-2.5 bg-[#0A2540] hover:bg-[#133A63] text-white font-extrabold px-7 py-4 rounded-full text-base transition shadow-md"
+            >
+              تواصل فوري عبر واتساب
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- PAGE 2: المنتجات (PRODUCTS CATALOG — 8 LUXURY & RARE SEAFOOD SKUs)  -->
+    <!-- =================================================================== -->
+    <section id="view-products" class="hidden page-reveal">
+      <!-- Corporate Blue Header Strip -->
+      <div class="subpage-header-bg text-white py-12 sm:py-14">
+        <div class="corp-container text-center space-y-3">
+          <span class="inline-block text-xs font-extrabold text-[#FDE047] bg-white/10 border border-[#EAB308]/40 px-4 py-1 rounded-full">مخزون حي متزامن مباشرة مع عنابر التبريد بالعبور</span>
+          <h1 class="text-3xl sm:text-4xl font-black">أفخر الأسماك والمأكولات البحرية والأنواع النادرة | B2B Wholesale</h1>
+          <p class="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto font-medium">
+            اختر الأوزان المطلوبة بالكيلوجرام (أو اكتب أي وزن مخصص مثل 12 كجم) وأضفها لطلب التوريد الرسمي أو أرسلها مباشرة عبر واتساب.
+          </p>
+        </div>
+      </div>
+
+      <div class="corp-container py-10 space-y-8">
+        <!-- Clean Rounded Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5" id="catalog-filter-bar">
+          <button type="button" data-filter="all" onclick="setCatalogFilter('all')" class="catalog-filter-btn px-5 py-2.5 rounded-full text-sm font-extrabold transition bg-[#0A2540] text-white shadow-sm">
+            كل المنتجات (8)
+          </button>
+          <button type="button" data-filter="crustaceans" onclick="setCatalogFilter('crustaceans')" class="catalog-filter-btn px-5 py-2.5 rounded-full text-sm font-bold transition bg-white text-slate-700 border border-slate-200 hover:border-[#0A2540]">
+            قشريات فاخرة ونادرة 👑
+          </button>
+          <button type="button" data-filter="rare_fish" onclick="setCatalogFilter('rare_fish')" class="catalog-filter-btn px-5 py-2.5 rounded-full text-sm font-bold transition bg-white text-slate-700 border border-slate-200 hover:border-[#0A2540]">
+            أسماك نادرة وفاخرة 🌊
+          </button>
+          <button type="button" data-filter="chilled" onclick="setCatalogFilter('chilled')" class="catalog-filter-btn px-5 py-2.5 rounded-full text-sm font-bold transition bg-white text-slate-700 border border-slate-200 hover:border-[#0284C7]">
+            مبرد طازج 0°C
+          </button>
+          <button type="button" data-filter="frozen" onclick="setCatalogFilter('frozen')" class="catalog-filter-btn px-5 py-2.5 rounded-full text-sm font-bold transition bg-white text-slate-700 border border-slate-200 hover:border-[#0284C7]">
+            مجمد فوري -18°C
+          </button>
+        </div>
+
+        <!-- Widescreen Product Grid (3 cols on xl, 2 on md, 1 on mobile) -->
+        <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- ISO & Cold Chain Quality Assurance Strip (AZAFCO Products Footer Pattern) -->
+        <div class="corp-card p-8 mt-6">
+          <div class="text-center mb-6">
+            <h3 class="text-xl font-black text-[#0A2540]">جودة معتمدة بشهادات ISO 22000 و HACCP</h3>
+            <p class="text-sm text-slate-500 font-semibold">جميع شحنات جولدن سي تخضع لفحص بيطري وجودة صارم قبل مغادرة المنطقة الصناعية بالعبور</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/70">
+              <div class="text-sm font-black text-[#0A2540]">تجهيز وتفليه حسب مواصفات الشيف</div>
+              <p class="text-xs text-slate-600 mt-1 font-semibold">تنظيف، تقطيع ساشيمي، أو شحن كامل مبرد حسب طلب الفندق</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/70">
+              <div class="text-sm font-black text-[#0284C7]">تحكم حراري 0°C / -18°C</div>
+              <p class="text-xs text-slate-600 mt-1 font-semibold">تقارير حرارة إلكترونية مرفقة مع كل فاتورة تسليم</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/70">
+              <div class="text-sm font-black text-emerald-700">شحن مبرد مجاني فوق 50 كجم</div>
+              <p class="text-xs text-slate-600 mt-1 font-semibold">انطلاق يومي من العبور لكافة مناطق القاهرة الكبرى والجيزة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- PAGE 3: مساعد المشتريات الذكي (AI PROCUREMENT & MENU CALCULATOR)    -->
+    <!-- =================================================================== -->
+    <section id="view-ai" class="hidden page-reveal">
+      <div class="subpage-header-bg text-white py-12">
+        <div class="corp-container text-center space-y-2.5">
+          <span class="inline-block text-xs font-extrabold text-[#FDE047] bg-white/10 border border-[#EAB308]/40 px-4 py-1 rounded-full">ذكاء اصطناعي لمديري المشتريات والشيفات التنفيذيين</span>
+          <h1 class="text-3xl sm:text-4xl font-black">مساعد المشتريات الذكي وحاسبة الكميات بالـ AI</h1>
+          <p class="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto font-medium">
+            احسب الأوزان الأسبوعية الدقيقة بالكيلوجرام حسب فئة منشأتك ومستوى القائمة لتجنب الهدر الغذائي وتحقيق أعلى هامش ربح.
+          </p>
+        </div>
+      </div>
+
+      <div class="corp-container py-10">
+        <div class="corp-card p-6 sm:p-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+            <!-- Right: AI Parameters Form -->
+            <div class="lg:col-span-5 space-y-6 bg-slate-50 border border-slate-200 rounded-2xl p-6">
+              <!-- Venue Type -->
+              <div class="space-y-2.5">
+                <label class="block text-sm font-black text-[#0A2540]">1. نوع المنشأة</label>
+                <div class="grid grid-cols-1 gap-2.5">
+                  <button type="button" data-venue="hotel" onclick="selectAiParam('venue', 'hotel')" class="ai-venue-btn text-right px-4 py-3.5 rounded-xl border text-sm font-extrabold transition bg-[#0A2540] text-white border-[#0A2540] shadow-sm">
+                    فندق 5 نجوم / منتجع سياحي
+                  </button>
+                  <button type="button" data-venue="restaurant" onclick="selectAiParam('venue', 'restaurant')" class="ai-venue-btn text-right px-4 py-3.5 rounded-xl border text-sm font-bold transition bg-white text-slate-700 border-slate-200 hover:border-[#0A2540]">
+                    مطعم مأكولات بحرية فاخر (Fine Dining)
+                  </button>
+                  <button type="button" data-venue="hypermarket" onclick="selectAiParam('venue', 'hypermarket')" class="ai-venue-btn text-right px-4 py-3.5 rounded-xl border text-sm font-bold transition bg-white text-slate-700 border-slate-200 hover:border-[#0A2540]">
+                    هايبر ماركت / قسم أسماك طازجة
+                  </button>
+                </div>
+              </div>
+
+              <!-- Weekly Guests Slider -->
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <label for="ai-guests-slider" class="text-sm font-black text-[#0A2540]">2. عدد الضيوف المتوقع أسبوعياً</label>
+                  <span class="bg-[#0A2540] text-[#EAB308] text-sm font-black px-3.5 py-1 rounded-lg tabular-nums">
+                    <span id="ai-guests-val">1,000</span> ضيف
+                  </span>
+                </div>
+                <input id="ai-guests-slider" type="range" min="200" max="3000" step="50" value="1000" class="corp-slider" oninput="updateAiGuests(this.value)" />
+                <div class="flex justify-between text-xs font-bold text-slate-500 tabular-nums">
+                  <span>200 ضيف</span>
+                  <span>1,500 ضيف</span>
+                  <span>3,000 ضيف</span>
+                </div>
+              </div>
+
+              <!-- Menu Tier / Focus -->
+              <div class="space-y-2.5">
+                <label class="block text-sm font-black text-[#0A2540]">3. فئة وتوجه القائمة (Menu Tier)</label>
+                <div class="grid grid-cols-1 gap-2.5">
+                  <button type="button" data-tier="vip" onclick="selectAiParam('tier', 'vip')" class="ai-tier-btn text-right px-4 py-3.5 rounded-xl border text-sm font-extrabold transition bg-[#0284C7] text-white border-[#0284C7] shadow-sm">
+                    قائمة VIP والأنواع النادرة (كينج كراب وتونة وسي باس)
+                  </button>
+                  <button type="button" data-tier="buffet" onclick="selectAiParam('tier', 'buffet')" class="ai-tier-btn text-right px-4 py-3.5 rounded-xl border text-sm font-bold transition bg-white text-slate-700 border-slate-200 hover:border-[#0284C7]">
+                    بوفيه مفتوح وفنادق (سلمون وناجل وقشر بياض)
+                  </button>
+                  <button type="button" data-tier="grills" onclick="selectAiParam('tier', 'grills')" class="ai-tier-btn text-right px-4 py-3.5 rounded-xl border text-sm font-bold transition bg-white text-slate-700 border-slate-200 hover:border-[#0284C7]">
+                    مشويات وبحريات فاخرة (جمبري جامبو واستاكوزا وناجل)
+                  </button>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                onclick="runAiProcurementCalc(false)"
+                class="w-full flex items-center justify-center gap-2.5 bg-[#EAB308] hover:bg-[#D99F06] text-[#0A2540] font-black py-4 px-6 rounded-xl text-base transition shadow-md"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                حساب الكميات المثالية بالـ AI
+              </button>
+            </div>
+
+            <!-- Left: AI Recommendation Output -->
+            <div class="lg:col-span-7">
+              <div id="ai-output-card" class="border border-slate-200 rounded-2xl bg-white p-6 sm:p-7 space-y-6 min-h-[430px] flex flex-col justify-between shadow-sm">
+                <!-- Populated dynamically via JS -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- PAGE 4: اتصل بنا (CONTACT US — EXACT AZAFCO 3-CARD DESIGN)          -->
+    <!-- =================================================================== -->
+    <section id="view-contact" class="hidden page-reveal">
+      <!-- Deep Blue Header Banner -->
+      <div class="subpage-header-bg text-white py-14">
+        <div class="corp-container text-center space-y-3">
+          <h1 class="text-3xl sm:text-5xl font-black">تواصل مع جولدن سي الدولية</h1>
+          <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto font-medium">
+            اختر قناة التواصل الأنسب لشركتك — فريق التعاقدات والمبيعات المؤسسية جاهز لخدمة الفنادق والمطاعم والهايبر ماركت على مدار الساعة
+          </p>
+        </div>
+      </div>
+
+      <div class="corp-container py-12 space-y-12">
+        <div class="text-center space-y-1.5">
+          <h2 class="text-2xl sm:text-3xl font-black text-[#0A2540]">قنوات التواصل لشركاء الأعمال (B2B Partners)</h2>
+          <p class="text-slate-600 text-sm sm:text-base font-semibold">توريد مبرد فوري من المنطقة الصناعية بمدينة العبور لكافة أنحاء الجمهورية</p>
+        </div>
+
+        <!-- 3 Side-by-Side Elevated White Cards with Thick Colored Top Borders -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+
+          <!-- Card 1: WhatsApp Inquiries (Green Top Border #16A34A) -->
+          <div class="corp-card corp-card-hover border-t-[5px] border-t-[#16A34A] p-7 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-200 text-[#16A34A] flex items-center justify-center">
+                  <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.031 2C6.498 2 2 6.497 2 12.031c0 1.766.462 3.49 1.339 5.01L2 22l5.098-1.336a9.975 9.975 0 004.933 1.298h.004c5.531 0 10.03-4.497 10.03-10.03C22.065 6.497 17.563 2 12.031 2zm5.825 14.165c-.248.698-1.444 1.335-2.01 1.419-.516.077-1.186.109-1.916-.122-.442-.14-1.01-.328-1.737-.642-3.058-1.321-5.055-4.415-5.207-4.618-.152-.203-1.242-1.653-1.242-3.153 0-1.5.786-2.238 1.065-2.543.279-.305.609-.381.812-.381.203 0 .406.002.584.011.188.009.439-.071.688.525.248.597.845 2.063.92 2.215.076.152.127.33.025.533-.101.203-.152.33-.305.508-.152.178-.32.397-.457.533-.152.152-.31.317-.133.622.178.305.789 1.302 1.694 2.11 1.164 1.038 2.145 1.36 2.45 1.512.305.152.483.127.66-.076.178-.203.762-.889.965-1.194.203-.305.406-.254.686-.152.279.101 1.778.838 2.083.99.305.152.508.229.584.356.076.127.076.737-.172 1.435z"/>
+                  </svg>
+                </div>
+                <span class="text-xs font-extrabold text-[#16A34A] bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">رد فوري</span>
+              </div>
+
+              <h3 class="text-xl font-black text-[#0A2540]">استفسارات وطلبات الواتساب</h3>
+              <p class="text-sm text-slate-600 font-medium leading-relaxed">
+                تواصل مباشرة مع فريق مبيعات الجملة عبر واتساب للطلب الفوري للكميات اليومية ومعرفة تحديثات أسعار السوق والأنواع النادرة المتوفرة اليوم.
+              </p>
+
+              <ul class="space-y-2 text-xs sm:text-sm font-bold text-slate-700 pt-1">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
+                  إرسال تلقائي لقائمة أصناف السلة والأوزان بالكيلو
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
+                  متاح 24/7 لمديري المشتريات والشيفات التنفيذيين
+                </li>
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              onclick="openWhatsAppOrder()"
+              class="w-full flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] text-white font-black py-3.5 px-5 rounded-xl text-sm transition shadow-md"
+            >
+              <span>ابدأ المحادثة على واتساب</span>
+              <span>←</span>
+            </button>
+          </div>
+
+          <!-- Card 2: B2B Partnership & OMS Order (Blue Top Border #0284C7) -->
+          <div class="corp-card corp-card-hover border-t-[5px] border-t-[#0284C7] p-7 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-14 h-14 rounded-2xl bg-sky-50 border border-sky-200 text-[#0284C7] flex items-center justify-center">
+                  <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                </div>
+                <span class="text-xs font-extrabold text-[#0284C7] bg-sky-50 border border-sky-200 px-3 py-1 rounded-full">للفنادق والمطاعم</span>
+              </div>
+
+              <h3 class="text-xl font-black text-[#0A2540]">نموذج التعاقد وطلب التوريد (OMS)</h3>
+              <p class="text-sm text-slate-600 font-medium leading-relaxed">
+                أصدر أمر التوريد الرسمي مباشرة مع حجز لحظي للكميات من مخزون ثلاجات العبور، وجدولة تلقائية لشاحنة التبريد ومسار التوصيل الذكي.
+              </p>
+
+              <ul class="space-y-2 text-xs sm:text-sm font-bold text-slate-700 pt-1">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#0284C7]"></span>
+                  حجز فوري من المخزون المبرد وإصدار رقم تتبع للشحنة
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#0284C7]"></span>
+                  شحن مبرد مجاني للطلبيات التي تتجاوز 50 كجم
+                </li>
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              onclick="openOmsModal()"
+              class="w-full flex items-center justify-center gap-2 bg-[#0284C7] hover:bg-sky-700 text-white font-black py-3.5 px-5 rounded-xl text-sm transition shadow-md"
+            >
+              <span>افتح نموذج التوريد والتعاقد</span>
+              <span>←</span>
+            </button>
+          </div>
+
+          <!-- Card 3: Business Email (Orange Top Border #EA580C) -->
+          <div class="corp-card corp-card-hover border-t-[5px] border-t-[#EA580C] p-7 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-14 h-14 rounded-2xl bg-orange-50 border border-orange-200 text-[#EA580C] flex items-center justify-center">
+                  <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <span class="text-xs font-extrabold text-[#EA580C] bg-orange-50 border border-orange-200 px-3 py-1 rounded-full">للعروض الرسمية</span>
+              </div>
+
+              <h3 class="text-xl font-black text-[#0A2540]">البريد الإلكتروني الرسمي</h3>
+              <p class="text-sm text-slate-600 font-medium leading-relaxed">
+                مناسب للمناقصات السنوية، عقود التوريد الممتدة، وطلبات عروض الأسعار الرسمية (RFQ) للفنادق وسلاسل الهايبر ماركت.
+              </p>
+
+              <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 space-y-1.5 text-xs font-bold">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-500">البريد الرسمي:</span>
+                  <span class="text-[#0A2540] font-extrabold" dir="ltr">contracts@goldensea-egypt.com</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-500">الخط الساخن للتعاقدات:</span>
+                  <span class="text-[#EA580C] font-black text-sm tabular-nums">19842</span>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="mailto:contracts@goldensea-egypt.com?subject=طلب%20تعاقد%20توريد%20B2B%20-%20جولدن%20سي"
+              class="w-full flex items-center justify-center gap-2 bg-[#EA580C] hover:bg-orange-700 text-white font-black py-3.5 px-5 rounded-xl text-sm transition shadow-md"
+            >
+              <span>إرسال بريد رسمي</span>
+              <span>←</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Headquarters & Cold-Storage Info Strip -->
+        <div class="corp-card p-7 sm:p-9 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 text-xs font-black text-[#0284C7] bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              المقر الرئيسي ومجمع ثلاجات التبريد
+            </div>
+            <h3 class="text-2xl font-black text-[#0A2540]">المنطقة الصناعية بمدينة العبور — القاهرة الكبرى</h3>
+            <div class="space-y-2.5 text-sm text-slate-600 font-semibold">
+              <p class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-[#C59B27] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span><strong>العنوان:</strong> المنطقة الصناعية بمدينة العبور — بجوار سوق العبور المركزي، قطعة 14 قطاع ب</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-[#0284C7] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span><strong>ساعات العمل:</strong> السبت – الخميس: 6:00 ص إلى 10:00 م | خط طوارئ الفنادق 24/7</span>
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2.5 pt-2">
+              <span class="bg-[#0A2540] text-white text-xs font-extrabold px-3.5 py-1.5 rounded-lg">ISO 22000:2018</span>
+              <span class="bg-[#0A2540] text-white text-xs font-extrabold px-3.5 py-1.5 rounded-lg">HACCP Certified</span>
+              <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-extrabold px-3.5 py-1.5 rounded-lg">الهيئة القومية لسلامة الغذاء</span>
+              <span class="bg-amber-50 text-amber-800 border border-amber-200 text-xs font-extrabold px-3.5 py-1.5 rounded-lg">نظام FEFO الذكي</span>
+            </div>
+          </div>
+
+          <!-- Offline-Safe Stylized Architectural Logistics Map Graphic -->
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl bg-[#EEF4FA] border border-slate-200 p-5 relative overflow-hidden">
+              <svg viewBox="0 0 420 210" fill="none" class="w-full h-auto" aria-label="خريطة موقع مخازن جولدن سي بمدينة العبور">
+                <rect width="420" height="210" rx="14" fill="#F8FAFC"/>
+                <!-- Road grid -->
+                <path d="M0 155H420" stroke="#CBD5E1" stroke-width="10"/>
+                <path d="M0 155H420" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10 8"/>
+                <path d="M290 0V210" stroke="#CBD5E1" stroke-width="8"/>
+                <path d="M0 65C110 70 200 120 420 105" stroke="#93C5FD" stroke-width="5" stroke-opacity="0.7"/>
+                <!-- Industrial Zone Block -->
+                <rect x="135" y="42" width="130" height="72" rx="10" fill="#0A2540" fill-opacity="0.08" stroke="#0A2540" stroke-width="1.5" stroke-dasharray="5 4"/>
+                <!-- Pin -->
+                <circle cx="200" cy="78" r="22" fill="#0284C7" fill-opacity="0.16"/>
+                <circle cx="200" cy="78" r="10" fill="#0A2540" stroke="#EAB308" stroke-width="3"/>
+                <text x="200" y="32" text-anchor="middle" fill="#0A2540" font-family="Cairo, sans-serif" font-size="13" font-weight="800">ثلاجات جولدن سي — العبور</text>
+                <text x="200" y="182" text-anchor="middle" fill="#475569" font-family="Cairo, sans-serif" font-size="11" font-weight="700">الدائري الإقليمي / طريق مصر الإسماعيلية الصحراوي</text>
+                <text x="355" y="92" text-anchor="middle" fill="#0284C7" font-family="Cairo, sans-serif" font-size="11" font-weight="700">سوق العبور المركزي</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MODE 2: غرفة عمليات الإدارة وسلاسل الإمداد الذكية (AI OPS)          -->
+    <!-- =================================================================== -->
+    <section id="view-ops" class="hidden page-reveal py-8">
+      <div class="corp-container space-y-8">
+
+        <!-- Cohesive Corporate Operations Top Bar -->
+        <div class="corp-card p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 border-r-[5px] border-r-[#0A2540]">
+          <div class="space-y-1">
+            <div class="inline-flex items-center gap-2 text-xs font-extrabold text-[#0284C7]">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#16A34A] pulse-emerald"></span>
+              مركز التحكم المركزي لسلاسل الإمداد المبردة — المنطقة الصناعية بالعبور (WMS • TMS • AI Forecast)
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-black text-[#0A2540]">غرفة عمليات الإدارة وسلاسل الإمداد الذكية</h1>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs font-bold text-slate-700 flex items-center gap-2.5">
+              <span>عنبر A: <strong class="text-[#0284C7] tabular-nums" dir="ltr">+0.4°C</strong></span>
+              <span class="text-slate-300">|</span>
+              <span>عنبر B: <strong class="text-[#0A2540] tabular-nums" dir="ltr">-18.4°C</strong></span>
+            </div>
+            <button
+              type="button"
+              onclick="returnToClientSite()"
+              class="inline-flex items-center gap-2 bg-[#EAB308] hover:bg-[#D99F06] text-[#0A2540] font-black px-5 py-2.5 rounded-xl text-sm transition shadow-sm"
+            >
+              <span>العودة لواجهة الموقع للعملاء</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 Live Executive KPI Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+          <!-- KPI 1: Revenue -->
+          <div class="corp-card p-6 border-r-4 border-r-[#0A2540]">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-sm font-bold text-slate-600">إجمالي إيرادات التعاقدات</span>
+              <div class="w-10 h-10 rounded-xl bg-[#0A2540]/10 text-[#0A2540] flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+            </div>
+            <div id="ops-kpi-revenue" class="text-2xl sm:text-3xl font-black text-[#0A2540] tabular-nums">3,485,000 ج.م</div>
+            <div class="mt-2 flex items-center gap-2 text-xs font-bold text-emerald-700">
+              <span class="bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md">+21.6% نمو شهري</span>
+              <span class="text-slate-500">متزامن لحظياً</span>
+            </div>
+          </div>
+
+          <!-- KPI 2: Inventory -->
+          <div class="corp-card p-6 border-r-4 border-r-[#0284C7]">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-sm font-bold text-slate-600">إجمالي المخزون المبرد المتاح</span>
+              <div class="w-10 h-10 rounded-xl bg-sky-100 text-[#0284C7] flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                </svg>
+              </div>
+            </div>
+            <div id="ops-kpi-stock" class="text-2xl sm:text-3xl font-black text-[#0A2540] tabular-nums">2,780 كجم</div>
+            <div class="mt-2 flex items-center gap-2 text-xs font-bold text-slate-600">
+              <span class="bg-sky-50 text-[#0284C7] border border-sky-200 px-2 py-0.5 rounded-md">8 أصناف فاخرة</span>
+              <span>ثلاجات العبور</span>
+            </div>
+          </div>
+
+          <!-- KPI 3: Waste Reduction -->
+          <div class="corp-card p-6 border-r-4 border-r-[#16A34A]">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-sm font-bold text-slate-600">خفض الهالك والفاقد الغذائي</span>
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-[#16A34A] flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="text-2xl sm:text-3xl font-black text-[#16A34A] tabular-nums" dir="ltr">-38.4%</div>
+            <div class="mt-2 text-xs font-bold text-slate-600">
+              بفضل التنبؤ الذكي بالطلب وتطبيق قاعدة <strong class="text-[#0A2540]">FEFO</strong>
+            </div>
+          </div>
+
+          <!-- KPI 4: Active Vans -->
+          <div class="corp-card p-6 border-r-4 border-r-[#EAB308]">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-sm font-bold text-slate-600">أسطول شاحنات التبريد النشط</span>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-[#C59B27] flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                </svg>
+              </div>
+            </div>
+            <div id="ops-kpi-vans" class="text-2xl sm:text-3xl font-black text-[#0A2540]">6 شاحنات نشطة</div>
+            <div class="mt-2 flex items-center gap-2 text-xs font-bold text-slate-600">
+              <span id="ops-kpi-active-shipments" class="bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-md tabular-nums">2 شحنات قيد التوصيل</span>
+              <span>GPS حراري</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module A: إدارة المخزون المبرد والصلاحية (WMS & FEFO Table) -->
+        <div class="corp-card overflow-hidden">
+          <div class="p-6 border-b border-slate-200 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black bg-[#0A2540] text-[#EAB308] px-2.5 py-0.5 rounded-md">WMS + FEFO</span>
+                <h2 class="text-xl sm:text-2xl font-black text-[#0A2540]">إدارة المخزون المبرد والصلاحية (8 أصناف متزامنة حياً)</h2>
+              </div>
+              <p class="text-sm text-slate-600 font-medium">
+                الأصناف التي تبقى على صلاحيتها <strong class="text-amber-700">4 أيام أو أقل</strong> تحصل تلقائياً على شارة <strong class="text-[#0A2540]">أولوية صرف عاجلة (FEFO — ما تنتهي صلاحيته أولاً يُصرف أولاً)</strong>.
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button type="button" id="wms-btn-fefo" onclick="setWmsSort('fefo')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-[#0A2540] text-white transition">
+                ترتيب تلقائي حسب FEFO
+              </button>
+              <button type="button" id="wms-btn-sku" onclick="setWmsSort('sku')" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                ترتيب حسب الكود
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-right border-collapse min-w-[960px]">
+              <thead>
+                <tr class="bg-slate-50 border-b border-slate-200 text-xs font-extrabold text-slate-600">
+                  <th class="py-4 px-6">الصنف والكود (SKU)</th>
+                  <th class="py-4 px-4">عنبر التبريد والحرارة</th>
+                  <th class="py-4 px-4">الصلاحية وأولوية FEFO</th>
+                  <th class="py-4 px-4">المخزون الحالي (كجم)</th>
+                  <th class="py-4 px-6 text-left">توريد فوري للمخزن</th>
+                </tr>
+              </thead>
+              <tbody id="ops-wms-body" class="divide-y divide-slate-200/80 text-sm">
+                <!-- Populated dynamically via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Module B: أسطول التبريد وتحسين المسارات بالـ AI (TMS) -->
+        <div class="corp-card overflow-hidden">
+          <div class="p-6 border-b border-slate-200 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black bg-[#0284C7] text-white px-2.5 py-0.5 rounded-md">TMS + AI Routing</span>
+                <h2 class="text-xl sm:text-2xl font-black text-[#0A2540]">أسطول التبريد وتحسين المسارات بالـ AI</h2>
+              </div>
+              <p class="text-sm text-slate-600 font-medium">
+                متابعة حية لجميع شحنات الفنادق والمطاعم المنطلقة من العبور مع إمكانية ترقية حالة الشحنة لحظياً أمام لجنة التحكيم.
+              </p>
+            </div>
+            <span class="inline-flex items-center gap-2 bg-sky-50 border border-sky-200 text-[#0284C7] px-4 py-2 rounded-xl text-xs font-extrabold">
+              متوسط توفير الوقت والوقود بالمسار الذكي: 26%
+            </span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-right border-collapse min-w-[1120px]">
+              <thead>
+                <tr class="bg-slate-50 border-b border-slate-200 text-xs font-extrabold text-slate-600">
+                  <th class="py-4 px-5">رقم الشحنة</th>
+                  <th class="py-4 px-4">العميل والمنطقة</th>
+                  <th class="py-4 px-4">الحمولة والتكلفة</th>
+                  <th class="py-4 px-4">شاحنة التبريد المخصصة</th>
+                  <th class="py-4 px-4">المسار الذكي بالـ AI</th>
+                  <th class="py-4 px-4">حرارة الصندوق</th>
+                  <th class="py-4 px-4">الحالة</th>
+                  <th class="py-4 px-5 text-left">تحديث حي</th>
+                </tr>
+              </thead>
+              <tbody id="ops-tms-body" class="divide-y divide-slate-200/80 text-sm">
+                <!-- Populated dynamically via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Module C: محاكي التنبؤ بالطلب والمواسم (AI Demand Forecasting) -->
+        <div class="corp-card p-6 sm:p-8 space-y-7">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-200 pb-6">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black bg-[#EAB308] text-[#0A2540] px-2.5 py-0.5 rounded-md">AI Forecasting</span>
+                <h2 class="text-xl sm:text-2xl font-black text-[#0A2540]">محاكي التنبؤ بالطلب والمواسم</h2>
+              </div>
+              <p class="text-sm text-slate-600 font-medium">
+                اختر السيناريو الموسمي لاستعراض توقعات الاستهلاك الأسبوعي بالكيلوجرام وتوصيات استراتيجية سلاسل الإمداد.
+              </p>
+            </div>
+
+            <!-- 3 Interactive Scenario Tabs -->
+            <div class="flex flex-wrap items-center gap-2 bg-slate-100 p-1.5 rounded-2xl border border-slate-200">
+              <button type="button" data-scenario="normal" onclick="setForecastScenario('normal')" class="forecast-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition bg-[#0A2540] text-white shadow-sm">
+                أيام العمل العادية
+              </button>
+              <button type="button" data-scenario="holidays" onclick="setForecastScenario('holidays')" class="forecast-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-white">
+                موسم الأعياد والسياحة
+              </button>
+              <button type="button" data-scenario="summer" onclick="setForecastScenario('summer')" class="forecast-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-white">
+                ذروة الصيف والساحل الشمالي
+              </button>
+            </div>
+          </div>
+
+          <!-- Forecast Summary Strip -->
+          <div id="ops-forecast-summary" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <!-- Populated dynamically via JS -->
+          </div>
+
+          <!-- Dynamic Vertical Bar Chart across 5 Seafood Categories -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+              <h3 class="text-base font-black text-[#0A2540]">التنبؤ الأسبوعي بالطلب حسب فئة المنتجات البحرية (كجم)</h3>
+              <span class="text-xs font-bold text-slate-500">نسبة التغير مقارنة بخط الأساس العادي</span>
+            </div>
+
+            <div class="relative pt-8 pb-2">
+              <div class="absolute inset-x-0 top-8 bottom-14 flex flex-col justify-between pointer-events-none">
+                <div class="border-t border-dashed border-slate-300/80 w-full relative"><span class="absolute -top-3 right-0 text-[11px] font-bold text-slate-400 tabular-nums">1,500 كجم</span></div>
+                <div class="border-t border-dashed border-slate-300/80 w-full relative"><span class="absolute -top-3 right-0 text-[11px] font-bold text-slate-400 tabular-nums">1,000 كجم</span></div>
+                <div class="border-t border-dashed border-slate-300/80 w-full relative"><span class="absolute -top-3 right-0 text-[11px] font-bold text-slate-400 tabular-nums">500 كجم</span></div>
+                <div class="border-t border-slate-300 w-full"></div>
+              </div>
+
+              <div id="ops-forecast-bars" class="relative z-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 items-end h-[270px] pr-16">
+                <!-- Populated dynamically via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 Executive Strategy Cards -->
+          <div id="ops-forecast-strategies" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- SHARED CORPORATE 4-COLUMN DARK NAVY FOOTER (EXACT AZAFCO PATTERN)     -->
+  <!-- ===================================================================== -->
+  <footer class="bg-[#0A192F] text-slate-300 border-t border-white/10 mt-auto">
+    <div class="corp-container py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Col 1: Golden Sea Logo & Mission -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-[#0A2540] border border-[#EAB308]/50 flex items-center justify-center shrink-0">
+              <svg class="w-8 h-8" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="#EAB308" stroke-width="1.5"/>
+                <path d="M18 14L21 17L24 12L27 17L30 14L29 19H19L18 14Z" fill="#EAB308"/>
+                <path d="M24 19V33" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M14 27C14 31.8 18.5 35 24 35C29.5 35 34 31.8 34 27" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M11 39C15 37 18 37 22 39C26 41 29 41 33 39" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xl font-black text-white">جولدن سي</div>
+              <div class="text-[11px] font-bold tracking-widest text-[#EAB308]">GOLDEN SEA SUPPLY CHAIN</div>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed font-medium">
+            شركة مصرية رائدة متخصصة في توريد الأسماك الطازجة والأنواع البحرية الفاخرة والنادرة وإدارة سلاسل الإمداد المبردة للفنادق والمطاعم والهايبر ماركت.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-4">
+          <h4 class="text-base font-black text-white">روابط سريعة</h4>
+          <ul class="space-y-2.5 text-sm font-semibold">
+            <li><button type="button" onclick="navigateTo('home')" class="text-slate-300 hover:text-[#EAB308] transition">الرئيسية</button></li>
+            <li><button type="button" onclick="navigateTo('products')" class="text-slate-300 hover:text-[#EAB308] transition">كتالوج المنتجات الفاخرة</button></li>
+            <li><button type="button" onclick="navigateTo('ai')" class="text-slate-300 hover:text-[#EAB308] transition">مساعد المشتريات الذكي (AI)</button></li>
+            <li><button type="button" onclick="navigateTo('contact')" class="text-slate-300 hover:text-[#EAB308] transition">اتصل بنا وطلبات التعاقد</button></li>
+            <li><button type="button" onclick="navigateTo('ops')" class="text-[#38BDF8] hover:text-[#EAB308] transition font-bold">غرفة عمليات الإدارة (AI Ops)</button></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div class="space-y-4">
+          <h4 class="text-base font-black text-white">بيانات التواصل</h4>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300 font-medium">
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#EAB308] mt-0.5">●</span>
+              <span>المنطقة الصناعية بمدينة العبور — بجوار سوق العبور المركزي، قطعة 14 قطاع ب</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-[#EAB308]">●</span>
+              <span>الخط الساخن للتعاقدات: <strong class="text-white tabular-nums">19842</strong></span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-[#EAB308]">●</span>
+              <span dir="ltr">contracts@goldensea-egypt.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quality Certifications -->
+        <div class="space-y-4">
+          <h4 class="text-base font-black text-white">شهادات الجودة والاعتماد</h4>
+          <div class="grid grid-cols-2 gap-2.5 text-xs font-extrabold">
+            <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-center text-white">ISO 22000</div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-center text-white">HACCP</div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-center text-emerald-300">سلامة الغذاء المصرية</div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-center text-[#FDE047]">نظام FEFO الذكي</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 py-5">
+      <div class="corp-container flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-semibold">
+        <span>© 2026 جولدن سي لتوريد الأسماك وسلاسل الإمداد (Golden Sea Supply Chain). جميع الحقوق محفوظة.</span>
+        <span>مصمم لقطاع الضيافة والفنادق وكبرى المطاعم في مصر</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- FLOATING WHATSAPP FAB (Bottom-Left)                                   -->
+  <!-- ===================================================================== -->
+  <div class="fixed bottom-6 left-6 z-40 flex items-center gap-3 wa-fab-wrap">
+    <button
+      type="button"
+      onclick="openWhatsAppOrder()"
+      class="w-14 h-14 rounded-full bg-[#16A34A] hover:bg-[#15803D] text-white flex items-center justify-center shadow-xl pulse-emerald transition hover:scale-105 focus:outline-none"
+      aria-label="تواصل مباشر عبر واتساب"
+    >
+      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.031 2C6.498 2 2 6.497 2 12.031c0 1.766.462 3.49 1.339 5.01L2 22l5.098-1.336a9.975 9.975 0 004.933 1.298h.004c5.531 0 10.03-4.497 10.03-10.03C22.065 6.497 17.563 2 12.031 2zm5.825 14.165c-.248.698-1.444 1.335-2.01 1.419-.516.077-1.186.109-1.916-.122-.442-.14-1.01-.328-1.737-.642-3.058-1.321-5.055-4.415-5.207-4.618-.152-.203-1.242-1.653-1.242-3.153 0-1.5.786-2.238 1.065-2.543.279-.305.609-.381.812-.381.203 0 .406.002.584.011.188.009.439-.071.688.525.248.597.845 2.063.92 2.215.076.152.127.33.025.533-.101.203-.152.33-.305.508-.152.178-.32.397-.457.533-.152.152-.31.317-.133.622.178.305.789 1.302 1.694 2.11 1.164 1.038 2.145 1.36 2.45 1.512.305.152.483.127.66-.076.178-.203.762-.889.965-1.194.203-.305.406-.254.686-.152.279.101 1.778.838 2.083.99.305.152.508.229.584.356.076.127.076.737-.172 1.435z"/>
+      </svg>
+    </button>
+    <div class="wa-tooltip bg-[#0A2540] text-white text-xs font-extrabold px-3.5 py-2 rounded-xl shadow-lg whitespace-nowrap border border-[#EAB308]/40">
+      تواصل مباشر عبر واتساب
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- B2B CHECKOUT & OMS MODAL (Connected to Cart + Live Ops + WhatsApp)    -->
+  <!-- ===================================================================== -->
+  <div id="oms-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 modal-overlay" role="dialog" aria-modal="true" aria-labelledby="omsModalHeading">
+    <div class="bg-white w-full max-w-5xl max-h-[92vh] rounded-3xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden page-reveal">
+
+      <!-- Modal Header -->
+      <div class="bg-[#0A2540] text-white px-6 py-5 flex items-center justify-between gap-4 shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-[#EAB308]/20 border border-[#EAB308]/50 text-[#FDE047] flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <div>
+            <h2 id="omsModalHeading" class="text-lg sm:text-xl font-black">نظام إدارة الطلبيات والتعاقدات (B2B OMS)</h2>
+            <p class="text-xs text-slate-300 font-semibold">حجز فوري من ثلاجات العبور + إصدار شحنة مبردة أو إرسال الطلب عبر واتساب</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeOmsModal()" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition" aria-label="إغلاق">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto flex-1">
+        <!-- Empty Cart View -->
+        <div id="oms-empty" class="hidden py-14 text-center space-y-4">
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-slate-100 text-slate-400 flex items-center justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-black text-[#0A2540]">سلة التوريد فارغة حالياً</h3>
+          <p class="text-sm text-slate-500 max-w-md mx-auto font-medium">أضف الأصناف الفاخرة من صفحة المنتجات أو احسب احتياجك عبر مساعد المشتريات الذكي بالـ AI.</p>
+          <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <button type="button" onclick="closeOmsModal(); navigateTo('products');" class="bg-[#0A2540] hover:bg-[#133A63] text-white font-bold px-6 py-3 rounded-xl text-sm transition">
+              تصفح المنتجات الفاخرة
+            </button>
+            <button type="button" onclick="openWhatsAppOrder('مرحباً فريق جولدن سي، أرغب في الاستفسار عن أسعار التعاقدات والتوريد اليومي للفنادق والمطاعم.')" class="bg-[#16A34A] hover:bg-[#15803D] text-white font-bold px-6 py-3 rounded-xl text-sm transition">
+              استفسار مباشر عبر واتساب
+            </button>
+          </div>
+        </div>
+
+        <!-- Confirmation Success View (Shown right after OMS Order Confirm) -->
+        <div id="oms-success-banner" class="hidden py-10 text-center space-y-5">
+          <div class="w-16 h-16 mx-auto rounded-full bg-emerald-100 text-[#16A34A] flex items-center justify-center">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+          </div>
+          <div class="space-y-1.5">
+            <h3 class="text-2xl font-black text-[#0A2540]">تم تأكيد أمر التوريد وحجز المخزون بنجاح!</h3>
+            <p id="oms-success-details" class="text-sm sm:text-base text-slate-600 max-w-xl mx-auto font-semibold"></p>
+          </div>
+          <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <button type="button" onclick="closeOmsModal(); navigateTo('ops');" class="inline-flex items-center gap-2 bg-[#0A2540] hover:bg-[#133A63] text-white font-black px-7 py-3.5 rounded-xl text-sm transition shadow-md">
+              <span>متابعة الشحنة في غرفة عمليات الإدارة (AI Ops)</span>
+              <span>←</span>
+            </button>
+            <button type="button" onclick="closeOmsModal();" class="bg-slate-100 hover:bg-slate-200 text-[#0A2540] font-bold px-6 py-3.5 rounded-xl text-sm transition">
+              متابعة التصفح
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Checkout Form -->
+        <div id="oms-active" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- Right: Cart Items & Financials -->
+          <div class="lg:col-span-7 space-y-5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-black text-[#0A2540]">الأصناف المختارة في الطلبية</h3>
+              <button type="button" onclick="clearCart()" class="text-xs font-bold text-red-600 hover:underline">إفراغ السلة</button>
+            </div>
+
+            <div id="oms-cart-list" class="space-y-3 max-h-[310px] overflow-y-auto pl-1">
+              <!-- Populated dynamically via JS -->
+            </div>
+
+            <!-- Financial Summary -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-2.5 text-sm">
+              <div class="flex justify-between font-bold text-slate-600">
+                <span>إجمالي الوزن المطلوب</span>
+                <span id="oms-total-kg" class="text-[#0A2540] font-black tabular-nums">0 كجم</span>
+              </div>
+              <div class="flex justify-between font-bold text-slate-600">
+                <span>قيمة البضاعة بسعر الجملة</span>
+                <span id="oms-subtotal" class="text-[#0A2540] font-black tabular-nums">0 ج.م</span>
+              </div>
+              <div class="flex justify-between font-bold text-slate-600">
+                <span>تكلفة النقل المبرد (من العبور)</span>
+                <span id="oms-shipping" class="font-black text-[#16A34A]">مجاني</span>
+              </div>
+              <div class="border-t border-slate-200 pt-3 flex justify-between text-base sm:text-lg font-black text-[#0A2540]">
+                <span>الإجمالي النهائي</span>
+                <span id="oms-grand-total" class="tabular-nums">0 ج.م</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left: Client Selection, Zone & Live AI Logistics Estimator -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 space-y-4">
+              <h3 class="text-base font-black text-[#0A2540]">بيانات العميل ومنطقة التسليم</h3>
+
+              <div class="space-y-1.5">
+                <label for="oms-client-select" class="block text-xs font-extrabold text-slate-700">الحساب التعاقدي</label>
+                <select id="oms-client-select" onchange="handleOmsClientSelect()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm font-bold text-[#0A2540] focus:outline-none focus:border-[#0284C7] focus:bg-white">
+                  <option value="فندق فورسيزونز نايل بلازا">فندق فورسيزونز نايل بلازا</option>
+                  <option value="سلسلة مطاعم أسماك قدورة">سلسلة مطاعم أسماك قدورة</option>
+                  <option value="فندق ماريوت الزمالك">فندق ماريوت الزمالك</option>
+                  <option value="هايبر وان - الشيخ زايد">هايبر وان - الشيخ زايد</option>
+                  <option value="فندق دوسيت تاني - التجمع الخامس">فندق دوسيت تاني - التجمع الخامس</option>
+                  <option value="__custom__">عميل جديد (إدخال اسم المنشأة)</option>
+                </select>
+              </div>
+
+              <div id="oms-custom-client-wrap" class="hidden space-y-1.5">
+                <label for="oms-custom-client-input" class="block text-xs font-extrabold text-slate-700">اسم الفندق / المطعم الجديد</label>
+                <input id="oms-custom-client-input" type="text" placeholder="مثال: مطعم بحريات كايرو فيستيفال" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm font-bold text-[#0A2540] focus:outline-none focus:border-[#0284C7]" />
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="oms-zone-select" class="block text-xs font-extrabold text-slate-700">منطقة التسليم</label>
+                <select id="oms-zone-select" onchange="renderOmsModal()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm font-bold text-[#0A2540] focus:outline-none focus:border-[#0284C7] focus:bg-white">
+                  <option value="التجمع الخامس">التجمع الخامس</option>
+                  <option value="الزمالك وجاردن سيتي">الزمالك وجاردن سيتي</option>
+                  <option value="الشيخ زايد و6 أكتوبر">الشيخ زايد و6 أكتوبر</option>
+                  <option value="المعادي">المعادي</option>
+                  <option value="مصر الجديدة ومدينة نصر">مصر الجديدة ومدينة نصر</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Live AI Logistics Estimator Box -->
+            <div class="bg-[#EEF4FA] border border-sky-200 rounded-2xl p-4 space-y-2.5 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="font-black text-[#0A2540]">مُقدّر اللوجستيات الذكي (AI Logistics)</span>
+                <span id="oms-ai-saving" class="bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded">توفير 27% وقت ووقود</span>
+              </div>
+              <div class="space-y-1.5 font-semibold text-slate-700">
+                <div><strong class="text-[#0284C7]">الشاحنة:</strong> <span id="oms-ai-van" class="font-bold text-[#0A2540]"></span></div>
+                <div><strong class="text-[#0284C7]">المسار الأمثل:</strong> <span id="oms-ai-route" class="font-bold text-[#0A2540]"></span></div>
+                <div><strong class="text-[#0284C7]">موعد الوصول:</strong> <span id="oms-ai-eta" class="font-bold text-emerald-800"></span></div>
+              </div>
+            </div>
+
+            <!-- Inline Error Message Box -->
+            <div id="oms-error-msg" class="hidden bg-red-50 border border-red-200 text-red-700 text-xs font-bold rounded-xl px-4 py-3"></div>
+
+            <!-- Two Clear Modal Action Buttons -->
+            <div class="space-y-2.5 pt-1">
+              <button
+                type="button"
+                onclick="confirmOmsOrder()"
+                class="w-full flex items-center justify-center gap-2 bg-[#0A2540] hover:bg-[#133A63] text-white border border-[#EAB308]/50 font-black py-3.5 px-5 rounded-xl text-sm transition shadow-md"
+              >
+                <svg class="w-5 h-5 text-[#EAB308]" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span>تأكيد التوريد وحجز المخزون (OMS)</span>
+              </button>
+
+              <button
+                type="button"
+                onclick="sendModalOrderViaWhatsApp()"
+                class="w-full flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] text-white font-black py-3.5 px-5 rounded-xl text-sm transition shadow-sm"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 2C6.498 2 2 6.497 2 12.031c0 1.766.462 3.49 1.339 5.01L2 22l5.098-1.336a9.975 9.975 0 004.933 1.298h.004c5.531 0 10.03-4.497 10.03-10.03C22.065 6.497 17.563 2 12.031 2zm5.825 14.165c-.248.698-1.444 1.335-2.01 1.419-.516.077-1.186.109-1.916-.122-.442-.14-1.01-.328-1.737-.642-3.058-1.321-5.055-4.415-5.207-4.618-.152-.203-1.242-1.653-1.242-3.153 0-1.5.786-2.238 1.065-2.543.279-.305.609-.381.812-.381.203 0 .406.002.584.011.188.009.439-.071.688.525.248.597.845 2.063.92 2.215.076.152.127.33.025.533-.101.203-.152.33-.305.508-.152.178-.32.397-.457.533-.152.152-.31.317-.133.622.178.305.789 1.302 1.694 2.11 1.164 1.038 2.145 1.36 2.45 1.512.305.152.483.127.66-.076.178-.203.762-.889.965-1.194.203-.305.406-.254.686-.152.279.101 1.778.838 2.083.99.305.152.508.229.584.356.076.127.076.737-.172 1.435z"/>
+                </svg>
+                <span>إرسال نفس الطلبية عبر واتساب</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- TOAST NOTIFICATION CONTAINER (Zero native alert / confirm)            -->
+  <!-- ===================================================================== -->
+  <div id="toast-container" class="fixed top-24 left-4 sm:left-6 z-50 space-y-3 max-w-md w-[calc(100%-2rem)] pointer-events-none"></div>
+
+  <!-- ===================================================================== -->
+  <!-- APPLICATION LOGIC & LIVE STATE ENGINE (VANILLA JS)                    -->
+  <!-- ===================================================================== -->
+  <script>
+    /**
+     * =========================================================================
+     * CONFIGURABLE WHATSAPP BUSINESS NUMBER
+     * =========================================================================
+     */
+    const WHATSAPP_NUMBER = "201148226747"; // استبدل هذا الرقم برقمك المصري مسبوقاً بـ 20 بدون علامة + أو صفر
+
+    /**
+     * =========================================================================
+     * 1. RICH BESPOKE INLINE SVG ILLUSTRATIONS FOR ALL 8 LUXURY SPECIES
+     * =========================================================================
+     */
+    const SPECIES_SVGS = {
+      // GS-101: Alaskan Red King Crab
+      'GS-101': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="سرطان البحر الملكي">
+          <defs>
+            <linearGradient id="kingCrabShell" x1="70" y1="30" x2="150" y2="95" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#DC2626"/>
+              <stop offset="0.55" stop-color="#EA580C"/>
+              <stop offset="1" stop-color="#991B1B"/>
+            </linearGradient>
+          </defs>
+          <!-- Long spiky legs left -->
+          <path d="M84 56L48 34L18 46" stroke="#C2410C" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M80 68L40 60L14 78" stroke="#DC2626" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M84 80L48 88L24 110" stroke="#B91C1C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Long spiky legs right -->
+          <path d="M136 56L172 34L202 46" stroke="#C2410C" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M140 68L180 60L206 78" stroke="#DC2626" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M136 80L172 88L196 110" stroke="#B91C1C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Heavy front claws -->
+          <path d="M92 44L74 22C66 15 56 20 62 30L74 36" stroke="#991B1B" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M128 44L146 22C154 15 164 20 158 30L146 36" stroke="#991B1B" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Spiky carapace -->
+          <path d="M110 34C134 34 148 52 145 76C142 94 128 102 110 102C92 102 78 94 75 76C72 52 86 34 110 34Z" fill="url(#kingCrabShell)" stroke="#7F1D1D" stroke-width="2.2"/>
+          <!-- Golden highlights & shell texture -->
+          <path d="M92 58C104 52 116 52 128 58" stroke="#FDE68A" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.75"/>
+          <circle cx="98" cy="70" r="2.5" fill="#FEF3C7" fill-opacity="0.8"/>
+          <circle cx="122" cy="70" r="2.5" fill="#FEF3C7" fill-opacity="0.8"/>
+          <circle cx="110" cy="82" r="2.8" fill="#FEF3C7" fill-opacity="0.7"/>
+          <!-- Eyes -->
+          <circle cx="101" cy="40" r="3" fill="#0A2540"/><circle cx="119" cy="40" r="3" fill="#0A2540"/>
+          <circle cx="100" cy="39" r="1" fill="#FFFFFF"/><circle cx="118" cy="39" r="1" fill="#FFFFFF"/>
+        </svg>`,
+
+      // GS-102: Bluefin Tuna (Sashimi Grade)
+      'GS-102': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="تونة الزعنفة الزرقاء">
+          <defs>
+            <linearGradient id="tunaBody" x1="25" y1="30" x2="185" y2="95" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0A2540"/>
+              <stop offset="0.48" stop-color="#1D4ED8"/>
+              <stop offset="0.58" stop-color="#CBD5E1"/>
+              <stop offset="1" stop-color="#F8FAFC"/>
+            </linearGradient>
+          </defs>
+          <!-- Crescent tail -->
+          <path d="M174 64L204 34L192 64L204 94L174 64Z" fill="#0A2540"/>
+          <!-- Dorsal & Ventral Fins -->
+          <path d="M84 37L108 18L114 38Z" fill="#0A2540"/>
+          <path d="M126 42L144 30L146 46Z" fill="#EAB308"/>
+          <path d="M124 85L142 98L144 82Z" fill="#EAB308"/>
+          <!-- Streamlined metallic body -->
+          <path d="M18 65C42 30 124 24 180 64C124 104 42 98 18 65Z" fill="url(#tunaBody)" stroke="#0A2540" stroke-width="2"/>
+          <!-- Dorsal cobalt sheen -->
+          <path d="M24 63C48 35 120 30 174 62C122 54 58 55 24 63Z" fill="#0F2F57" fill-opacity="0.88"/>
+          <!-- Finlets -->
+          <circle cx="154" cy="49" r="2.2" fill="#EAB308"/><circle cx="163" cy="54" r="2.2" fill="#EAB308"/>
+          <circle cx="154" cy="79" r="2.2" fill="#EAB308"/><circle cx="163" cy="74" r="2.2" fill="#EAB308"/>
+          <!-- Sashimi Toro Ruby Badge -->
+          <path d="M74 66C92 62 114 62 132 68C114 82 90 83 74 66Z" fill="#E11D48" fill-opacity="0.82"/>
+          <path d="M84 68L90 77M98 66L104 78M112 66L117 76" stroke="#FFE4E6" stroke-width="1.6" stroke-linecap="round"/>
+          <!-- Eye & Gill -->
+          <path d="M52 50C58 60 58 72 51 80" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="38" cy="59" r="3.4" fill="#0A2540"/>
+          <circle cx="37" cy="58" r="1.2" fill="#FFFFFF"/>
+        </svg>`,
+
+      // GS-103: Royal Lobster
+      'GS-103': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="استاكوزا ملكي عملاقة">
+          <!-- Long sweeping antennae -->
+          <path d="M54 56C34 34 18 26 8 28" stroke="#991B1B" stroke-width="2" stroke-linecap="round"/>
+          <path d="M54 72C34 94 18 102 8 100" stroke="#991B1B" stroke-width="2" stroke-linecap="round"/>
+          <!-- Heavy royal claws -->
+          <path d="M64 52L46 34C32 24 22 36 32 48L50 56" fill="#B91C1C" stroke="#7F1D1D" stroke-width="2.2"/>
+          <path d="M64 78L46 96C32 106 22 94 32 82L50 74" fill="#B91C1C" stroke="#7F1D1D" stroke-width="2.2"/>
+          <!-- Walking legs -->
+          <path d="M88 46L80 28M104 46L100 28M120 48L120 32" stroke="#C2410C" stroke-width="3" stroke-linecap="round"/>
+          <path d="M88 84L80 102M104 84L100 102M120 82L120 98" stroke="#C2410C" stroke-width="3" stroke-linecap="round"/>
+          <!-- Fan tail -->
+          <path d="M172 65L204 46C209 56 209 74 204 84L172 65Z" fill="#DC2626" stroke="#7F1D1D" stroke-width="2"/>
+          <path d="M176 65H204" stroke="#FDE68A" stroke-width="1.5"/>
+          <!-- Segmented body -->
+          <ellipse cx="86" cy="65" rx="34" ry="20" fill="#B91C1C" stroke="#7F1D1D" stroke-width="2"/>
+          <rect x="114" y="48" width="20" height="34" rx="8" fill="#DC2626" stroke="#7F1D1D" stroke-width="2"/>
+          <rect x="132" y="51" width="18" height="28" rx="7" fill="#EA580C" stroke="#7F1D1D" stroke-width="2"/>
+          <rect x="148" y="54" width="16" height="22" rx="6" fill="#DC2626" stroke="#7F1D1D" stroke-width="2"/>
+          <rect x="162" y="57" width="13" height="16" rx="5" fill="#B91C1C" stroke="#7F1D1D" stroke-width="2"/>
+          <!-- Golden royal flecks & Eyes -->
+          <circle cx="80" cy="58" r="2.2" fill="#FDE047"/><circle cx="96" cy="66" r="2" fill="#FDE047"/>
+          <circle cx="58" cy="59" r="2.6" fill="#0A2540"/><circle cx="58" cy="71" r="2.6" fill="#0A2540"/>
+        </svg>`,
+
+      // GS-104: Red Sea U-10 Tiger Jumbo Shrimp
+      'GS-104': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="جمبري جامبو سوبر بحر أحمر">
+          <defs>
+            <linearGradient id="shrimpGrad" x1="50" y1="25" x2="170" y2="105" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F97316"/>
+              <stop offset="0.55" stop-color="#FB923C"/>
+              <stop offset="1" stop-color="#EA580C"/>
+            </linearGradient>
+          </defs>
+          <!-- Sweeping antennae -->
+          <path d="M132 30C98 12 60 12 24 28" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/>
+          <path d="M136 36C106 24 72 26 38 42" stroke="#9A3412" stroke-width="1.6" stroke-linecap="round"/>
+          <!-- Bold curved jumbo body -->
+          <path d="M68 92C56 54 88 26 130 30C164 34 180 62 162 86C148 104 120 108 104 96C94 88 96 74 110 72C122 70 130 78 128 84" stroke="url(#shrimpGrad)" stroke-width="24" stroke-linecap="round"/>
+          <!-- Tiger dark stripes -->
+          <path d="M74 62L92 66M92 38L102 54M122 30L124 48M152 44L142 58M165 72L148 76" stroke="#7C2D12" stroke-width="4" stroke-linecap="round" stroke-opacity="0.75"/>
+          <!-- Tail fan -->
+          <path d="M62 94L34 102L46 116L68 100Z" fill="#DC2626" stroke="#7C2D12" stroke-width="1.8"/>
+          <!-- Eye -->
+          <circle cx="144" cy="40" r="3.6" fill="#0A2540"/>
+          <circle cx="143" cy="39" r="1.2" fill="#FFFFFF"/>
+        </svg>`,
+
+      // GS-105: Chilean Sea Bass (White Gold)
+      'GS-105': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="سمك السي باس التشيلي">
+          <defs>
+            <linearGradient id="seabassGrad" x1="25" y1="30" x2="185" y2="100" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#334155"/>
+              <stop offset="0.45" stop-color="#94A3B8"/>
+              <stop offset="0.75" stop-color="#E2E8F0"/>
+              <stop offset="1" stop-color="#F8FAFC"/>
+            </linearGradient>
+          </defs>
+          <!-- Tail -->
+          <path d="M174 65L204 42V88L174 65Z" fill="#1E293B"/>
+          <!-- Dorsal & Anal fins -->
+          <path d="M78 40L154 38L158 52L76 48Z" fill="#475569"/>
+          <path d="M106 86L156 84L154 96L104 92Z" fill="#64748B"/>
+          <!-- Sleek body -->
+          <path d="M18 66C44 34 134 32 180 65C134 98 44 96 18 66Z" fill="url(#seabassGrad)" stroke="#1E293B" stroke-width="2"/>
+          <!-- Pearly White Gold Highlight -->
+          <path d="M52 66C84 54 128 54 162 66C128 84 84 84 52 66Z" fill="#FFFFFF" fill-opacity="0.78"/>
+          <path d="M72 66H144" stroke="#EAB308" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round"/>
+          <!-- Gill & Eye -->
+          <path d="M56 50C62 60 62 72 55 82" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="38" cy="58" r="3.4" fill="#0A2540"/>
+          <circle cx="37" cy="57" r="1.2" fill="#FFFFFF"/>
+        </svg>`,
+
+      // GS-106: Norwegian Atlantic Salmon
+      'GS-106': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="سلمون نرويجي طازج">
+          <defs>
+            <linearGradient id="salmonSkin" x1="20" y1="30" x2="180" y2="95" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0F2F57"/>
+              <stop offset="0.38" stop-color="#64748B"/>
+              <stop offset="0.65" stop-color="#FB923C"/>
+              <stop offset="1" stop-color="#F97316"/>
+            </linearGradient>
+          </defs>
+          <path d="M174 65L204 38L196 65L204 92L174 65Z" fill="#0F2F57"/>
+          <path d="M90 38L114 22L120 40Z" fill="#1E3A5F"/>
+          <path d="M18 65C42 32 132 28 180 65C132 102 42 98 18 65Z" fill="url(#salmonSkin)" stroke="#0A2540" stroke-width="2"/>
+          <!-- Coral fillet marbling highlight -->
+          <path d="M62 64C86 52 126 52 158 65C126 86 86 86 62 64Z" fill="#FB923C"/>
+          <path d="M78 58L88 79M96 55L106 81M114 55L124 80M132 58L140 76" stroke="#FFF7ED" stroke-width="2.4" stroke-linecap="round" stroke-opacity="0.88"/>
+          <!-- Silver dorsal spots -->
+          <circle cx="80" cy="46" r="1.8" fill="#0A2540"/><circle cx="104" cy="43" r="1.8" fill="#0A2540"/><circle cx="128" cy="46" r="1.8" fill="#0A2540"/>
+          <circle cx="38" cy="59" r="3.4" fill="#0A2540"/><circle cx="37" cy="58" r="1.1" fill="#FFFFFF"/>
+        </svg>`,
+
+      // GS-107: Red Sea Coral Nagel (Spotted Red Grouper)
+      'GS-107': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="سمك الناجل الحر البحر الأحمر">
+          <defs>
+            <linearGradient id="nagelGrad" x1="20" y1="25" x2="185" y2="100" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#DC2626"/>
+              <stop offset="0.5" stop-color="#EF4444"/>
+              <stop offset="1" stop-color="#B91C1C"/>
+            </linearGradient>
+          </defs>
+          <!-- Lunate tail with golden edge -->
+          <path d="M170 65L204 38L194 65L204 92L170 65Z" fill="#B91C1C" stroke="#EAB308" stroke-width="2.2"/>
+          <!-- Spiny dorsal fin -->
+          <path d="M68 38C96 20 136 22 158 44L152 50H72Z" fill="#DC2626" stroke="#EAB308" stroke-width="1.8"/>
+          <!-- Deep coral red body -->
+          <path d="M18 66C40 28 130 24 176 65C130 104 40 102 18 66Z" fill="url(#nagelGrad)" stroke="#7F1D1D" stroke-width="2"/>
+          <!-- Signature Red Sea Nagel Turquoise-Blue Spots -->
+          <circle cx="72" cy="54" r="3.2" fill="#38BDF8"/><circle cx="92" cy="48" r="3.5" fill="#38BDF8"/>
+          <circle cx="114" cy="52" r="3.2" fill="#38BDF8"/><circle cx="136" cy="56" r="3" fill="#38BDF8"/>
+          <circle cx="82" cy="72" r="3.4" fill="#38BDF8"/><circle cx="106" cy="70" r="3.6" fill="#38BDF8"/>
+          <circle cx="128" cy="74" r="3" fill="#38BDF8"/><circle cx="150" cy="66" r="2.6" fill="#38BDF8"/>
+          <circle cx="60" cy="64" r="2.4" fill="#38BDF8"/>
+          <!-- Eye -->
+          <circle cx="38" cy="58" r="4" fill="#FDE047" stroke="#7F1D1D" stroke-width="1.5"/>
+          <circle cx="38" cy="58" r="2" fill="#0A2540"/>
+        </svg>`,
+
+      // GS-108: Premium Nile Perch Fillet
+      'GS-108': `
+        <svg viewBox="0 0 220 130" fill="none" class="w-full h-full max-w-[205px] max-h-[120px]" aria-label="فيليه قشر بياض فاخر">
+          <!-- Back snow-white fillet cut -->
+          <path d="M36 52C58 26 116 20 176 30C192 33 196 46 184 58C164 76 106 82 50 72C36 69 30 60 36 52Z" fill="#E0F2FE" stroke="#0284C7" stroke-width="2.2"/>
+          <!-- Front thick boneless prime fillet -->
+          <path d="M26 84C48 56 114 48 182 58C198 60 202 74 188 88C166 108 102 114 42 104C26 101 20 92 26 84Z" fill="#FFFFFF" stroke="#0A2540" stroke-width="2.4"/>
+          <!-- Clean muscle grain lines -->
+          <path d="M58 64L50 100M86 58L78 104M116 56L108 104M146 58L138 100M172 62L166 92" stroke="#BAE6FD" stroke-width="2.8" stroke-linecap="round"/>
+          <!-- Ice crystal freshness badge -->
+          <circle cx="178" cy="40" r="10" fill="#0284C7"/>
+          <path d="M178 34V46M172 40H184M174 36L182 44M182 36L174 44" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>`
+    };
+
+    /**
+     * =========================================================================
+     * 2. CORE APPLICATION STATE (Synced Real-Time Across Client Site & AI Ops)
+     * =========================================================================
+     */
+    const state = {
+      currentPage: 'home', // 'home' | 'products' | 'ai' | 'contact' | 'ops'
+      lastClientPage: 'home',
+      activeFilter: 'all',
+      wmsSort: 'fefo',
+      forecastScenario: 'normal',
+      totalRevenue: 3485000,
+      shipmentCounter: 9203,
+      cart: [],
+      selectedQtyBySku: {
+        'GS-101': 10,
+        'GS-102': 10,
+        'GS-103': 10,
+        'GS-104': 25,
+        'GS-105': 10,
+        'GS-106': 25,
+        'GS-107': 25,
+        'GS-108': 50
+      },
+      aiConfig: {
+        venue: 'hotel',
+        guests: 1000,
+        tier: 'vip'
+      },
+      lastAiRec: [],
+      products: [
+        {
+          sku: 'GS-101',
+          name: 'سرطان البحر الملكي (ألاسكا كينج كراب)',
+          enName: 'Alaskan Red King Crab',
+          category: 'crustaceans',
+          categoryLabel: 'قشريات فاخرة ونادرة',
+          rarityBadge: 'نادر جداً 👑',
+          origin: 'ألاسكا — بحر بيرنج',
+          tempType: 'frozen',
+          tempLabel: '-18°C مجمد فوري',
+          zone: 'عنبر B (-18.4°C)',
+          shelfLifeDays: 45,
+          price: 3850,
+          stock: 180,
+          maxStock: 350,
+          highlight: 'أرجل ضخمة ممتلئة باللحم، صيد أعماق بحر بيرنج — نجم الفنادق العالمية'
+        },
+        {
+          sku: 'GS-102',
+          name: 'تونة الزعنفة الزرقاء الفاخرة',
+          enName: 'Bluefin Tuna — Sashimi Grade',
+          category: 'rare_fish',
+          categoryLabel: 'أسماك نادرة وفاخرة',
+          rarityBadge: 'ساشيمي جريد 💎',
+          origin: 'البحر المتوسط / شحن مبرد',
+          tempType: 'chilled',
+          tempLabel: '0°C مبرد طازج',
+          zone: 'عنبر A (0.3°C)',
+          shelfLifeDays: 3,
+          price: 2900,
+          stock: 140,
+          maxStock: 300,
+          highlight: 'من أغلى وأندر أسماك العالم — قطعة التورو الفاخرة لمطاعم السوشي والـ Fine Dining'
+        },
+        {
+          sku: 'GS-103',
+          name: 'استاكوزا ملكي عملاقة',
+          enName: 'Royal Lobster',
+          category: 'crustaceans',
+          categoryLabel: 'قشريات فاخرة ونادرة',
+          rarityBadge: 'ملكي فاخر 👑',
+          origin: 'البحر الأحمر / استيراد كندي',
+          tempType: 'chilled',
+          tempLabel: '0°C مبرد طازج',
+          zone: 'عنبر A (0.5°C)',
+          shelfLifeDays: 4,
+          price: 2150,
+          stock: 210,
+          maxStock: 400,
+          highlight: 'استاكوزا بحرية كاملة بوزن 800جم - 1.5كجم للحبة، مثالية لبوفيهات الـ VIP'
+        },
+        {
+          sku: 'GS-104',
+          name: 'جمبري جامبو سوبر بحر أحمر',
+          enName: 'U-10 Tiger Jumbo Shrimp',
+          category: 'crustaceans',
+          categoryLabel: 'قشريات فاخرة ونادرة',
+          rarityBadge: 'مقاس عملاق U-10',
+          origin: 'البحر الأحمر (السويس والغردقة)',
+          tempType: 'chilled',
+          tempLabel: '0°C مبرد طازج',
+          zone: 'عنبر A (0.4°C)',
+          shelfLifeDays: 5,
+          price: 920,
+          stock: 480,
+          maxStock: 750,
+          highlight: 'جمبري جامبو حر مقاس U-10 (أقل من 10 حبات بالكيلو)، قوام مقرمش وطعم بحري أصيل'
+        },
+        {
+          sku: 'GS-105',
+          name: 'سمك السي باس التشيلي',
+          enName: 'Chilean Sea Bass — White Gold',
+          category: 'rare_fish',
+          categoryLabel: 'أسماك نادرة وفاخرة',
+          rarityBadge: 'الذهب الأبيض 💎',
+          origin: 'المحيط الجنوبي (مستورد فاخر)',
+          tempType: 'frozen',
+          tempLabel: '-18°C مجمد فوري',
+          zone: 'عنبر B (-18.2°C)',
+          shelfLifeDays: 60,
+          price: 2450,
+          stock: 160,
+          maxStock: 350,
+          highlight: 'أرقى فيليه أبيض غني بالأوميجا-3 وقوام زبدي فاخر لمطاعم النخبة'
+        },
+        {
+          sku: 'GS-106',
+          name: 'سلمون نرويجي طازج',
+          enName: 'Norwegian Atlantic Salmon',
+          category: 'rare_fish',
+          categoryLabel: 'أسماك نادرة وفاخرة',
+          rarityBadge: 'طيران مباشر ✈️',
+          origin: 'النرويج (مزارع الفيورد)',
+          tempType: 'chilled',
+          tempLabel: '0°C مبرد طازج',
+          zone: 'عنبر A (0.2°C)',
+          shelfLifeDays: 6,
+          price: 890,
+          stock: 520,
+          maxStock: 800,
+          highlight: 'سلمون أطلسي كامل منزوع الأحشاء أو فيليه طازج، وصول أسبوعي منتظم'
+        },
+        {
+          sku: 'GS-107',
+          name: 'سمك الناجل الحر البحر الأحمر',
+          enName: 'Red Sea Coral Nagel',
+          category: 'rare_fish',
+          categoryLabel: 'أسماك نادرة وفاخرة',
+          rarityBadge: 'ملك البحر الأحمر 👑',
+          origin: 'البحر الأحمر (مرسى علم والغردقة)',
+          tempType: 'chilled',
+          tempLabel: '0°C مبرد طازج',
+          zone: 'عنبر A (0.4°C)',
+          shelfLifeDays: 4,
+          price: 780,
+          stock: 340,
+          maxStock: 600,
+          highlight: 'أشهر وأغلى أسماك الشعاب المرجانية المصرية، لحم أبيض ناصع للشوي والفرن'
+        },
+        {
+          sku: 'GS-108',
+          name: 'فيليه قشر بياض فاخر',
+          enName: 'Premium Nile Perch Fillet',
+          category: 'rare_fish',
+          categoryLabel: 'أسماك نادرة وفاخرة',
+          rarityBadge: 'الأكثر طلباً B2B',
+          origin: 'بحيرة ناصر — تجهيز العبور',
+          tempType: 'frozen',
+          tempLabel: '-18°C مجمد فوري',
+          zone: 'عنبر B (-18.5°C)',
+          shelfLifeDays: 30,
+          price: 460,
+          stock: 750,
+          maxStock: 1000,
+          highlight: 'فيليه خالي تماماً من الشوك ومقصوص بمعايير الفنادق والبوفيهات المفتوحة'
+        }
+      ],
+      shipments: [
+        {
+          id: 'GS-SHP-9201',
+          client: 'فندق فورسيزونز نايل بلازا',
+          zone: 'الزمالك وجاردن سيتي',
+          weight: 95,
+          value: 214500,
+          van: 'مرسيدس أكتروس مبردة #02 (ثنائية التبريد)',
+          route: 'مخازن العبور ← الدائري ← محور روض الفرج ← جاردن سيتي | توفير 25% وقت ووقود',
+          boxTemp: '0.3°C',
+          status: 'transit',
+          isNew: false
+        },
+        {
+          id: 'GS-SHP-9202',
+          client: 'فندق دوسيت تاني - التجمع الخامس',
+          zone: 'التجمع الخامس',
+          weight: 140,
+          value: 298000,
+          van: 'مرسيدس أتيجو مبردة #04 (5 طن)',
+          route: 'مخازن العبور ← الدائري الإقليمي ← محور المشير ← التجمع الخامس | توفير 27% وقت ووقود',
+          boxTemp: '-18.3°C',
+          status: 'loading',
+          isNew: false
+        }
+      ]
+    };
+
+    /**
+     * Zone Logistics Intelligence Engine
+     */
+    const ZONE_ROUTES = {
+      'التجمع الخامس': {
+        route: 'مخازن العبور ← الدائري الإقليمي ← محور المشير ← التجمع الخامس',
+        saving: '27%',
+        eta: 'خلال 70 دقيقة من بوابة العبور',
+        vanStd: 'مرسيدس سبرينتر مبردة #01 (2.5 طن)',
+        vanHeavy: 'مرسيدس أتيجو مبردة #04 (5 طن)'
+      },
+      'الزمالك وجاردن سيتي': {
+        route: 'مخازن العبور ← طريق الإسماعيلية ← محور روض الفرج ← الزمالك',
+        saving: '25%',
+        eta: 'خلال 85 دقيقة من بوابة العبور',
+        vanStd: 'مرسيدس سبرينتر مبردة #02 (3 طن)',
+        vanHeavy: 'مرسيدس أكتروس مبردة #05 (ثنائية التبريد)'
+      },
+      'الشيخ زايد و6 أكتوبر': {
+        route: 'مخازن العبور ← الدائري الإقليمي ← محور 26 يوليو ← الشيخ زايد',
+        saving: '30%',
+        eta: 'خلال 100 دقيقة من بوابة العبور',
+        vanStd: 'مرسيدس مبردة #03 (3 طن مزدوجة)',
+        vanHeavy: 'مرسيدس أكتروس مبردة #06 (7 طن)'
+      },
+      'المعادي': {
+        route: 'مخازن العبور ← الدائري الإقليمي ← طريق السويس ← المعادي',
+        saving: '24%',
+        eta: 'خلال 80 دقيقة من بوابة العبور',
+        vanStd: 'مرسيدس سبرينتر مبردة #01 (2.5 طن)',
+        vanHeavy: 'مرسيدس أتيجو مبردة #04 (5 طن)'
+      },
+      'مصر الجديدة ومدينة نصر': {
+        route: 'مخازن العبور ← طريق الإسماعيلية الصحراوي ← محور جوزيف تيتو ← مصر الجديدة',
+        saving: '22%',
+        eta: 'خلال 50 دقيقة من بوابة العبور',
+        vanStd: 'مرسيدس سبرينتر مبردة #01 (2.5 طن)',
+        vanHeavy: 'مرسيدس مبردة #02 (3 طن)'
+      }
+    };
+
+    /**
+     * AI Demand Forecasting Scenarios (5 Strategic Categories)
+     */
+    const FORECAST_DATA = {
+      normal: {
+        title: 'أيام العمل العادية (Baseline)',
+        surge: '+0% خط الأساس',
+        trips: 22,
+        categories: [
+          { name: 'قشريات نادرة', sub: 'كينج كراب / استاكوزا', kg: 340, base: 340, color: 'from-[#0A2540] to-[#1A4B7C]' },
+          { name: 'تونة وساشيمي', sub: 'زعنفة زرقاء / سي باس', kg: 280, base: 280, color: 'from-[#0284C7] to-[#38BDF8]' },
+          { name: 'سلمون وناجل', sub: 'نرويجي / بحر أحمر', kg: 680, base: 680, color: 'from-[#C59B27] to-[#EAB308]' },
+          { name: 'جمبري جامبو', sub: 'مقاس U-10 حر', kg: 540, base: 540, color: 'from-[#EA580C] to-[#F97316]' },
+          { name: 'فيليه قشر بياض', sub: 'تجهيز الفنادق', kg: 820, base: 820, color: 'from-[#16A34A] to-[#22C55E]' }
+        ],
+        strategies: [
+          {
+            title: 'استراتيجية Push/Pull الهجينة',
+            tag: 'Pull 75% / Push 25%',
+            text: 'تطبيق السحب المباشر (Pull) للأنواع عالية القيمة سريعة التلف مثل تونة الزعنفة الزرقاء والاستاكوزا وفق حجوزات الفنادق، مع تخزين استباقي (Push) للكينج كراب والفيليه المجمد بعنبر B.'
+          },
+          {
+            title: 'قاعدة FEFO لتقليل الهالك (-38.4%)',
+            tag: 'صرف فوري ≤ 4 أيام',
+            text: 'إعطاء أولوية صرف إلزامية لدفعات تونة الساشيمي (3 أيام) والاستاكوزا والناجل (4 أيام) في رحلات الفجر الأولى للمطاعم لضمان وصولها بأعلى نضارة دون أي هدر.'
+          },
+          {
+            title: 'مخزون الأمان الذكي (Safety Stock)',
+            tag: 'هامش أمان 15%',
+            text: 'ضبط نقطة إعادة الطلب التلقائية (ROP) عند 150 كجم للأصناف النادرة و300 كجم للأصناف الأساسية لتأمين استمرارية التوريد دون تجميد رأس المال.'
+          }
+        ]
+      },
+      holidays: {
+        title: 'موسم الأعياد والسياحة الفندقية',
+        surge: '+48% ارتفاع الطلب',
+        trips: 34,
+        categories: [
+          { name: 'قشريات نادرة', sub: 'كينج كراب / استاكوزا', kg: 620, base: 340, color: 'from-[#0A2540] to-[#1A4B7C]' },
+          { name: 'تونة وساشيمي', sub: 'زعنفة زرقاء / سي باس', kg: 510, base: 280, color: 'from-[#0284C7] to-[#38BDF8]' },
+          { name: 'سلمون وناجل', sub: 'نرويجي / بحر أحمر', kg: 1020, base: 680, color: 'from-[#C59B27] to-[#EAB308]' },
+          { name: 'جمبري جامبو', sub: 'مقاس U-10 حر', kg: 860, base: 540, color: 'from-[#EA580C] to-[#F97316]' },
+          { name: 'فيليه قشر بياض', sub: 'تجهيز الفنادق', kg: 1120, base: 820, color: 'from-[#16A34A] to-[#22C55E]' }
+        ],
+        strategies: [
+          {
+            title: 'استراتيجية Push/Pull الهجينة',
+            tag: 'شحن جوي مضاعف',
+            text: 'رفع حصة الشحن الاستباقي (Push) للكينج كراب والسي باس التشيلي قبل الموسم بأسبوعين، ومضاعفة شحنات الطيران المباشر للسلمون النرويجي والتونة الزرقاء لتغطية بوفيهات الأعياد.'
+          },
+          {
+            title: 'قاعدة FEFO لتقليل الهالك',
+            tag: 'تدوير كل 36 ساعة',
+            text: 'توجيه الدفعات الأقرب صلاحية أوتوماتيكياً للفنادق ذات الإشغال الأعلى (فورسيزونز وماريوت ودوسيت تاني) مع فحص جودة مزدوج كل 12 ساعة بعنبر A.'
+          },
+          {
+            title: 'مخزون الأمان الذكي (Safety Stock)',
+            tag: 'هامش أمان 30%',
+            text: 'رفع مخزون الأمان بنسبة 30% في ثلاجات العبور مع تفعيل وردية تشغيل ليلية لخطوط التجهيز وتسيير الشاحنات الـ 6 بنظام التوصيل المستمر.'
+          }
+        ]
+      },
+      summer: {
+        title: 'ذروة الصيف والساحل الشمالي',
+        surge: '+66% طلب قياسي',
+        trips: 44,
+        categories: [
+          { name: 'قشريات نادرة', sub: 'كينج كراب / استاكوزا', kg: 740, base: 340, color: 'from-[#0A2540] to-[#1A4B7C]' },
+          { name: 'تونة وساشيمي', sub: 'زعنفة زرقاء / سي باس', kg: 580, base: 280, color: 'from-[#0284C7] to-[#38BDF8]' },
+          { name: 'سلمون وناجل', sub: 'نرويجي / بحر أحمر', kg: 1240, base: 680, color: 'from-[#C59B27] to-[#EAB308]' },
+          { name: 'جمبري جامبو', sub: 'مقاس U-10 حر', kg: 1380, base: 540, color: 'from-[#EA580C] to-[#F97316]' },
+          { name: 'فيليه قشر بياض', sub: 'تجهيز الفنادق', kg: 1290, base: 820, color: 'from-[#16A34A] to-[#22C55E]' }
+        ],
+        strategies: [
+          {
+            title: 'استراتيجية Push/Pull الهجينة',
+            tag: 'خط إمداد الساحل',
+            text: 'تأمين تعاقدات حصرية يومية من السويس والغردقة ومرسى علم للجمبري U-10 والناجل الحر، مع تسيير شاحنات تبريد ثقيلة (7 طن) عبر محور روض الفرج والضبعة لمطاعم ومنتجعات الساحل.'
+          },
+          {
+            title: 'قاعدة FEFO لتقليل الهالك',
+            tag: 'تبريد مسبق -1°C إضافي',
+            text: 'مواجهة ارتفاع درجات الحرارة صيفاً بخفض حرارة الصناديق المبردة قبل التحميل وتطبيق نظام FEFO الآلي لتصريف كافة دفعات البحر الأحمر الطازجة خلال 24-48 ساعة.'
+          },
+          {
+            title: 'مخزون الأمان الذكي (Safety Stock)',
+            tag: 'هامش أمان 38%',
+            text: 'تخصيص عنبر تبريد احتياطي بالعبور للكميات الاستراتيجية من الجمبري الجامبو والاستاكوزا مع ربطه الفوري بنظام OMS لمنع أي عجز في عطلات نهاية الأسبوع.'
+          }
+        ]
+      }
+    };
+
+    /**
+     * =========================================================================
+     * 3. HELPERS: FORMATTING, WHATSAPP INTEGRATION & TOASTS
+     * =========================================================================
+     */
+    function fmtNum(n) {
+      return Math.round(n).toLocaleString('en-US');
+    }
+
+    function fmtEGP(n) {
+      return fmtNum(n) + ' ج.م';
+    }
+
+    function getProduct(sku) {
+      return state.products.find(p => p.sku === sku);
+    }
+
+    /**
+     * Opens WhatsApp with either custom text OR auto-formatted B2B Cart Invoice!
+     */
+    function openWhatsAppOrder(customText) {
+      let msg = '';
+      if (customText) {
+        msg = customText;
+      } else if (state.cart.length > 0) {
+        const totals = getCartSummary();
+        const lines = state.cart.map((item, idx) => {
+          const p = getProduct(item.sku);
+          return `${idx + 1}. ${p.name} (${p.sku}) — الكمية: ${item.kg} كجم × ${fmtNum(p.price)} ج.م = ${fmtEGP(item.kg * p.price)}`;
+        }).join('\n');
+
+        msg = [
+          'مرحباً شركة جولدن سي لتوريد الأسماك وسلاسل الإمداد 🐟',
+          'أرغب في تأكيد طلب توريد الجملة (B2B) التالي:',
+          '--------------------------------',
+          lines,
+          '--------------------------------',
+          `إجمالي الوزن: ${fmtNum(totals.totalKg)} كجم`,
+          `إجمالي قيمة البضاعة: ${fmtEGP(totals.subtotal)}`,
+          totals.totalKg >= 50 ? 'الشحن المبرد: مجاني (فوق 50 كجم)' : 'الشحن المبرد: 450 ج.م',
+          'يرجى تأكيد التوافر وموعد تحرك الشاحنة المبردة من مخازن العبور.'
+        ].join('\n');
+      } else {
+        msg = 'مرحباً فريق مبيعات جولدن سي لتوريد الأسماك وسلاسل الإمداد 🐟، أرغب في الاستفسار عن أسعار الجملة والتعاقدات اليومية للأنواع البحرية الطازجة والنادرة.';
+      }
+
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    /**
+     * Sleek Executive Toast Notification (Never uses alert/confirm)
+     */
+    function showToast(title, message, type = 'success', action = null) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const borders = {
+        success: 'border-r-[#16A34A]',
+        info: 'border-r-[#0284C7]',
+        warning: 'border-r-[#D97706]',
+        error: 'border-r-[#DC2626]'
+      };
+
+      toast.className = `pointer-events-auto bg-white border border-slate-200 border-r-4 ${borders[type] || borders.success} rounded-2xl shadow-corporate-lg p-4 page-reveal`;
+      toast.innerHTML = `
+        <div class="flex items-start justify-between gap-3">
+          <div class="space-y-1">
+            <div class="text-sm font-black text-[#0A2540]">${title}</div>
+            <div class="text-xs text-slate-600 font-semibold leading-relaxed">${message}</div>
+            ${action ? `<div class="pt-2"><button type="button" class="toast-act bg-[#0A2540] hover:bg-[#133A63] text-white text-xs font-extrabold px-3.5 py-1.5 rounded-lg transition">${action.label}</button></div>` : ''}
+          </div>
+          <button type="button" class="toast-close text-slate-400 hover:text-slate-700 p-0.5" aria-label="إغلاق">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      `;
+
+      toast.querySelector('.toast-close').addEventListener('click', () => toast.remove());
+      if (action) {
+        toast.querySelector('.toast-act').addEventListener('click', () => {
+          action.onClick();
+          toast.remove();
+        });
+      }
+
+      container.appendChild(toast);
+      setTimeout(() => {
+        if (toast.parentNode) {
+          toast.style.opacity = '0';
+          toast.style.transition = 'opacity 0.25s ease';
+          setTimeout(() => toast.remove(), 260);
+        }
+      }, action ? 6500 : 4200);
+    }
+
+    /**
+     * =========================================================================
+     * 4. MULTI-PAGE ROUTING & ADMIN OPS TOGGLE
+     * =========================================================================
+     */
+    function navigateTo(page) {
+      if (page !== 'ops') {
+        state.lastClientPage = page;
+      }
+      state.currentPage = page;
+
+      const pages = ['home', 'products', 'ai', 'contact', 'ops'];
+      pages.forEach(p => {
+        const el = document.getElementById(`view-${p}`);
+        if (!el) return;
+        if (p === page) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+
+      // Update Desktop Nav Active Underline
+      document.querySelectorAll('#desktop-nav .nav-link').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.page === page);
+      });
+
+      // Update Mobile Nav Active Pill
+      document.querySelectorAll('.mobile-nav-link').forEach(btn => {
+        const isActive = btn.dataset.page === page;
+        btn.className = isActive
+          ? 'mobile-nav-link flex-1 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-extrabold bg-[#0A2540] text-white'
+          : 'mobile-nav-link flex-1 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:bg-slate-100';
+      });
+
+      // Update Ops Toggle Button Visual State
+      const opsBtn = document.getElementById('btn-ops-toggle');
+      const opsLabel = document.getElementById('btn-ops-label');
+      if (page === 'ops') {
+        opsBtn.className = 'inline-flex items-center gap-2.5 bg-[#EAB308] hover:bg-[#D99F06] text-[#0A2540] border border-[#C59B27] px-3.5 sm:px-4 py-2.5 rounded-full text-xs sm:text-sm font-black transition shadow-md';
+        opsLabel.textContent = 'العودة لموقع العملاء';
+        renderOpsDashboard();
+      } else {
+        opsBtn.className = 'inline-flex items-center gap-2.5 bg-[#0A2540] hover:bg-[#133A63] text-white border border-[#EAB308]/60 px-3.5 sm:px-4 py-2.5 rounded-full text-xs sm:text-sm font-extrabold transition shadow-md';
+        opsLabel.textContent = 'غرفة عمليات الإدارة (AI Ops)';
+      }
+
+      if (page === 'products') renderProductsCatalog();
+      if (page === 'ai') runAiProcurementCalc(true);
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleAdminOps() {
+      if (state.currentPage === 'ops') {
+        returnToClientSite();
+      } else {
+        navigateTo('ops');
+      }
+    }
+
+    function returnToClientSite() {
+      navigateTo(state.lastClientPage || 'home');
+    }
+
+    /**
+     * =========================================================================
+     * 5. HOME FEATURED PREVIEW & PRODUCTS CATALOG RENDERERS
+     * =========================================================================
+     */
+    function renderHomeFeatured() {
+      const container = document.getElementById('home-featured-grid');
+      const featuredSkus = ['GS-101', 'GS-102', 'GS-103', 'GS-104'];
+      const items = featuredSkus.map(getProduct).filter(Boolean);
+
+      container.innerHTML = items.map(p => `
+        <article class="corp-card corp-card-hover overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="relative bg-[#F8FAFC] border-b border-slate-200/80 h-44 flex items-center justify-center p-4">
+              <span class="absolute top-3 right-3 text-[11px] font-black bg-[#0A2540] text-[#FDE047] px-2.5 py-1 rounded-full shadow-sm">${p.rarityBadge}</span>
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold px-2.5 py-1 rounded-full border ${p.tempType === 'chilled' ? 'bg-sky-50 text-[#0284C7] border-sky-200' : 'bg-[#EEF4FA] text-[#0A2540] border-slate-300'}">${p.tempLabel}</span>
+              ${SPECIES_SVGS[p.sku]}
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-extrabold text-[#0284C7]">${p.sku} • ${p.origin}</div>
+              <h3 class="text-base font-black text-[#0A2540] leading-snug">${p.name}</h3>
+              <p class="text-xs font-bold text-slate-400" dir="ltr">${p.enName}</p>
+              <p class="text-xs text-slate-600 font-medium line-clamp-2 pt-1">${p.highlight}</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100">
+            <div>
+              <span class="text-lg font-black text-[#0A2540] tabular-nums">${fmtNum(p.price)}</span>
+              <span class="text-xs font-bold text-slate-500">ج.م/كجم</span>
+            </div>
+            <button type="button" onclick="navigateTo('products')" class="text-xs font-extrabold text-[#0284C7] hover:text-[#0A2540] transition">
+              اطلب الجملة ←
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function setCatalogFilter(filter) {
+      state.activeFilter = filter;
+      document.querySelectorAll('.catalog-filter-btn').forEach(btn => {
+        const active = btn.dataset.filter === filter;
+        btn.className = active
+          ? 'catalog-filter-btn px-5 py-2.5 rounded-full text-sm font-extrabold transition bg-[#0A2540] text-white shadow-sm'
+          : 'catalog-filter-btn px-5 py-2.5 rounded-full text-sm font-bold transition bg-white text-slate-700 border border-slate-200 hover:border-[#0A2540]';
+      });
+      renderProductsCatalog();
+    }
+
+    function setProductQty(sku, kg) {
+      const parsed = Math.max(1, parseInt(kg, 10) || 1);
+      state.selectedQtyBySku[sku] = parsed;
+      // Update active pill styling and subtotal label without full re-render flicker when typing
+      renderProductsCatalog();
+    }
+
+    function updateCustomQty(sku, value) {
+      const parsed = Math.max(1, parseInt(value, 10) || 1);
+      state.selectedQtyBySku[sku] = parsed;
+      const product = getProduct(sku);
+      const priceHint = document.getElementById(`price-hint-${sku}`);
+      if (priceHint && product) {
+        priceHint.textContent = fmtEGP(parsed * product.price);
+      }
+      // Update quick pill highlights
+      document.querySelectorAll(`[data-qty-sku="${sku}"]`).forEach(btn => {
+        const active = parseInt(btn.dataset.qtyVal, 10) === parsed;
+        btn.className = active
+          ? 'py-1.5 rounded-lg text-xs font-black border bg-[#0A2540] text-white border-[#0A2540] transition tabular-nums'
+          : 'py-1.5 rounded-lg text-xs font-bold border bg-white text-slate-700 border-slate-200 hover:border-[#0A2540] transition tabular-nums';
+      });
+    }
+
+    function orderSingleProductWhatsApp(sku) {
+      const p = getProduct(sku);
+      if (!p) return;
+      const kg = state.selectedQtyBySku[sku] || 10;
+      const total = kg * p.price;
+      const msg = [
+        'مرحباً فريق مبيعات جولدن سي لتوريد الأسماك 🐟',
+        'أرغب في طلب الصنف التالي بسعر الجملة (B2B):',
+        `• الصنف: ${p.name} (${p.enName})`,
+        `• كود الصنف: ${p.sku}`,
+        `• الكمية المطلوبة: ${kg} كجم`,
+        `• سعر الكيلو: ${fmtEGP(p.price)}`,
+        `• الإجمالي التقديري: ${fmtEGP(total)}`,
+        'يرجى تأكيد التوافر وموعد التوريد المبرد من العبور.'
+      ].join('\n');
+      openWhatsAppOrder(msg);
+    }
+
+    function renderProductsCatalog() {
+      const grid = document.getElementById('products-grid');
+      const filtered = state.products.filter(p => {
+        if (state.activeFilter === 'all') return true;
+        if (state.activeFilter === 'crustaceans') return p.category === 'crustaceans';
+        if (state.activeFilter === 'rare_fish') return p.category === 'rare_fish';
+        if (state.activeFilter === 'chilled') return p.tempType === 'chilled';
+        if (state.activeFilter === 'frozen') return p.tempType === 'frozen';
+        return true;
+      });
+
+      grid.innerHTML = filtered.map(p => {
+        const qty = state.selectedQtyBySku[p.sku] || 10;
+        const isUrgentFefo = p.shelfLifeDays <= 4;
+        const stockColor = p.stock < 120 ? 'text-red-600' : p.stock < 220 ? 'text-amber-700' : 'text-emerald-700';
+        const quickQtys = [5, 10, 25, 50];
+
+        return `
+          <article class="corp-card corp-card-hover overflow-hidden flex flex-col justify-between">
+            <div>
+              <!-- Spacious Light-Slate Visual Stage with Custom Species SVG -->
+              <div class="relative bg-[#F8FAFC] border-b border-slate-200/80 h-48 flex items-center justify-center p-5">
+                <span class="absolute top-3.5 right-3.5 text-[11px] font-black bg-[#0A2540] text-[#FDE047] px-3 py-1 rounded-full shadow-sm">${p.rarityBadge}</span>
+                <span class="absolute top-3.5 left-3.5 text-[11px] font-extrabold px-3 py-1 rounded-full border ${p.tempType === 'chilled' ? 'bg-sky-50 text-[#0284C7] border-sky-200' : 'bg-[#EEF4FA] text-[#0A2540] border-slate-300'}">${p.tempLabel}</span>
+                ${SPECIES_SVGS[p.sku]}
+                <span class="absolute bottom-3 right-3.5 text-[11px] font-black text-slate-500 bg-white/90 border border-slate-200 px-2.5 py-0.5 rounded-md tabular-nums">${p.sku}</span>
+              </div>
+
+              <!-- Details Body -->
+              <div class="p-5 space-y-4">
+                <div>
+                  <h3 class="text-lg font-black text-[#0A2540] leading-snug">${p.name}</h3>
+                  <div class="text-xs font-bold text-slate-400 mt-0.5" dir="ltr">${p.enName}</div>
+                  <p class="text-xs text-slate-600 font-medium mt-2 leading-relaxed">${p.highlight}</p>
+                </div>
+
+                <!-- Origin, Shelf-Life & Live Stock -->
+                <div class="space-y-2 text-xs">
+                  <div class="flex items-center justify-between text-slate-600 font-bold">
+                    <span class="inline-flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-[#C59B27]"></span>
+                      ${p.origin}
+                    </span>
+                    <span class="px-2.5 py-0.5 rounded-md border font-extrabold ${isUrgentFefo ? 'bg-amber-50 text-amber-800 border-amber-300' : 'bg-emerald-50 text-emerald-700 border-emerald-200'}">
+                      صلاحية: ${p.shelfLifeDays} ${p.shelfLifeDays <= 10 ? 'أيام' : 'يوم'}
+                    </span>
+                  </div>
+
+                  <div class="flex items-center justify-between bg-slate-50 border border-slate-200/80 rounded-xl px-3.5 py-2.5">
+                    <div>
+                      <div class="text-[11px] text-slate-500 font-bold">سعر الجملة</div>
+                      <div class="text-xl font-black text-[#0A2540] tabular-nums">${fmtNum(p.price)} <span class="text-xs font-bold text-slate-500">ج.م/كجم</span></div>
+                    </div>
+                    <div class="text-left">
+                      <div class="text-[11px] text-slate-500 font-bold">المتاح بالعبور</div>
+                      <div class="text-sm font-black ${stockColor} tabular-nums">${fmtNum(p.stock)} كجم</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interactive KG Selector + Custom Numeric Input (e.g., 12 KG!) -->
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between text-xs font-bold text-slate-600">
+                    <span>اختر الوزن (كجم):</span>
+                    <span id="price-hint-${p.sku}" class="text-[#0284C7] font-black tabular-nums">${fmtEGP(qty * p.price)}</span>
+                  </div>
+                  <div class="grid grid-cols-5 gap-1.5 items-center">
+                    ${quickQtys.map(val => {
+                      const active = qty === val;
+                      return `
+                        <button
+                          type="button"
+                          data-qty-sku="${p.sku}"
+                          data-qty-val="${val}"
+                          onclick="setProductQty('${p.sku}', ${val})"
+                          class="py-1.5 rounded-lg text-xs border transition tabular-nums ${active ? 'font-black bg-[#0A2540] text-white border-[#0A2540]' : 'font-bold bg-white text-slate-700 border-slate-200 hover:border-[#0A2540]'}"
+                        >${val}</button>
+                      `;
+                    }).join('')}
+                    <input
+                      type="number"
+                      min="1"
+                      max="${p.stock}"
+                      value="${qty}"
+                      oninput="updateCustomQty('${p.sku}', this.value)"
+                      title="اكتب أي وزن مخصص بالكيلوجرام"
+                      class="w-full py-1.5 px-1.5 text-center rounded-lg border border-slate-300 bg-slate-50 text-xs font-black text-[#0A2540] focus:outline-none focus:border-[#0284C7] focus:bg-white tabular-nums"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dual Action Footer: OMS Add + WhatsApp Instant Order -->
+            <div class="px-5 pb-5 pt-1 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <button
+                type="button"
+                onclick="addToCart('${p.sku}')"
+                ${p.stock <= 0 ? 'disabled' : ''}
+                class="flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl text-xs font-black transition ${p.stock <= 0 ? 'bg-slate-200 text-slate-500 cursor-not-allowed' : 'bg-[#0A2540] hover:bg-[#133A63] text-white shadow-sm'}"
+              >
+                <svg class="w-4 h-4 text-[#EAB308] shrink-0" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+                <span>${p.stock <= 0 ? 'نفد المخزون' : 'إضافة لطلب التوريد'}</span>
+              </button>
+
+              <button
+                type="button"
+                onclick="orderSingleProductWhatsApp('${p.sku}')"
+                class="flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl text-xs font-black border-2 border-[#16A34A] text-[#16A34A] hover:bg-[#16A34A] hover:text-white transition"
+              >
+                <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 2C6.498 2 2 6.497 2 12.031c0 1.766.462 3.49 1.339 5.01L2 22l5.098-1.336a9.975 9.975 0 004.933 1.298h.004c5.531 0 10.03-4.497 10.03-10.03C22.065 6.497 17.563 2 12.031 2zm5.825 14.165c-.248.698-1.444 1.335-2.01 1.419-.516.077-1.186.109-1.916-.122-.442-.14-1.01-.328-1.737-.642-3.058-1.321-5.055-4.415-5.207-4.618-.152-.203-1.242-1.653-1.242-3.153 0-1.5.786-2.238 1.065-2.543.279-.305.609-.381.812-.381.203 0 .406.002.584.011.188.009.439-.071.688.525.248.597.845 2.063.92 2.215.076.152.127.33.025.533-.101.203-.152.33-.305.508-.152.178-.32.397-.457.533-.152.152-.31.317-.133.622.178.305.789 1.302 1.694 2.11 1.164 1.038 2.145 1.36 2.45 1.512.305.152.483.127.66-.076.178-.203.762-.889.965-1.194.203-.305.406-.254.686-.152.279.101 1.778.838 2.083.99.305.152.508.229.584.356.076.127.076.737-.172 1.435z"/>
+                </svg>
+                <span>اطلبها واتساب</span>
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    /**
+     * =========================================================================
+     * 6. PAGE 3: AI PROCUREMENT & MENU CALCULATOR
+     * =========================================================================
+     */
+    function selectAiParam(type, value) {
+      state.aiConfig[type] = value;
+
+      if (type === 'venue') {
+        document.querySelectorAll('.ai-venue-btn').forEach(btn => {
+          const active = btn.dataset.venue === value;
+          btn.className = active
+            ? 'ai-venue-btn text-right px-4 py-3.5 rounded-xl border text-sm font-extrabold transition bg-[#0A2540] text-white border-[#0A2540] shadow-sm'
+            : 'ai-venue-btn text-right px-4 py-3.5 rounded-xl border text-sm font-bold transition bg-white text-slate-700 border-slate-200 hover:border-[#0A2540]';
+        });
+      } else if (type === 'tier') {
+        document.querySelectorAll('.ai-tier-btn').forEach(btn => {
+          const active = btn.dataset.tier === value;
+          btn.className = active
+            ? 'ai-tier-btn text-right px-4 py-3.5 rounded-xl border text-sm font-extrabold transition bg-[#0284C7] text-white border-[#0284C7] shadow-sm'
+            : 'ai-tier-btn text-right px-4 py-3.5 rounded-xl border text-sm font-bold transition bg-white text-slate-700 border-slate-200 hover:border-[#0284C7]';
+        });
+      }
+    }
+
+    function updateAiGuests(val) {
+      state.aiConfig.guests = parseInt(val, 10);
+      document.getElementById('ai-guests-val').textContent = fmtNum(state.aiConfig.guests);
+    }
+
+    function runAiProcurementCalc(silent = false) {
+      const { venue, guests, tier } = state.aiConfig;
+      const factor = venue === 'hotel' ? 0.14 : venue === 'restaurant' ? 0.175 : 0.16;
+      const totalTargetKg = Math.max(25, Math.round((guests * factor) / 5) * 5);
+
+      let mix;
+      if (tier === 'vip') {
+        mix = [
+          { sku: 'GS-101', ratio: 0.30, reason: 'طبق التوقيع الرئيسي لجذب ضيوف الـ VIP' },
+          { sku: 'GS-102', ratio: 0.35, reason: 'ساشيمي تورو طازج بأعلى عائد للطبق' },
+          { sku: 'GS-105', ratio: 0.35, reason: 'فيليه الذهب الأبيض قليل الهالك وسهل التحضير' }
+        ];
+      } else if (tier === 'buffet') {
+        mix = [
+          { sku: 'GS-106', ratio: 0.35, reason: 'الركيزة الأساسية لبوفيهات الفنادق الخمس نجوم' },
+          { sku: 'GS-107', ratio: 0.30, reason: 'الناجل الحر المصري المفضل في حفلات العشاء' },
+          { sku: 'GS-108', ratio: 0.35, reason: 'فيليه صافي 100% اقتصادي بدون أي فاقد تنظيف' }
+        ];
+      } else {
+        mix = [
+          { sku: 'GS-104', ratio: 0.45, reason: 'جمبري U-10 الأكثر طلباً على الشواية والطواجن' },
+          { sku: 'GS-103', ratio: 0.25, reason: 'استاكوزا ملكي ترفع متوسط قيمة الفاتورة' },
+          { sku: 'GS-107', ratio: 0.30, reason: 'سمك ناجل حر مثالي للشوي بالزيت والليمون' }
+        ];
+      }
+
+      const recs = mix.map(item => {
+        const p = getProduct(item.sku);
+        let kg = Math.max(5, Math.round((totalTargetKg * item.ratio) / 5) * 5);
+        if (kg > p.stock && p.stock > 0) kg = p.stock;
+        return { product: p, kg, cost: kg * p.price, reason: item.reason };
+      });
+
+      state.lastAiRec = recs;
+      renderAiOutput(recs);
+
+      if (!silent) {
+        showToast('تم حساب خطة التوريد بالـ AI', `تم توليد التوصية المثالية لـ ${fmtNum(guests)} ضيف أسبوعياً مع مراعاة المخزون الحي.`, 'info');
+      }
+    }
+
+    function renderAiOutput(recs) {
+      const box = document.getElementById('ai-output-card');
+      const totalKg = recs.reduce((s, r) => s + r.kg, 0);
+      const totalBudget = recs.reduce((s, r) => s + r.cost, 0);
+      const wasteCut = state.aiConfig.tier === 'vip' ? 31 : state.aiConfig.tier === 'buffet' ? 28 : 25;
+
+      box.innerHTML = `
+        <div class="space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-slate-200">
+            <div>
+              <h3 class="text-lg sm:text-xl font-black text-[#0A2540]">التوصية الأسبوعية الذكية (AI Procurement)</h3>
+              <p class="text-xs text-slate-500 font-bold">متوافقة لحظياً مع أرصدة ثلاجات العبور وأسعار الجملة</p>
+            </div>
+            <span class="bg-emerald-50 text-[#16A34A] border border-emerald-200 text-xs font-black px-3.5 py-1.5 rounded-full">
+              وفر متوقع من الهدر: ${wasteCut}%
+            </span>
+          </div>
+
+          <div class="space-y-3">
+            ${recs.map(r => `
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 border border-slate-200/80 rounded-2xl p-4">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-16 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center p-1 shrink-0">
+                    ${SPECIES_SVGS[r.product.sku]}
+                  </div>
+                  <div>
+                    <div class="flex flex-wrap items-center gap-2">
+                      <span class="font-black text-sm text-[#0A2540]">${r.product.name}</span>
+                      <span class="text-[11px] font-extrabold bg-[#0A2540] text-[#FDE047] px-2 py-0.5 rounded">${r.product.sku}</span>
+                    </div>
+                    <p class="text-xs text-slate-600 font-semibold mt-0.5">${r.reason}</p>
+                  </div>
+                </div>
+                <div class="flex sm:flex-col items-center sm:items-end justify-between border-t sm:border-t-0 border-slate-200 pt-2 sm:pt-0 shrink-0">
+                  <div class="text-base font-black text-[#0284C7] tabular-nums">${fmtNum(r.kg)} كجم</div>
+                  <div class="text-xs font-bold text-slate-500 tabular-nums">${fmtEGP(r.cost)}</div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div class="pt-5 border-t border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-4 bg-[#EEF4FA] rounded-xl px-5 py-3.5">
+            <div>
+              <div class="text-xs text-slate-600 font-bold">إجمالي الوزن الموصى به</div>
+              <div class="text-xl font-black text-[#0A2540] tabular-nums">${fmtNum(totalKg)} كجم</div>
+            </div>
+            <div>
+              <div class="text-xs text-slate-600 font-bold">الميزانية الأسبوعية التقديرية</div>
+              <div class="text-xl font-black text-[#C59B27] tabular-nums">${fmtEGP(totalBudget)}</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <button type="button" onclick="addAiRecToCart()" class="flex items-center justify-center gap-2 bg-[#0A2540] hover:bg-[#133A63] text-white font-black py-3.5 px-4 rounded-xl text-sm transition shadow-md">
+              <span>إضافة التوصية بالكامل لطلب التوريد</span>
+            </button>
+            <button type="button" onclick="sendAiRecWhatsApp()" class="flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] text-white font-black py-3.5 px-4 rounded-xl text-sm transition shadow-sm">
+              <span>إرسال التوصية عبر واتساب</span>
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function addAiRecToCart() {
+      if (!state.lastAiRec.length) runAiProcurementCalc(true);
+      let added = 0;
+      state.lastAiRec.forEach(r => {
+        if (r.kg > 0 && r.product.stock > 0) {
+          addToCart(r.product.sku, r.kg, true);
+          added++;
+        }
+      });
+      if (added > 0) {
+        showToast(
+          'تمت إضافة خطة الـ AI لسلة التوريد',
+          `تم إدراج ${added} أصناف فاخرة بالكميات المثالية في السلة.`,
+          'success',
+          { label: 'مراجعة وإتمام الطلب (OMS)', onClick: () => openOmsModal() }
+        );
+      }
+    }
+
+    function sendAiRecWhatsApp() {
+      if (!state.lastAiRec.length) runAiProcurementCalc(true);
+      const totalKg = state.lastAiRec.reduce((s, r) => s + r.kg, 0);
+      const totalCost = state.lastAiRec.reduce((s, r) => s + r.cost, 0);
+      const lines = state.lastAiRec.map((r, i) => `${i + 1}. ${r.product.name} — ${r.kg} كجم (${fmtEGP(r.cost)})`).join('\n');
+      const msg = [
+        'مرحباً جولدن سي 🐟، هذه توصية المشتريات الأسبوعية المحسوبة عبر مساعد الـ AI:',
+        lines,
+        `إجمالي الوزن: ${totalKg} كجم | الميزانية التقديرية: ${fmtEGP(totalCost)}`,
+        'يرجى التواصل لتأكيد التوريد المبرد.'
+      ].join('\n');
+      openWhatsAppOrder(msg);
+    }
+
+    /**
+     * =========================================================================
+     * 7. B2B CART & OMS CHECKOUT MODAL
+     * =========================================================================
+     */
+    function addToCart(sku, overrideKg = null, silent = false) {
+      const p = getProduct(sku);
+      if (!p) return;
+
+      const qty = overrideKg !== null ? overrideKg : (state.selectedQtyBySku[sku] || 10);
+      const existing = state.cart.find(c => c.sku === sku);
+      const currentKg = existing ? existing.kg : 0;
+
+      if (currentKg + qty > p.stock) {
+        if (!silent) {
+          showToast(
+            'تجاوز الحد المتاح بالمخزن',
+            `المتاح حالياً من ${p.name} في ثلاجات العبور هو ${fmtNum(p.stock)} كجم فقط. يمكنك تزويد المخزون من غرفة عمليات الإدارة.`,
+            'warning'
+          );
+        }
+        return;
+      }
+
+      if (existing) {
+        existing.kg += qty;
+      } else {
+        state.cart.push({ sku, kg: qty });
+      }
+
+      updateNavbarBadges();
+      if (!silent) {
+        showToast(
+          'تمت الإضافة لسلة التوريد',
+          `أُضيف ${fmtNum(qty)} كجم من ${p.name} (${fmtEGP(qty * p.price)}).`,
+          'success',
+          { label: 'إتمام الطلب الآن', onClick: () => openOmsModal() }
+        );
+      }
+    }
+
+    function updateCartItemKg(sku, nextKg) {
+      const item = state.cart.find(c => c.sku === sku);
+      const p = getProduct(sku);
+      if (!item || !p) return;
+
+      const val = parseInt(nextKg, 10);
+      if (isNaN(val) || val <= 0) {
+        removeCartItem(sku);
+        return;
+      }
+      if (val > p.stock) {
+        showToast('حد المخزون', `الحد الأقصى المتاح من ${p.name} هو ${fmtNum(p.stock)} كجم.`, 'warning');
+        renderOmsModal();
+        return;
+      }
+      item.kg = val;
+      updateNavbarBadges();
+      renderOmsModal();
+    }
+
+    function removeCartItem(sku) {
+      state.cart = state.cart.filter(c => c.sku !== sku);
+      updateNavbarBadges();
+      renderOmsModal();
+    }
+
+    function clearCart() {
+      state.cart = [];
+      updateNavbarBadges();
+      renderOmsModal();
+    }
+
+    function getCartSummary() {
+      let totalKg = 0;
+      let subtotal = 0;
+      let hasFrozen = false;
+
+      state.cart.forEach(item => {
+        const p = getProduct(item.sku);
+        if (!p) return;
+        totalKg += item.kg;
+        subtotal += item.kg * p.price;
+        if (p.tempType === 'frozen') hasFrozen = true;
+      });
+      return { totalKg, subtotal, hasFrozen, count: state.cart.length };
+    }
+
+    function updateNavbarBadges() {
+      const { totalKg, count } = getCartSummary();
+      document.getElementById('nav-cart-count').textContent = count;
+      document.getElementById('nav-cart-kg').textContent = `${fmtNum(totalKg)} كجم`;
+
+      const activeShipments = state.shipments.filter(s => s.status !== 'delivered').length;
+      const liveOrdersEl = document.getElementById('nav-live-orders');
+      if (liveOrdersEl) liveOrdersEl.textContent = `${activeShipments} شحنات`;
+    }
+
+    function openOmsModal() {
+      const modal = document.getElementById('oms-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('oms-success-banner').classList.add('hidden');
+      document.getElementById('oms-error-msg').classList.add('hidden');
+      renderOmsModal();
+    }
+
+    function closeOmsModal() {
+      const modal = document.getElementById('oms-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function handleOmsClientSelect() {
+      const sel = document.getElementById('oms-client-select').value;
+      const wrap = document.getElementById('oms-custom-client-wrap');
+      if (sel === '__custom__') {
+        wrap.classList.remove('hidden');
+        document.getElementById('oms-custom-client-input').focus();
+      } else {
+        wrap.classList.add('hidden');
+      }
+    }
+
+    function renderOmsModal() {
+      const emptyEl = document.getElementById('oms-empty');
+      const activeEl = document.getElementById('oms-active');
+      const successEl = document.getElementById('oms-success-banner');
+
+      if (!successEl.classList.contains('hidden')) {
+        emptyEl.classList.add('hidden');
+        activeEl.classList.add('hidden');
+        return;
+      }
+
+      if (state.cart.length === 0) {
+        emptyEl.classList.remove('hidden');
+        activeEl.classList.add('hidden');
+        return;
+      }
+
+      emptyEl.classList.add('hidden');
+      activeEl.classList.remove('hidden');
+
+      const { totalKg, subtotal } = getCartSummary();
+      const shippingFee = totalKg >= 50 ? 0 : 450;
+      const grandTotal = subtotal + shippingFee;
+
+      const zone = document.getElementById('oms-zone-select').value;
+      const logi = ZONE_ROUTES[zone] || ZONE_ROUTES['التجمع الخامس'];
+      const van = totalKg >= 100 ? logi.vanHeavy : logi.vanStd;
+
+      document.getElementById('oms-total-kg').textContent = `${fmtNum(totalKg)} كجم`;
+      document.getElementById('oms-subtotal').textContent = fmtEGP(subtotal);
+      const shipEl = document.getElementById('oms-shipping');
+      if (shippingFee === 0) {
+        shipEl.textContent = 'مجاني (للطلبات فوق 50 كجم)';
+        shipEl.className = 'font-black text-[#16A34A]';
+      } else {
+        shipEl.textContent = fmtEGP(shippingFee);
+        shipEl.className = 'font-black text-[#0A2540] tabular-nums';
+      }
+      document.getElementById('oms-grand-total').textContent = fmtEGP(grandTotal);
+
+      // Update AI Logistics Estimator
+      document.getElementById('oms-ai-saving').textContent = `توفير ${logi.saving} وقت ووقود`;
+      document.getElementById('oms-ai-van').textContent = van;
+      document.getElementById('oms-ai-route').textContent = logi.route;
+      document.getElementById('oms-ai-eta').textContent = logi.eta;
+
+      // Render Cart Rows
+      document.getElementById('oms-cart-list').innerHTML = state.cart.map(item => {
+        const p = getProduct(item.sku);
+        return `
+          <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 bg-white border border-slate-200 rounded-xl p-3.5">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-14 h-11 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center p-1 shrink-0">
+                ${SPECIES_SVGS[p.sku]}
+              </div>
+              <div class="min-w-0">
+                <div class="font-extrabold text-sm text-[#0A2540] truncate">${p.name}</div>
+                <div class="text-xs text-slate-500 font-semibold">${p.sku} • ${fmtNum(p.price)} ج.م/كجم</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5 shrink-0 mr-auto">
+              <div class="flex items-center gap-1 bg-slate-100 rounded-lg p-1">
+                <button type="button" onclick="updateCartItemKg('${p.sku}', ${item.kg - 5})" class="w-6 h-6 rounded bg-white text-[#0A2540] font-black text-xs hover:bg-slate-200">-</button>
+                <input type="number" min="1" max="${p.stock}" value="${item.kg}" onchange="updateCartItemKg('${p.sku}', this.value)" class="w-12 text-center bg-transparent text-xs font-black text-[#0A2540] focus:outline-none tabular-nums" />
+                <button type="button" onclick="updateCartItemKg('${p.sku}', ${item.kg + 5})" class="w-6 h-6 rounded bg-white text-[#0A2540] font-black text-xs hover:bg-slate-200">+</button>
+              </div>
+              <span class="text-xs font-black text-[#0A2540] min-w-[78px] text-left tabular-nums">${fmtEGP(item.kg * p.price)}</span>
+              <button type="button" onclick="removeCartItem('${p.sku}')" class="text-slate-400 hover:text-red-600 p-1" aria-label="حذف">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function getSelectedClientName() {
+      const sel = document.getElementById('oms-client-select').value;
+      if (sel === '__custom__') {
+        return document.getElementById('oms-custom-client-input').value.trim();
+      }
+      return sel;
+    }
+
+    function confirmOmsOrder() {
+      const errBox = document.getElementById('oms-error-msg');
+      errBox.classList.add('hidden');
+      if (state.cart.length === 0) return;
+
+      const clientName = getSelectedClientName();
+      if (!clientName) {
+        errBox.textContent = 'يرجى كتابة اسم الفندق أو المطعم الجديد لإتمام تأكيد الطلبية.';
+        errBox.classList.remove('hidden');
+        return;
+      }
+
+      // Verify live stock
+      for (const item of state.cart) {
+        const p = getProduct(item.sku);
+        if (!p || item.kg > p.stock) {
+          errBox.textContent = `الكمية المطلوبة من (${p ? p.name : item.sku}) تتجاوز المخزون المتاح حالياً (${p ? p.stock : 0} كجم).`;
+          errBox.classList.remove('hidden');
+          return;
+        }
+      }
+
+      const { totalKg, subtotal, hasFrozen } = getCartSummary();
+      const shippingFee = totalKg >= 50 ? 0 : 450;
+      const grandTotal = subtotal + shippingFee;
+      const zone = document.getElementById('oms-zone-select').value;
+      const logi = ZONE_ROUTES[zone] || ZONE_ROUTES['التجمع الخامس'];
+      const van = totalKg >= 100 ? logi.vanHeavy : logi.vanStd;
+
+      // 1. Deduct KG from live warehouse stock
+      state.cart.forEach(item => {
+        const p = getProduct(item.sku);
+        if (p) p.stock -= item.kg;
+      });
+
+      // 2. Update revenue KPI
+      state.totalRevenue += grandTotal;
+
+      // 3. Generate live refrigerated shipment in Admin Mode 2
+      const shipId = `GS-SHP-${state.shipmentCounter++}`;
+      state.shipments.unshift({
+        id: shipId,
+        client: clientName,
+        zone,
+        weight: totalKg,
+        value: grandTotal,
+        van,
+        route: `${logi.route} | توفير ${logi.saving} وقت ووقود`,
+        boxTemp: hasFrozen ? '-18.2°C' : '0.4°C',
+        status: 'loading',
+        isNew: true
+      });
+
+      // 4. Clear cart & show sleek confirmation inside modal
+      state.cart = [];
+      document.getElementById('oms-custom-client-input').value = '';
+      syncAllUI();
+
+      document.getElementById('oms-active').classList.add('hidden');
+      document.getElementById('oms-empty').classList.add('hidden');
+      document.getElementById('oms-success-details').innerHTML =
+        `تم إصدار الشحنة رقم <strong class="text-[#0A2540]">${shipId}</strong> لصالح <strong class="text-[#0A2540]">${clientName}</strong> (${zone}) بوزن <strong class="text-[#0284C7]">${fmtNum(totalKg)} كجم</strong> وإجمالي <strong class="text-[#C59B27]">${fmtEGP(grandTotal)}</strong>، وتم خصم الكميات لحظياً من ثلاجات العبور وتخصيص <strong>${van}</strong>.`;
+      document.getElementById('oms-success-banner').classList.remove('hidden');
+    }
+
+    function sendModalOrderViaWhatsApp() {
+      if (state.cart.length === 0) return;
+      const clientName = getSelectedClientName() || 'عميل تعاقدي B2B';
+      const zone = document.getElementById('oms-zone-select').value;
+      const { totalKg, subtotal } = getCartSummary();
+      const shippingFee = totalKg >= 50 ? 0 : 450;
+      const grandTotal = subtotal + shippingFee;
+
+      const lines = state.cart.map((item, idx) => {
+        const p = getProduct(item.sku);
+        return `${idx + 1}. ${p.name} (${p.sku}) — ${item.kg} كجم × ${fmtNum(p.price)} ج.م = ${fmtEGP(item.kg * p.price)}`;
+      }).join('\n');
+
+      const msg = [
+        '📋 *طلب توريد رسمي — جولدن سي (B2B)*',
+        `• اسم المنشأة: ${clientName}`,
+        `• منطقة التسليم: ${zone}`,
+        '--------------------------------',
+        lines,
+        '--------------------------------',
+        `• إجمالي الوزن: ${fmtNum(totalKg)} كجم`,
+        `• الشحن المبرد من العبور: ${shippingFee === 0 ? 'مجاني' : fmtEGP(shippingFee)}`,
+        `• الإجمالي النهائي: ${fmtEGP(grandTotal)}`
+      ].join('\n');
+
+      openWhatsAppOrder(msg);
+    }
+
+    /**
+     * =========================================================================
+     * 8. MODE 2: COLD-CHAIN AI OPERATIONS (WMS, TMS, FORECASTING)
+     * =========================================================================
+     */
+    function setWmsSort(sort) {
+      state.wmsSort = sort;
+      document.getElementById('wms-btn-fefo').className = sort === 'fefo'
+        ? 'px-4 py-2 rounded-xl text-xs font-extrabold bg-[#0A2540] text-white transition'
+        : 'px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+      document.getElementById('wms-btn-sku').className = sort === 'sku'
+        ? 'px-4 py-2 rounded-xl text-xs font-extrabold bg-[#0A2540] text-white transition'
+        : 'px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+      renderOpsWms();
+    }
+
+    function restockSku(sku) {
+      const p = getProduct(sku);
+      if (!p) return;
+      p.stock += 200;
+      if (p.stock > p.maxStock) p.maxStock = p.stock + 100;
+      syncAllUI();
+      showToast(
+        'تم التوريد الفوري للمخزن (+200 كجم)',
+        `تمت إضافة 200 كجم من ${p.name} إلى ${p.zone} وتحديث الكتالوج للعملاء لحظياً.`,
+        'success'
+      );
+    }
+
+    function advanceShipment(shipId) {
+      const s = state.shipments.find(item => item.id === shipId);
+      if (!s) return;
+
+      if (s.status === 'loading') {
+        s.status = 'transit';
+        showToast(`انطلاق الشحنة ${s.id}`, `تحركت ${s.van} من العبور عبر المسار الذكي نحو ${s.client}.`, 'info');
+      } else if (s.status === 'transit') {
+        s.status = 'delivered';
+        showToast(`تم التسليم للمطبخ (${s.id})`, `تم تسليم ${fmtNum(s.weight)} كجم لصالح ${s.client} بدرجة حرارة موثقة (${s.boxTemp}).`, 'success');
+      }
+      s.isNew = false;
+      syncAllUI();
+    }
+
+    function renderOpsKpis() {
+      const totalStock = state.products.reduce((sum, p) => sum + p.stock, 0);
+      const activeCount = state.shipments.filter(s => s.status !== 'delivered').length;
+      const activeVans = Math.max(6, activeCount + 4);
+
+      document.getElementById('ops-kpi-revenue').textContent = fmtEGP(state.totalRevenue);
+      document.getElementById('ops-kpi-stock').textContent = `${fmtNum(totalStock)} كجم`;
+      document.getElementById('ops-kpi-vans').textContent = `${activeVans} شاحنات نشطة`;
+      document.getElementById('ops-kpi-active-shipments').textContent = `${activeCount} شحنات قيد التوصيل`;
+    }
+
+    function renderOpsWms() {
+      const tbody = document.getElementById('ops-wms-body');
+      const list = [...state.products].sort((a, b) => {
+        if (state.wmsSort === 'fefo') return a.shelfLifeDays - b.shelfLifeDays;
+        return a.sku.localeCompare(b.sku);
+      });
+
+      tbody.innerHTML = list.map(p => {
+        const isUrgent = p.shelfLifeDays <= 4;
+        const pct = Math.min(100, Math.round((p.stock / p.maxStock) * 100));
+        const barColor = p.stock < 120 ? 'bg-red-600' : p.stock < 220 ? 'bg-amber-500' : 'bg-[#16A34A]';
+
+        return `
+          <tr class="hover:bg-slate-50/90 transition">
+            <td class="py-4 px-6">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1 shrink-0">
+                  ${SPECIES_SVGS[p.sku]}
+                </div>
+                <div>
+                  <div class="font-black text-[#0A2540]">${p.name}</div>
+                  <div class="text-xs text-slate-500 font-bold">${p.sku} • ${p.origin}</div>
+                </div>
+              </div>
+            </td>
+            <td class="py-4 px-4">
+              <span class="inline-flex items-center gap-1.5 text-xs font-extrabold px-3 py-1.5 rounded-lg border ${p.tempType === 'chilled' ? 'bg-sky-50 text-[#0284C7] border-sky-200' : 'bg-[#EEF4FA] text-[#0A2540] border-slate-300'}">
+                ${p.zone}
+              </span>
+            </td>
+            <td class="py-4 px-4">
+              <div class="flex flex-wrap items-center gap-2">
+                ${isUrgent
+                  ? `<span class="inline-flex items-center gap-1.5 text-xs font-black px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-400 pulse-fefo">
+                       <span class="w-2 h-2 rounded-full bg-red-600"></span> أولوية صرف عاجلة (FEFO)
+                     </span>`
+                  : `<span class="inline-flex items-center gap-1.5 text-xs font-extrabold px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                       صلاحية مستقرة
+                     </span>`
+                }
+                <span class="text-xs font-bold text-slate-600 tabular-nums">متبقي ${p.shelfLifeDays} ${p.shelfLifeDays <= 10 ? 'أيام' : 'يوم'}</span>
+              </div>
+            </td>
+            <td class="py-4 px-4 min-w-[200px]">
+              <div class="space-y-1.5">
+                <div class="flex justify-between text-xs">
+                  <span class="font-black text-[#0A2540] tabular-nums">${fmtNum(p.stock)} كجم</span>
+                  <span class="font-bold text-slate-500 tabular-nums">${pct}% من السعة</span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="h-full rounded-full bar-smooth ${barColor}" style="width:${pct}%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="py-4 px-6 text-left">
+              <button type="button" onclick="restockSku('${p.sku}')" class="inline-flex items-center gap-1.5 bg-[#0A2540] hover:bg-[#133A63] text-white text-xs font-extrabold px-3.5 py-2.5 rounded-xl transition shadow-sm">
+                <span class="text-[#EAB308] font-black">+200 كجم</span>
+                <span>توريد فوري</span>
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function renderOpsTms() {
+      const tbody = document.getElementById('ops-tms-body');
+      const statusMap = {
+        loading: {
+          label: 'جاري التحميل بالعبور',
+          pill: 'bg-amber-50 text-amber-800 border-amber-300',
+          btn: 'bg-[#0284C7] hover:bg-sky-700 text-white',
+          btnText: 'ترقية الحالة ← للدائري'
+        },
+        transit: {
+          label: 'في الطريق عبر الدائري',
+          pill: 'bg-sky-50 text-[#0284C7] border-sky-300',
+          btn: 'bg-[#16A34A] hover:bg-[#15803D] text-white',
+          btnText: 'ترقية الحالة ← تم التسليم'
+        },
+        delivered: {
+          label: 'تم التسليم للمطبخ',
+          pill: 'bg-emerald-50 text-emerald-700 border-emerald-300',
+          btn: '',
+          btnText: ''
+        }
+      };
+
+      tbody.innerHTML = state.shipments.map(s => {
+        const st = statusMap[s.status];
+        const isFrozen = s.boxTemp.startsWith('-');
+        return `
+          <tr class="hover:bg-slate-50/90 transition ${s.isNew ? 'shipment-new-row' : ''}">
+            <td class="py-4 px-5">
+              <div class="flex items-center gap-2">
+                <span class="font-black text-[#0A2540] tabular-nums">${s.id}</span>
+                ${s.isNew ? '<span class="text-[10px] font-black bg-[#EAB308] text-[#0A2540] px-2 py-0.5 rounded-full">طلب جديد</span>' : ''}
+              </div>
+            </td>
+            <td class="py-4 px-4">
+              <div class="font-extrabold text-[#0A2540]">${s.client}</div>
+              <div class="text-xs text-slate-500 font-semibold">${s.zone}</div>
+            </td>
+            <td class="py-4 px-4">
+              <div class="font-black text-[#0A2540] tabular-nums">${fmtNum(s.weight)} كجم</div>
+              <div class="text-xs font-bold text-[#C59B27] tabular-nums">${fmtEGP(s.value)}</div>
+            </td>
+            <td class="py-4 px-4">
+              <span class="text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200 px-2.5 py-1.5 rounded-lg inline-block">${s.van}</span>
+            </td>
+            <td class="py-4 px-4 max-w-[280px]">
+              <div class="text-xs font-bold text-slate-700 leading-relaxed">${s.route}</div>
+            </td>
+            <td class="py-4 px-4">
+              <span class="inline-block text-xs font-black px-2.5 py-1 rounded-lg tabular-nums ${isFrozen ? 'bg-[#EEF4FA] text-[#0A2540]' : 'bg-sky-50 text-[#0284C7]'}" dir="ltr">${s.boxTemp}</span>
+            </td>
+            <td class="py-4 px-4">
+              <span class="inline-flex items-center text-xs font-extrabold px-3 py-1 rounded-full border ${st.pill}">${st.label}</span>
+            </td>
+            <td class="py-4 px-5 text-left">
+              ${s.status === 'delivered'
+                ? '<span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-2 rounded-xl inline-block">✓ مكتملة وموثقة</span>'
+                : `<button type="button" onclick="advanceShipment('${s.id}')" class="text-xs font-extrabold px-3.5 py-2 rounded-xl transition shadow-sm ${st.btn}">${st.btnText}</button>`
+              }
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function setForecastScenario(key) {
+      state.forecastScenario = key;
+      document.querySelectorAll('.forecast-tab-btn').forEach(btn => {
+        const active = btn.dataset.scenario === key;
+        btn.className = active
+          ? 'forecast-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition bg-[#0A2540] text-white shadow-sm'
+          : 'forecast-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-white';
+      });
+      renderOpsForecast();
+    }
+
+    function renderOpsForecast() {
+      const data = FORECAST_DATA[state.forecastScenario];
+      const totalKg = data.categories.reduce((s, c) => s + c.kg, 0);
+      const maxScale = 1500;
+
+      document.getElementById('ops-forecast-summary').innerHTML = `
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex items-center justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-500">إجمالي الطلب الأسبوعي المتوقع</div>
+            <div class="text-2xl font-black text-[#0A2540] tabular-nums mt-0.5">${fmtNum(totalKg)} كجم</div>
+          </div>
+          <span class="text-xs font-black px-3 py-1 rounded-full bg-amber-100 text-amber-900">${data.surge}</span>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+          <div class="text-xs font-bold text-slate-500">السيناريو النشط</div>
+          <div class="text-base font-black text-[#0A2540] mt-1">${data.title}</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+          <div class="text-xs font-bold text-slate-500">رحلات التبريد الأسبوعية المخططة</div>
+          <div class="text-2xl font-black text-[#0284C7] tabular-nums mt-0.5">${data.trips} رحلة مبردة</div>
+        </div>
+      `;
+
+      document.getElementById('ops-forecast-bars').innerHTML = data.categories.map(cat => {
+        const pctHeight = Math.max(14, Math.min(100, Math.round((cat.kg / maxScale) * 100)));
+        const delta = Math.round(((cat.kg - cat.base) / cat.base) * 100);
+        return `
+          <div class="flex flex-col items-center justify-end h-full">
+            <div class="flex flex-col items-center mb-1.5">
+              <span class="text-xs sm:text-sm font-black text-[#0A2540] tabular-nums">${fmtNum(cat.kg)} كجم</span>
+              ${delta > 0
+                ? `<span class="text-[10px] font-black text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded tabular-nums">+${delta}%</span>`
+                : '<span class="text-[10px] font-bold text-slate-400">قياسي</span>'
+              }
+            </div>
+            <div class="w-full max-w-[74px] h-[175px] flex items-end justify-center">
+              <div class="w-full rounded-t-xl shadow-sm bar-smooth bg-gradient-to-t ${cat.color}" style="height:${pctHeight}%"></div>
+            </div>
+            <div class="mt-2.5 text-center">
+              <div class="text-xs font-black text-[#0A2540]">${cat.name}</div>
+              <div class="text-[10px] font-bold text-slate-500">${cat.sub}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      const topBorders = ['border-t-[#0A2540]', 'border-t-[#16A34A]', 'border-t-[#EAB308]'];
+      document.getElementById('ops-forecast-strategies').innerHTML = data.strategies.map((st, idx) => `
+        <div class="bg-white border border-slate-200 border-t-4 ${topBorders[idx]} rounded-2xl p-5 space-y-2.5 shadow-sm">
+          <div class="flex items-center justify-between gap-2">
+            <h4 class="text-sm sm:text-base font-black text-[#0A2540]">${st.title}</h4>
+            <span class="text-[11px] font-extrabold bg-slate-100 text-[#0A2540] px-2.5 py-1 rounded-lg shrink-0">${st.tag}</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">${st.text}</p>
+        </div>
+      `).join('');
+    }
+
+    function renderOpsDashboard() {
+      renderOpsKpis();
+      renderOpsWms();
+      renderOpsTms();
+      renderOpsForecast();
+    }
+
+    /**
+     * Master Real-Time Sync Across Every Page & Mode
+     */
+    function syncAllUI() {
+      renderHomeFeatured();
+      renderProductsCatalog();
+      updateNavbarBadges();
+      renderOpsDashboard();
+      runAiProcurementCalc(true);
+    }
+
+    // Modal Escape & Backdrop Dismiss
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('oms-modal');
+        if (!modal.classList.contains('hidden')) closeOmsModal();
+      }
+    });
+    document.getElementById('oms-modal').addEventListener('click', e => {
+      if (e.target.id === 'oms-modal') closeOmsModal();
+    });
+
+    /**
+     * Bootstrap on Load
+     */
+    window.addEventListener('DOMContentLoaded', () => {
+      try {
+        syncAllUI();
+      } catch (err) {
+        console.error('Golden Sea Initialization Error:', err);
+      }
+    });
+  </script>
+</body>
+</html>
