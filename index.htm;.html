@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جولدن سي لتوريد الأسماك وسلاسل الإمداد | بوابة التعاقدات B2B</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --border: #E2E8F0;
+      --border-strong: #CBD5E1;
+      --navy: #0A2540;
+      --navy-mid: #133A63;
+      --navy-soft: #EEF4FA;
+      --gold: #C59B27;
+      --gold-bright: #EAB308;
+      --gold-soft: #FEF9C3;
+      --ice: #0284C7;
+      --ice-soft: #E0F2FE;
+      --emerald: #059669;
+      --emerald-soft: #ECFDF5;
+      --amber: #D97706;
+      --amber-soft: #FFFBEB;
+      --crimson: #DC2626;
+      --crimson-soft: #FEF2F2;
+      --text: #0F172A;
+      --muted: #475569;
+      --shadow: 0 4px 20px rgba(10, 37, 64, 0.05);
+      --shadow-lg: 0 14px 36px rgba(10, 37, 64, 0.12);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    button, input, select { font-family: inherit; }
+    button { cursor: pointer; }
+    a { text-decoration: none; color: inherit; }
+    .tabular { font-variant-numeric: tabular-nums; }
+    .hidden { display: none !important; }
+
+    /* Widescreen Container */
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 16px; }
+    }
+
+    /* 1. Top Corporate Utility Strip */
+    .utility-strip {
+      background: var(--navy);
+      color: #E2E8F0;
+      font-size: 13px;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .utility-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      padding: 10px 0;
+    }
+    .utility-items {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+    }
+    .utility-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .utility-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold-bright);
+      flex-shrink: 0;
+    }
+    .iso-pill {
+      background: rgba(197, 155, 39, 0.16);
+      border: 1px solid rgba(234, 179, 8, 0.45);
+      color: #FDE047;
+      padding: 3px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .hotline-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #FFFFFF;
+      font-weight: 800;
+    }
+    .hotline-num {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 2px 10px;
+      border-radius: 8px;
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    /* 2. Sticky Main Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 14px rgba(10, 37, 64, 0.04);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      height: 82px;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-crest {
+      width: 50px;
+      height: 50px;
+      border-radius: 13px;
+      background: var(--navy);
+      border: 1px solid rgba(197, 155, 39, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(10, 37, 64, 0.16);
+      flex-shrink: 0;
+    }
+    .brand-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-ar {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+    .brand-en {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      border-right: 2px solid var(--border);
+      padding-right: 10px;
+    }
+    .brand-sub {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .main-nav a {
+      font-size: 15px;
+      font-weight: 800;
+      color: #334155;
+      padding: 6px 2px;
+      position: relative;
+      transition: color 0.2s ease;
+    }
+    .main-nav a:hover { color: var(--navy); }
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 999px;
+      background: var(--gold);
+      transition: width 0.22s ease;
+    }
+    .main-nav a:hover::after { width: 100%; }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .cold-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--ice-soft);
+      color: var(--navy);
+      border: 1px solid #BAE6FD;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.6);
+      animation: pulseGreen 2s infinite;
+    }
+    @keyframes pulseGreen {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.55); }
+      50% { box-shadow: 0 0 0 6px rgba(5, 150, 105, 0); }
+    }
+
+    .cart-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--navy);
+      color: #FFFFFF;
+      border: 1px solid rgba(197, 155, 39, 0.5);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: transform 0.18s ease, background 0.18s ease;
+      box-shadow: 0 6px 18px rgba(10, 37, 64, 0.15);
+    }
+    .cart-trigger:hover {
+      background: var(--navy-mid);
+      transform: translateY(-1px);
+    }
+    .cart-count-pill {
+      background: var(--gold-bright);
+      color: var(--navy);
+      min-width: 24px;
+      height: 24px;
+      padding: 0 7px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    @media (max-width: 1024px) {
+      .main-nav, .cold-status-pill { display: none; }
+    }
+    @media (max-width: 640px) {
+      .brand-en { display: none; }
+      .brand-ar { font-size: 18px; }
+    }
+
+    /* 3. Executive Hero Banner */
+    .hero-section {
+      padding: 34px 0 18px;
+    }
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #071A30 0%, #0A2540 52%, #15406B 100%);
+      color: #FFFFFF;
+      padding: 56px 52px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(197, 155, 39, 0.25);
+    }
+    .hero-waves {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.16;
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(234, 179, 8, 0.45);
+      color: #FDE047;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+    .hero-title {
+      margin: 0;
+      font-size: clamp(28px, 3.6vw, 46px);
+      font-weight: 900;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    .hero-title span { color: #F5C451; }
+    .hero-desc {
+      margin: 18px 0 28px;
+      font-size: 17px;
+      color: #CBD5E1;
+      max-width: 680px;
+      font-weight: 600;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: none;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 13px 24px;
+      transition: all 0.2s ease;
+    }
+    .btn-gold {
+      background: var(--gold-bright);
+      color: var(--navy);
+      box-shadow: 0 8px 20px rgba(234, 179, 8, 0.25);
+    }
+    .btn-gold:hover { background: #D99F06; transform: translateY(-2px); }
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.12);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+    }
+    .btn-glass:hover { background: rgba(255, 255, 255, 0.2); }
+    .btn-navy {
+      background: var(--navy);
+      color: #FFFFFF;
+    }
+    .btn-navy:hover { background: var(--navy-mid); }
+    .btn-ice {
+      background: var(--ice);
+      color: #FFFFFF;
+    }
+    .btn-ice:hover { background: #0369A1; }
+    .btn-outline {
+      background: #FFFFFF;
+      color: var(--navy);
+      border: 1px solid var(--border-strong);
+    }
+    .btn-outline:hover { border-color: var(--navy); background: var(--navy-soft); }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .hero-metric-box {
+      background: rgba(255, 255, 255, 0.09);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .hero-metric-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: rgba(234, 179, 8, 0.18);
+      border: 1px solid rgba(234, 179, 8, 0.35);
+      color: #FDE047;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hero-metric-val {
+      font-size: 18px;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.25;
+    }
+    .hero-metric-sub {
+      font-size: 13px;
+      color: #CBD5E1;
+      font-weight: 600;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card { padding: 34px 24px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 26px; }
+    }
+
+    /* Section Headings */
+    .section-block {
+      padding: 36px 0;
+    }
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .section-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 900;
+      color: var(--ice);
+      background: var(--ice-soft);
+      border: 1px solid #BAE6FD;
+      padding: 4px 13px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      margin: 0;
+      font-size: clamp(22px, 2.4vw, 30px);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+    .section-subtitle {
+      margin: 6px 0 0;
+      font-size: 15px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* Surface Card */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    /* 4. AI Procurement & Menu Calculator */
+    .ai-panel {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1.05fr 1.25fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+    .ai-controls {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .field-label {
+      display: block;
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .choice-btn {
+      padding: 12px 10px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: #FFFFFF;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 800;
+      text-align: center;
+      transition: all 0.18s ease;
+    }
+    .choice-btn:hover { border-color: var(--navy); }
+    .choice-btn.active {
+      background: var(--navy);
+      color: #FFFFFF;
+      border-color: var(--navy);
+      box-shadow: 0 6px 14px rgba(10, 37, 64, 0.16);
+    }
+    .choice-btn.active-ice {
+      background: var(--ice);
+      color: #FFFFFF;
+      border-color: var(--ice);
+    }
+
+    .slider-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .slider-val-pill {
+      background: var(--navy);
+      color: #FDE047;
+      padding: 4px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+    input[type="range"].range-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      background: #CBD5E1;
+      outline: none;
+    }
+    input[type="range"].range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--navy);
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 2px 10px rgba(10, 37, 64, 0.35);
+      cursor: pointer;
+    }
+    .slider-marks {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .ai-output {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      background: #FFFFFF;
+    }
+    .ai-output-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .ai-rec-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .ai-rec-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    .ai-rec-info {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .mini-svg-box {
+      width: 60px;
+      height: 44px;
+      border-radius: 10px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      flex-shrink: 0;
+    }
+    .ai-summary-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      background: var(--navy-soft);
+      border-radius: 14px;
+      padding: 14px 18px;
+    }
+
+    @media (max-width: 1024px) {
+      .ai-panel { grid-template-columns: 1fr; padding: 20px; }
+    }
+    @media (max-width: 640px) {
+      .choice-grid { grid-template-columns: 1fr; }
+    }
+
+    /* 5. B2B Seafood Catalog (6 SKUs — Wide 3-Column Grid) */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .filter-tab {
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: #FFFFFF;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      transition: all 0.18s ease;
+    }
+    .filter-tab:hover { border-color: var(--navy); color: var(--navy); }
+    .filter-tab.active {
+      background: var(--navy);
+      color: #FFFFFF;
+      border-color: var(--navy);
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 1120px) {
+      .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
+      .catalog-grid { grid-template-columns: 1fr; }
+    }
+
+    .product-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-strong);
+    }
+    .product-stage {
+      position: relative;
+      height: 176px;
+      background: linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+    }
+    .sku-tag {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--navy);
+      color: #FDE047;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+    .temp-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 11px;
+      border-radius: 999px;
+      border: 1px solid;
+    }
+    .temp-chilled {
+      background: var(--ice-soft);
+      color: var(--ice);
+      border-color: #BAE6FD;
+    }
+    .temp-frozen {
+      background: var(--navy-soft);
+      color: var(--navy);
+      border-color: #CBD5E1;
+    }
+    .product-body {
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+    .product-name {
+      margin: 0;
+      font-size: 19px;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+    .product-desc {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .origin-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #334155;
+    }
+    .shelf-badge {
+      padding: 3px 10px;
+      border-radius: 8px;
+      border: 1px solid;
+      font-weight: 800;
+    }
+    .shelf-urgent {
+      background: var(--amber-soft);
+      color: #92400E;
+      border-color: #FCD34D;
+    }
+    .shelf-safe {
+      background: var(--emerald-soft);
+      color: #065F46;
+      border-color: #A7F3D0;
+    }
+    .price-stock-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .price-main {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+    .price-unit {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .stock-val {
+      font-size: 15px;
+      font-weight: 900;
+    }
+    .stock-ok { color: var(--emerald); }
+    .stock-mid { color: var(--amber); }
+    .stock-low { color: var(--crimson); }
+
+    .qty-label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .qty-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .qty-btn {
+      padding: 8px 4px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border);
+      background: #FFFFFF;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 800;
+      transition: all 0.16s ease;
+    }
+    .qty-btn:hover { border-color: var(--navy); }
+    .qty-btn.active {
+      background: var(--navy);
+      color: #FFFFFF;
+      border-color: var(--navy);
+    }
+
+    .product-footer {
+      padding: 0 22px 22px;
+    }
+    .add-order-btn {
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 12px;
+      border: none;
+      background: var(--navy);
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.18s ease;
+    }
+    .add-order-btn:hover:not(:disabled) { background: var(--navy-mid); }
+    .add-order-btn:disabled {
+      background: #CBD5E1;
+      color: #64748B;
+      cursor: not-allowed;
+    }
+
+    /* 6. OMS Checkout Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      background: rgba(7, 26, 48, 0.65);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-box {
+      width: 100%;
+      max-width: 1020px;
+      max-height: 92vh;
+      background: #FFFFFF;
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 60px rgba(7, 26, 48, 0.28);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .modal-head {
+      background: var(--navy);
+      color: #FFFFFF;
+      padding: 20px 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .modal-close {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255, 255, 255, 0.12);
+      color: #FFFFFF;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-close:hover { background: rgba(255, 255, 255, 0.22); }
+    .modal-body {
+      padding: 26px;
+      overflow-y: auto;
+    }
+    .oms-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 860px) {
+      .oms-grid { grid-template-columns: 1fr; }
+    }
+    .cart-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .cart-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #FFFFFF;
+    }
+    .cart-qty-ctrl {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #F1F5F9;
+      padding: 4px;
+      border-radius: 10px;
+    }
+    .cart-qty-ctrl button {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+      border: none;
+      background: #FFFFFF;
+      color: var(--navy);
+      font-weight: 900;
+    }
+    .cart-qty-ctrl input {
+      width: 52px;
+      text-align: center;
+      border: none;
+      background: transparent;
+      font-weight: 900;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    .form-box {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .input-ctrl {
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-strong);
+      background: #F8FAFC;
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 700;
+      outline: none;
+    }
+    .input-ctrl:focus {
+      border-color: var(--ice);
+      background: #FFFFFF;
+    }
+    .logistics-box {
+      background: var(--navy-soft);
+      border: 1px solid #BAE6FD;
+      border-radius: 14px;
+      padding: 16px;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .summary-box {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .summary-total {
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #071A30;
+      color: #CBD5E1;
+      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 32px;
+      padding: 44px 0 32px;
+    }
+    @media (max-width: 820px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 22px; }
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: #94A3B8;
+    }
+    .staff-link {
+      color: #64748B;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.2s ease;
+    }
+    .staff-link:hover {
+      color: #E2E8F0;
+      border-color: rgba(234, 179, 8, 0.4);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Toast */
+    .toast-stack {
+      position: fixed;
+      top: 98px;
+      left: 24px;
+      z-index: 80;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 390px;
+      width: calc(100% - 32px);
+      pointer-events: none;
+    }
+    .toast-item {
+      pointer-events: auto;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-right: 5px solid var(--emerald);
+      border-radius: 14px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow-lg);
+      animation: slideIn 0.25s ease;
+    }
+    .toast-item.warn { border-right-color: var(--amber); }
+    .toast-item.info { border-right-color: var(--ice); }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Top Corporate Utility Strip -->
+  <div class="utility-strip">
+    <div class="container utility-inner">
+      <div class="utility-items">
+        <span class="utility-item">
+          <span class="utility-dot"></span>
+          <span>المقر الرئيسي ومخازن التبريد: المنطقة الصناعية بمدينة العبور — بجوار سوق العبور المركزي</span>
+        </span>
+        <span class="iso-pill">معتمد بشهادة سلامة الغذاء ISO 22000</span>
+      </div>
+      <div class="hotline-badge">
+        <span>الخط الساخن للتعاقدات:</span>
+        <span class="hotline-num tabular">19842</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Main Sticky Corporate Header (Client-Only, Zero Admin Switch) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand-wrap">
+        <div class="brand-crest">
+          <svg width="34" height="34" viewBox="0 0 48 48" fill="none" aria-label="شعار جولدن سي">
+            <circle cx="24" cy="24" r="21" stroke="#EAB308" stroke-width="1.6" stroke-opacity="0.75"/>
+            <path d="M18 13L21 16L24 11L27 16L30 13L29 18H19L18 13Z" fill="#EAB308"/>
+            <path d="M24 18V33" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M18 22H30" stroke="#EAB308" stroke-width="2" stroke-linecap="round"/>
+            <path d="M13.5 27C13.5 32 18.2 35.2 24 35.2C29.8 35.2 34.5 32 34.5 27" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M10 39.2C13.5 37.2 16.5 37.2 20 39.2C23.5 41.2 26.5 41.2 30 39.2C33.5 37.2 36.5 37.2 39 38.8" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title-row">
+            <span class="brand-ar">جولدن سي</span>
+            <span class="brand-en">GOLDEN SEA</span>
+          </div>
+          <div class="brand-sub">لتوريد الأسماك وسلاسل الإمداد المبردة</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#top">الرئيسية</a>
+        <a href="#ai-calculator">مساعد المشتريات AI</a>
+        <a href="#catalog">كتالوج الجملة B2B</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="cold-status-pill">
+          <span class="pulse-dot"></span>
+          <span>ثلاجات العبور: <strong dir="ltr">-18.2°C</strong> آمن</span>
+        </div>
+
+        <button type="button" class="cart-trigger" onclick="openOmsModal()">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
+          <span>طلب التوريد</span>
+          <span id="header-cart-kg" class="tabular" style="color:#CBD5E1;font-size:12px;">0 كجم</span>
+          <span id="header-cart-count" class="cart-count-pill tabular">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 3. Executive Hero Banner -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-card">
+          <svg class="hero-waves" viewBox="0 0 1440 460" fill="none" preserveAspectRatio="none">
+            <path d="M-40 350C240 270 480 410 780 320C1080 230 1260 360 1500 280" stroke="#38BDF8" stroke-width="2.2"/>
+            <path d="M-40 400C260 320 510 450 830 360C1130 270 1300 400 1500 330" stroke="#EAB308" stroke-width="1.6"/>
+            <path d="M-40 290C220 220 450 350 740 265C1020 185 1230 300 1500 230" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="8 8"/>
+          </svg>
+
+          <div class="hero-grid">
+            <div>
+              <div class="hero-kicker">★ بوابة التعاقدات الرسمية لقطاع الضيافة والفنادق والهايبر ماركت</div>
+              <h1 class="hero-title">
+                شريكك الاستراتيجي في توريد <span>الأسماك الطازجة والمبردة</span> لكبرى الفنادق والمطاعم
+              </h1>
+              <p class="hero-desc">
+                سلاسل إمداد مبردة متكاملة من المنطقة الصناعية بمدينة العبور مباشرة إلى مطبخ منشأتك — بأسعار جملة معتمدة، تحكم حراري دقيق، وحجز فوري من المخزون الحي.
+              </p>
+              <div class="hero-ctas">
+                <a href="#catalog" class="btn btn-gold">تصفح كتالوج الجملة الآن</a>
+                <a href="#ai-calculator" class="btn btn-glass">احسب احتياجك بمساعد الـ AI</a>
+              </div>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="hero-metric-box">
+                <div class="hero-metric-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="hero-metric-val tabular">دقة مواعيد التوريد 99.4%</div>
+                  <div class="hero-metric-sub">التزام تعاقدي يومي بمواعيد استلام المطابخ</div>
+                </div>
+              </div>
+
+              <div class="hero-metric-box">
+                <div class="hero-metric-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="hero-metric-val">أسطول تبريد مجهز بالكامل</div>
+                  <div class="hero-metric-sub">شاحنات ثنائية التبريد (0°C و -18°C) بتتبع GPS</div>
+                </div>
+              </div>
+
+              <div class="hero-metric-box">
+                <div class="hero-metric-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="hero-metric-val">مباشرة من سوق العبور ومزارع كفر الشيخ</div>
+                  <div class="hero-metric-sub">فحص جودة بيطري يومي وشهادات ISO 22000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. AI Procurement & Menu Calculator -->
+    <section id="ai-calculator" class="section-block">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-badge">ذكاء اصطناعي لمنع الهالك وتقليل التكاليف</span>
+            <h2 class="section-title">مساعد المشتريات الذكي وحاسبة الكميات (AI Procurement)</h2>
+            <p class="section-subtitle">حدد نوع منشأتك وعدد الضيوف الأسبوعي ليقترح النظام الكميات المثالية بالكيلوجرام دون فاقد غذائي.</p>
+          </div>
+        </div>
+
+        <div class="card ai-panel">
+          <!-- Controls -->
+          <div class="ai-controls">
+            <div>
+              <span class="field-label">1. نوع المنشأة</span>
+              <div class="choice-grid">
+                <button type="button" class="choice-btn active" data-venue="hotel" onclick="setAiParam('venue', 'hotel')">فندق سياحي</button>
+                <button type="button" class="choice-btn" data-venue="restaurant" onclick="setAiParam('venue', 'restaurant')">مطعم مأكولات بحرية</button>
+                <button type="button" class="choice-btn" data-venue="hypermarket" onclick="setAiParam('venue', 'hypermarket')">هايبر ماركت</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-header">
+                <span class="field-label" style="margin:0;">2. عدد الضيوف / الوجبات الأسبوعية</span>
+                <span class="slider-val-pill tabular"><span id="ai-guests-display">1,000</span> ضيف</span>
+              </div>
+              <input id="ai-guests-slider" class="range-slider" type="range" min="200" max="3000" step="50" value="1000" oninput="onAiGuestsChange(this.value)" />
+              <div class="slider-marks tabular">
+                <span>200 ضيف</span>
+                <span>1,500 ضيف</span>
+                <span>3,000 ضيف</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="field-label">3. توجه القائمة (Menu Focus)</span>
+              <div class="choice-grid">
+                <button type="button" class="choice-btn active-ice" data-focus="grills" onclick="setAiParam('focus', 'grills')">مشويات وبحريات</button>
+                <button type="button" class="choice-btn" data-focus="buffet" onclick="setAiParam('focus', 'buffet')">بوفيه مفتوح</button>
+                <button type="button" class="choice-btn" data-focus="fillet" onclick="setAiParam('focus', 'fillet')">فيليه وتجهيزات سريعة</button>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-gold" style="width:100%;" onclick="calculateAiPlan(false)">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+              حساب الكميات المثالية بالـ AI
+            </button>
+          </div>
+
+          <!-- Output -->
+          <div id="ai-result-box" class="ai-output">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. B2B Seafood Catalog (6 SKUs) -->
+    <section id="catalog" class="section-block" style="padding-bottom:60px;">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-badge">مخزون حي متزامن مع عنابر التبريد بالعبور</span>
+            <h2 class="section-title">كتالوج المنتجات البحرية بالجملة (B2B Wholesale)</h2>
+            <p class="section-subtitle">أسعار توريد يومية للفنادق والمطاعم — الشحن المبرد مجاني للطلبيات التي تتجاوز 50 كجم.</p>
+          </div>
+          <div class="filter-bar">
+            <button type="button" class="filter-tab active" data-filter="all" onclick="setCatalogFilter('all')">الكل (6)</button>
+            <button type="button" class="filter-tab" data-filter="chilled" onclick="setCatalogFilter('chilled')">أسماك مبردة طازجة 0°C</button>
+            <button type="button" class="filter-tab" data-filter="frozen" onclick="setCatalogFilter('frozen')">مجمدات بحرية -18°C</button>
+          </div>
+        </div>
+
+        <div id="catalog-grid" class="catalog-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. OMS Checkout Modal -->
+  <div id="oms-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="oms-title">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div>
+          <h2 id="oms-title" style="margin:0;font-size:20px;font-weight:900;">نظام إدارة الطلبيات والتعاقدات (B2B OMS)</h2>
+          <p style="margin:2px 0 0;font-size:12px;color:#CBD5E1;font-weight:600;">حجز فوري من ثلاجات العبور مع جدولة ذكية لشاحنة التبريد ومسار التوصيل</p>
+        </div>
+        <button type="button" class="modal-close" onclick="closeOmsModal()" aria-label="إغلاق">×</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Empty Cart State -->
+        <div id="oms-empty-view" class="hidden" style="text-align:center;padding:42px 16px;">
+          <h3 style="margin:0 0 8px;font-size:20px;font-weight:900;color:var(--navy);">سلة طلب التوريد فارغة حالياً</h3>
+          <p style="margin:0 0 20px;color:var(--muted);font-size:14px;font-weight:600;">أضف الأصناف المطلوبة من كتالوج الجملة أو استخدم مساعد المشتريات الذكي بالـ AI.</p>
+          <button type="button" class="btn btn-navy" onclick="closeOmsModal()">تصفح كتالوج المنتجات</button>
+        </div>
+
+        <!-- Order Confirmed State -->
+        <div id="oms-success-view" class="hidden" style="text-align:center;padding:34px 18px;">
+          <div style="width:66px;height:66px;border-radius:50%;background:var(--emerald-soft);color:var(--emerald);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:32px;font-weight:900;">✓</div>
+          <h3 style="margin:0 0 10px;font-size:24px;font-weight:900;color:var(--navy);">تم تأكيد أمر التوريد وحجز المخزون بنجاح</h3>
+          <p id="oms-success-text" style="margin:0 auto 24px;max-width:620px;color:var(--muted);font-size:15px;font-weight:700;"></p>
+          <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+            <button type="button" class="btn btn-navy" onclick="closeOmsModal()">العودة لكتالوج التوريد</button>
+            <button type="button" id="oms-wa-confirm-btn" class="btn" style="background:#16A34A;color:#fff;">إرسال نسخة التأكيد عبر واتساب</button>
+          </div>
+        </div>
+
+        <!-- Active Checkout Form -->
+        <div id="oms-active-view" class="oms-grid">
+          <div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+              <h3 style="margin:0;font-size:16px;font-weight:900;color:var(--navy);">الأصناف المختارة في الطلبية</h3>
+              <button type="button" onclick="clearCart()" style="border:none;background:none;color:var(--crimson);font-size:12px;font-weight:800;">إفراغ السلة</button>
+            </div>
+            <div id="oms-cart-items" class="cart-list"></div>
+
+            <div class="summary-box">
+              <div class="summary-row">
+                <span>إجمالي الوزن المطلوب</span>
+                <span id="oms-total-kg" class="tabular" style="color:var(--navy);font-weight:900;">0 كجم</span>
+              </div>
+              <div class="summary-row">
+                <span>قيمة البضاعة بسعر الجملة</span>
+                <span id="oms-subtotal" class="tabular" style="color:var(--navy);font-weight:900;">0 ج.م</span>
+              </div>
+              <div class="summary-row">
+                <span>تكلفة النقل المبرد (من العبور)</span>
+                <span id="oms-shipping" style="font-weight:900;">مجاني</span>
+              </div>
+              <div class="summary-row summary-total">
+                <span>الإجمالي النهائي</span>
+                <span id="oms-grand-total" class="tabular">0 ج.م</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <div class="form-box">
+              <h3 style="margin:0;font-size:16px;font-weight:900;color:var(--navy);">بيانات العميل ومنطقة التسليم</h3>
+              <div>
+                <label for="oms-client-select" style="display:block;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:6px;">الحساب التعاقدي</label>
+                <select id="oms-client-select" class="input-ctrl" onchange="toggleCustomVenue()">
+                  <option value="فندق فورسيزونز نايل بلازا">فندق فورسيزونز نايل بلازا</option>
+                  <option value="مطاعم أسماك قدورة">مطاعم أسماك قدورة</option>
+                  <option value="هايبر وان">هايبر وان</option>
+                  <option value="فندق ماريوت الزمالك">فندق ماريوت الزمالك</option>
+                  <option value="__custom__">منشأة جديدة (إدخال يدوي)</option>
+                </select>
+              </div>
+
+              <div id="oms-custom-venue-wrap" class="hidden">
+                <label for="oms-custom-venue" style="display:block;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:6px;">اسم الفندق / المطعم الجديد</label>
+                <input id="oms-custom-venue" class="input-ctrl" type="text" placeholder="مثال: فندق دوسيت تاني - التجمع الخامس" />
+              </div>
+
+              <div>
+                <label for="oms-zone-select" style="display:block;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:6px;">منطقة التسليم</label>
+                <select id="oms-zone-select" class="input-ctrl" onchange="renderOmsModal()">
+                  <option value="التجمع الخامس">التجمع الخامس</option>
+                  <option value="المعادي">المعادي</option>
+                  <option value="الشيخ زايد">الشيخ زايد</option>
+                  <option value="مصر الجديدة">مصر الجديدة</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="logistics-box">
+              <div style="display:flex;align-items:center;justify-content:space-between;">
+                <strong style="color:var(--navy);font-size:13px;">مُقدّر اللوجستيات الذكي (AI Logistics)</strong>
+                <span id="oms-ai-saving" style="background:var(--emerald-soft);color:var(--emerald);padding:2px 8px;border-radius:6px;font-size:11px;font-weight:900;">توفير 26% وقت ووقود</span>
+              </div>
+              <div><strong style="color:var(--ice);">الشاحنة المخصصة:</strong> <span id="oms-ai-van" style="font-weight:800;color:var(--navy);"></span></div>
+              <div><strong style="color:var(--ice);">المسار المقترح:</strong> <span id="oms-ai-route" style="font-weight:800;color:var(--navy);"></span></div>
+              <div><strong style="color:var(--ice);">نافذة الوصول:</strong> <span id="oms-ai-eta" style="font-weight:900;color:var(--emerald);"></span></div>
+            </div>
+
+            <div id="oms-error" class="hidden" style="background:var(--crimson-soft);border:1px solid #FECACA;color:var(--crimson);padding:10px 14px;border-radius:10px;font-size:12px;font-weight:800;"></div>
+
+            <button type="button" class="btn btn-navy" style="width:100%;padding:15px;" onclick="confirmOmsOrder()">
+              تأكيد أمر التوريد وحجز المخزون الفوري
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Corporate Footer (Only subtle staff link to admin.html) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="font-size:20px;font-weight:900;color:#FFFFFF;margin-bottom:8px;">جولدن سي لتوريد الأسماك وسلاسل الإمداد</div>
+          <p style="margin:0;font-size:13px;color:#94A3B8;max-width:420px;font-weight:600;">
+            منظومة توريد مصرية متخصصة لقطاع الفنادق، المطاعم، وسلاسل الهايبر ماركت وفق أعلى معايير سلامة الغذاء وسلاسل التبريد الحديثة.
+          </p>
+        </div>
+        <div>
+          <div style="font-size:15px;font-weight:900;color:#FFFFFF;margin-bottom:10px;">بيانات المقر والتعاقدات</div>
+          <div style="font-size:13px;display:flex;flex-direction:column;gap:6px;font-weight:600;">
+            <span>المنطقة الصناعية بمدينة العبور — بجوار سوق العبور المركزي</span>
+            <span>الخط الساخن للتعاقدات: <strong style="color:#FDE047;" class="tabular">19842</strong></span>
+            <span dir="ltr" style="text-align:right;">contracts@goldensea-egypt.com</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:15px;font-weight:900;color:#FFFFFF;margin-bottom:10px;">اعتمادات الجودة</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:12px;font-weight:800;">
+            <span style="background:rgba(255,255,255,0.08);padding:6px 12px;border-radius:8px;color:#FFFFFF;">ISO 22000</span>
+            <span style="background:rgba(255,255,255,0.08);padding:6px 12px;border-radius:8px;color:#FFFFFF;">HACCP</span>
+            <span style="background:rgba(255,255,255,0.08);padding:6px 12px;border-radius:8px;color:#86EFAC;">سلامة الغذاء المصرية</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 جولدن سي لتوريد الأسماك وسلاسل الإمداد (Golden Sea Supply Chain). جميع الحقوق محفوظة.</span>
+        <a href="admin.html" class="staff-link">بوابة الموظفين والإدارة</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notifications -->
+  <div id="toast-stack" class="toast-stack"></div>
+
+  <script>
+    const STORAGE_KEY = 'golden_sea_state_v1';
+    const WHATSAPP_NUMBER = '201148226747';
+
+    // 6 Custom Crisp Inline SVG Seafood Icons (Zero External Images)
+    const PRODUCT_SVGS = {
+      'GS-101': `<svg viewBox="0 0 210 120" width="190" height="108" fill="none" aria-label="سلمون نرويجي طازج">
+        <defs><linearGradient id="gSal" x1="20" y1="25" x2="180" y2="95" gradientUnits="userSpaceOnUse"><stop stop-color="#0A2540"/><stop offset="0.4" stop-color="#64748B"/><stop offset="0.65" stop-color="#FB923C"/><stop offset="1" stop-color="#EA580C"/></linearGradient></defs>
+        <path d="M168 60L198 34L190 60L198 86L168 60Z" fill="#0A2540"/>
+        <path d="M86 35L110 18L116 37Z" fill="#1E3A5F"/>
+        <path d="M16 60C42 28 128 24 174 60C128 96 42 92 16 60Z" fill="url(#gSal)" stroke="#0A2540" stroke-width="2"/>
+        <path d="M58 60C84 48 124 48 154 60C124 80 84 80 58 60Z" fill="#FB923C"/>
+        <path d="M74 53L84 74M92 50L102 76M110 50L120 75M128 53L136 72" stroke="#FFF7ED" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="38" cy="54" r="3.4" fill="#0A2540"/><circle cx="37" cy="53" r="1.2" fill="#FFFFFF"/>
+      </svg>`,
+      'GS-102': `<svg viewBox="0 0 210 120" width="190" height="108" fill="none" aria-label="جمبري جامبو بحر أحمر">
+        <defs><linearGradient id="gShr" x1="45" y1="20" x2="165" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#EA580C"/><stop offset="0.55" stop-color="#FB923C"/><stop offset="1" stop-color="#C2410C"/></linearGradient></defs>
+        <path d="M126 26C94 10 56 10 22 25" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/>
+        <path d="M130 33C100 22 68 24 36 39" stroke="#9A3412" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M64 88C52 50 84 24 126 28C158 32 174 58 156 82C142 99 116 103 100 91C90 83 92 70 106 68C118 66 125 74 123 80" stroke="url(#gShr)" stroke-width="22" stroke-linecap="round"/>
+        <path d="M70 58L88 62M88 35L98 50M118 28L120 45M148 42L138 55M160 68L144 72" stroke="#7C2D12" stroke-width="3.6" stroke-linecap="round"/>
+        <path d="M58 90L32 98L44 111L64 96Z" fill="#DC2626" stroke="#7C2D12" stroke-width="1.6"/>
+        <circle cx="138" cy="37" r="3.5" fill="#0A2540"/><circle cx="137" cy="36" r="1.2" fill="#FFFFFF"/>
+      </svg>`,
+      'GS-103': `<svg viewBox="0 0 210 120" width="190" height="108" fill="none" aria-label="فيليه قشر بياض فاخر">
+        <path d="M34 48C56 24 112 18 170 28C186 31 190 43 178 54C158 72 102 78 48 68C34 65 28 56 34 48Z" fill="#E0F2FE" stroke="#0284C7" stroke-width="2.2"/>
+        <path d="M24 78C46 52 110 44 176 54C192 56 196 70 182 82C160 102 98 108 40 98C24 95 18 86 24 78Z" fill="#FFFFFF" stroke="#0A2540" stroke-width="2.3"/>
+        <path d="M56 60L48 94M84 54L76 98M114 52L106 98M144 54L136 94M168 58L162 86" stroke="#BAE6FD" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="174" cy="36" r="10" fill="#0284C7"/>
+        <path d="M174 30V42M168 36H180" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>`,
+      'GS-104': `<svg viewBox="0 0 210 120" width="190" height="108" fill="none" aria-label="سمك دنيس بحري">
+        <defs><linearGradient id="gDen" x1="20" y1="22" x2="176" y2="96" gradientUnits="userSpaceOnUse"><stop stop-color="#334155"/><stop offset="0.45" stop-color="#94A3B8"/><stop offset="0.78" stop-color="#E2E8F0"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs>
+        <path d="M168 60L198 36L190 60L198 84L168 60Z" fill="#1E293B"/>
+        <path d="M62 34C92 18 134 22 156 44L70 46Z" fill="#475569"/>
+        <path d="M16 62C42 22 132 22 174 60C132 98 42 98 16 62Z" fill="url(#gDen)" stroke="#0A2540" stroke-width="2"/>
+        <path d="M36 44C44 40 52 40 58 46" stroke="#EAB308" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M54 46C60 56 60 68 53 78" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="38" cy="56" r="3.4" fill="#0A2540"/><circle cx="37" cy="55" r="1.1" fill="#FFFFFF"/>
+      </svg>`,
+      'GS-105': `<svg viewBox="0 0 210 120" width="190" height="108" fill="none" aria-label="سبيط بلدي منظف">
+        <path d="M32 60C32 38 66 26 112 30C128 32 136 44 136 60C136 76 128 88 112 90C66 94 32 82 32 60Z" fill="#FFFFFF" stroke="#0A2540" stroke-width="2.3"/>
+        <path d="M44 42C72 34 102 36 122 44M44 78C72 86 102 84 122 76" stroke="#BAE6FD" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M136 48C156 42 172 34 188 38" stroke="#0284C7" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M136 56C158 54 176 50 194 56" stroke="#0A2540" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M136 64C158 66 176 70 194 64" stroke="#0A2540" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M136 72C156 78 172 86 188 82" stroke="#0284C7" stroke-width="3.4" stroke-linecap="round"/>
+        <circle cx="122" cy="53" r="3" fill="#0A2540"/><circle cx="122" cy="67" r="3" fill="#0A2540"/>
+      </svg>`,
+      'GS-106': `<svg viewBox="0 0 210 120" width="190" height="108" fill="none" aria-label="كابوريا وبلح بحر">
+        <path d="M78 52L44 34L20 46M74 64L38 58L16 74M78 76L46 84L26 102" stroke="#0284C7" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M132 52L166 34L190 46M136 64L172 58L194 74M132 76L164 84L184 102" stroke="#0284C7" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M88 42L72 22C64 16 56 22 62 30L74 36" stroke="#0A2540" stroke-width="5.5" stroke-linecap="round"/>
+        <path d="M122 42L138 22C146 16 154 22 148 30L136 36" stroke="#0A2540" stroke-width="5.5" stroke-linecap="round"/>
+        <ellipse cx="105" cy="64" rx="34" ry="26" fill="#0369A1" stroke="#0A2540" stroke-width="2.2"/>
+        <path d="M86 58C98 50 112 50 124 58" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="96" cy="42" r="2.8" fill="#0A2540"/><circle cx="114" cy="42" r="2.8" fill="#0A2540"/>
+      </svg>`
+    };
+
+    const ZONE_LOGISTICS = {
+      'التجمع الخامس': {
+        route: 'مخازن العبور ← الدائري الإقليمي ← محور المشير ← التجمع الخامس',
+        saving: '26%',
+        eta: 'خلال 65 دقيقة من مخازن العبور',
+        vanStd: 'شاحنة تبريد #01 (مرسيدس 2.5 طن)',
+        vanHeavy: 'شاحنة تبريد #02 (مرسيدس 5 طن)'
+      },
+      'المعادي': {
+        route: 'مخازن العبور ← الدائري الإقليمي ← طريق السويس ← المعادي',
+        saving: '24%',
+        eta: 'خلال 80 دقيقة من مخازن العبور',
+        vanStd: 'شاحنة تبريد #03 (مرسيدس 3 طن)',
+        vanHeavy: 'شاحنة تبريد #04 (أكتروس 6 طن)'
+      },
+      'الشيخ زايد': {
+        route: 'مخازن العبور ← الدائري الإقليمي ← محور 26 يوليو ← الشيخ زايد',
+        saving: '29%',
+        eta: 'خلال 95 دقيقة من مخازن العبور',
+        vanStd: 'شاحنة تبريد #05 (مرسيدس 3 طن)',
+        vanHeavy: 'شاحنة تبريد #06 (أكتروس 7 طن)'
+      },
+      'مصر الجديدة': {
+        route: 'مخازن العبور ← طريق مصر الإسماعيلية ← محور جوزيف تيتو ← مصر الجديدة',
+        saving: '22%',
+        eta: 'خلال 45 دقيقة من مخازن العبور',
+        vanStd: 'شاحنة تبريد #01 (مرسيدس 2.5 طن)',
+        vanHeavy: 'شاحنة تبريد #02 (مرسيدس 5 طن)'
+      }
+    };
+
+    function getDefaultSharedState() {
+      return {
+        totalRevenue: 1845000,
+        shipmentSeq: 4103,
+        products: [
+          {
+            sku: 'GS-101',
+            name: 'سلمون نرويجي طازج',
+            origin: 'النرويج — شحن جوي مبرد',
+            tempType: 'chilled',
+            tempLabel: '0°C مبرد',
+            room: 'عنبر A: 0.4°C',
+            shelfLifeDays: 4,
+            price: 890,
+            stock: 340,
+            maxStock: 600,
+            desc: 'سلمون أطلسي طازج كامل أو فيليه مخصص لبوفيهات الفنادق الخمس نجوم.'
+          },
+          {
+            sku: 'GS-102',
+            name: 'جمبري جامبو بحر أحمر',
+            origin: 'البحر الأحمر — السويس والغردقة',
+            tempType: 'frozen',
+            tempLabel: '-18°C مجمد',
+            room: 'عنبر B: -18.2°C',
+            shelfLifeDays: 30,
+            price: 760,
+            stock: 460,
+            maxStock: 750,
+            desc: 'جمبري جامبو فاخر مقاس 10/15 مجمد فوري بالنيتروجين للحفاظ على القوام.'
+          },
+          {
+            sku: 'GS-103',
+            name: 'فيليه قشر بياض فاخر',
+            origin: 'بحيرة ناصر — تجهيز العبور',
+            tempType: 'frozen',
+            tempLabel: '-18°C مجمد',
+            room: 'عنبر B: -18.2°C',
+            shelfLifeDays: 25,
+            price: 440,
+            stock: 620,
+            maxStock: 900,
+            desc: 'فيليه أبيض صافي 100% خالي من الشوك ومقصوص بمعايير المطابخ المركزية.'
+          },
+          {
+            sku: 'GS-104',
+            name: 'سمك دنيس بحري',
+            origin: 'مزارع البحر المتوسط وكفر الشيخ',
+            tempType: 'chilled',
+            tempLabel: '0°C مبرد',
+            room: 'عنبر A: 0.4°C',
+            shelfLifeDays: 3,
+            price: 360,
+            stock: 280,
+            maxStock: 600,
+            desc: 'سمك دنيس طازج مقاس 400–600 جم يومياً للشوي والفرن بمطاعم البحريات.'
+          },
+          {
+            sku: 'GS-105',
+            name: 'سبيط بلدي منظف',
+            origin: 'البحر الأحمر — تجهيز فوري',
+            tempType: 'frozen',
+            tempLabel: '-18°C مجمد',
+            room: 'عنبر B: -18.2°C',
+            shelfLifeDays: 18,
+            price: 510,
+            stock: 310,
+            maxStock: 600,
+            desc: 'سبيط بلدي منظف بالكامل وجاهز للتقطيع والقلي والطواجن بدون فاقد.'
+          },
+          {
+            sku: 'GS-106',
+            name: 'كابوريا وبلح بحر',
+            origin: 'خليج السويس — صيد يومي',
+            tempType: 'chilled',
+            tempLabel: '0°C مبرد',
+            room: 'عنبر A: 0.4°C',
+            shelfLifeDays: 2,
+            price: 310,
+            stock: 190,
+            maxStock: 500,
+            desc: 'تشكيلة كابوريا بحرية ممتلئة مع بلح بحر طازج للشوربة وطواجن السي فود.'
+          }
+        ],
+        shipments: [
+          {
+            id: 'GS-SHP-4101',
+            client: 'فندق فورسيزونز نايل بلازا',
+            zone: 'المعادي',
+            weight: 120,
+            value: 92400,
+            van: 'شاحنة تبريد #02 (مرسيدس 5 طن)',
+            route: 'مخازن العبور ← الدائري الإقليمي ← طريق السويس ← المعادي',
+            boxTemp: '0.4°C',
+            status: 'transit',
+            createdAt: 'اليوم 08:15 ص'
+          },
+          {
+            id: 'GS-SHP-4102',
+            client: 'مطاعم أسماك قدورة',
+            zone: 'التجمع الخامس',
+            weight: 165,
+            value: 108900,
+            van: 'شاحنة تبريد #04 (أكتروس 6 طن)',
+            route: 'مخازن العبور ← الدائري الإقليمي ← محور المشير ← التجمع الخامس',
+            boxTemp: '-18.1°C',
+            status: 'loading',
+            createdAt: 'اليوم 09:40 ص'
+          }
+        ]
+      };
+    }
+
+    function loadSharedState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) {
+          const def = getDefaultSharedState();
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(def));
+          return def;
+        }
+        const parsed = JSON.parse(raw);
+        if (!parsed || !Array.isArray(parsed.products) || !Array.isArray(parsed.shipments)) {
+          const def = getDefaultSharedState();
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(def));
+          return def;
+        }
+        return parsed;
+      } catch (e) {
+        const def = getDefaultSharedState();
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(def));
+        return def;
+      }
+    }
+
+    function saveSharedState(nextState) {
+      sharedState = nextState;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(sharedState));
+    }
+
+    let sharedState = loadSharedState();
+
+    // Local Client UI State
+    const ui = {
+      filter: 'all',
+      qtyBySku: { 'GS-101': 25, 'GS-102': 25, 'GS-103': 50, 'GS-104': 25, 'GS-105': 25, 'GS-106': 10 },
+      cart: [],
+      ai: { venue: 'hotel', guests: 1000, focus: 'grills' },
+      lastAiPlan: [],
+      lastConfirmedText: ''
+    };
+
+    const fmtNum = n => Math.round(n).toLocaleString('en-US');
+    const fmtEGP = n => `${fmtNum(n)} ج.م`;
+    const findProduct = sku => sharedState.products.find(p => p.sku === sku);
+
+    function showToast(title, msg, kind = 'ok') {
+      const stack = document.getElementById('toast-stack');
+      const el = document.createElement('div');
+      el.className = `toast-item ${kind === 'warn' ? 'warn' : kind === 'info' ? 'info' : ''}`;
+      el.innerHTML = `<div style="font-size:14px;font-weight:900;color:var(--navy);">${title}</div><div style="font-size:12px;font-weight:700;color:var(--muted);margin-top:3px;">${msg}</div>`;
+      stack.appendChild(el);
+      setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity 0.25s'; setTimeout(() => el.remove(), 260); }, 4000);
+    }
+
+    // Real-time Cross-Tab Sync Listener (e.g., when admin.html restocks +200 KG!)
+    window.addEventListener('storage', (e) => {
+      if (e.key === STORAGE_KEY) {
+        sharedState = loadSharedState();
+        renderCatalog();
+        calculateAiPlan(true);
+        if (!document.getElementById('oms-modal').classList.contains('hidden')) {
+          renderOmsModal();
+        }
+        showToast('تحديث مخزون حي من عنابر العبور', 'تمت مزامنة الكميات المتاحة في الكتالوج لحظياً.', 'info');
+      }
+    });
+
+    // AI Calculator Logic
+    function setAiParam(key, val) {
+      ui.ai[key] = val;
+      if (key === 'venue') {
+        document.querySelectorAll('[data-venue]').forEach(btn => btn.classList.toggle('active', btn.dataset.venue === val));
+      } else if (key === 'focus') {
+        document.querySelectorAll('[data-focus]').forEach(btn => btn.classList.toggle('active-ice', btn.dataset.focus === val));
+      }
+    }
+
+    function onAiGuestsChange(val) {
+      ui.ai.guests = parseInt(val, 10);
+      document.getElementById('ai-guests-display').textContent = fmtNum(ui.ai.guests);
+    }
+
+    function calculateAiPlan(silent = false) {
+      const { venue, guests, focus } = ui.ai;
+      const multiplier = venue === 'hotel' ? 0.14 : venue === 'restaurant' ? 0.18 : 0.16;
+      const targetKg = Math.max(30, Math.round((guests * multiplier) / 5) * 5);
+
+      let mix;
+      if (focus === 'grills') {
+        mix = [
+          { sku: 'GS-102', ratio: 0.35, note: 'الأعلى طلباً على الشواية والطواجن البحرية' },
+          { sku: 'GS-104', ratio: 0.40, note: 'دنيس طازج مثالي للشوي بالزيت والليمون' },
+          { sku: 'GS-106', ratio: 0.25, note: 'إضافة فاخرة للشوربة وصواني المأكولات البحرية' }
+        ];
+      } else if (focus === 'buffet') {
+        mix = [
+          { sku: 'GS-101', ratio: 0.30, note: 'طبق التوقيع الرئيسي لبوفيهات الفنادق' },
+          { sku: 'GS-103', ratio: 0.45, note: 'فيليه صافي 100% بدون أي هالك تنظيف' },
+          { sku: 'GS-104', ratio: 0.25, note: 'سمك بحري متكامل لعرض البوفيه المفتوح' }
+        ];
+      } else {
+        mix = [
+          { sku: 'GS-103', ratio: 0.45, note: 'أسرع تجهيز وأعلى هامش ربح للوجبات' },
+          { sku: 'GS-105', ratio: 0.30, note: 'سبيط منظف وجاهز للطهي المباشر' },
+          { sku: 'GS-102', ratio: 0.25, note: 'جمبري مجمد فوري يحفظ المخزون دون تلف' }
+        ];
+      }
+
+      ui.lastAiPlan = mix.map(item => {
+        const p = findProduct(item.sku);
+        let kg = Math.max(10, Math.round((targetKg * item.ratio) / 5) * 5);
+        if (p && p.stock > 0 && kg > p.stock) kg = p.stock;
+        return { product: p, kg, cost: p ? kg * p.price : 0, note: item.note };
+      });
+
+      const totalKg = ui.lastAiPlan.reduce((s, r) => s + r.kg, 0);
+      const totalCost = ui.lastAiPlan.reduce((s, r) => s + r.cost, 0);
+
+      document.getElementById('ai-result-box').innerHTML = `
+        <div>
+          <div class="ai-output-head">
+            <div>
+              <h3 style="margin:0;font-size:18px;font-weight:900;color:var(--navy);">خطة التوريد الأسبوعية المقترحة</h3>
+              <span style="font-size:12px;font-weight:700;color:var(--muted);">محسوبة لـ ${fmtNum(guests)} ضيف مع مراعاة المخزون الحي</span>
+            </div>
+            <span style="background:var(--emerald-soft);color:var(--emerald);border:1px solid #A7F3D0;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:900;">تقليل الهدر بنسبة 32%</span>
+          </div>
+
+          <div class="ai-rec-list" style="margin-top:16px;">
+            ${ui.lastAiPlan.map(r => `
+              <div class="ai-rec-row">
+                <div class="ai-rec-info">
+                  <div class="mini-svg-box">${PRODUCT_SVGS[r.product.sku]}</div>
+                  <div>
+                    <div style="font-size:15px;font-weight:900;color:var(--navy);">${r.product.name} <span style="font-size:11px;color:var(--ice);">(${r.product.sku})</span></div>
+                    <div style="font-size:12px;font-weight:600;color:var(--muted);">${r.note}</div>
+                  </div>
+                </div>
+                <div style="text-align:left;flex-shrink:0;">
+                  <div class="tabular" style="font-size:16px;font-weight:900;color:var(--ice);">${fmtNum(r.kg)} كجم</div>
+                  <div class="tabular" style="font-size:12px;font-weight:700;color:var(--muted);">${fmtEGP(r.cost)}</div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div class="ai-summary-strip">
+            <div>
+              <div style="font-size:12px;font-weight:700;color:var(--muted);">إجمالي الكمية الموصى بها</div>
+              <div class="tabular" style="font-size:20px;font-weight:900;color:var(--navy);">${fmtNum(totalKg)} كجم</div>
+            </div>
+            <div>
+              <div style="font-size:12px;font-weight:700;color:var(--muted);">التكلفة الأسبوعية التقديرية</div>
+              <div class="tabular" style="font-size:20px;font-weight:900;color:var(--gold);">${fmtEGP(totalCost)}</div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-navy" style="width:100%;" onclick="addAiPlanToCart()">
+            إضافة التوصية بالكامل لطلب التوريد
+          </button>
+        </div>
+      `;
+
+      if (!silent) {
+        showToast('تم حساب الكميات المثالية', `تم اقتراح ${fmtNum(totalKg)} كجم موزعة على 3 أصناف لتقليل الفاقد.`, 'info');
+      }
+    }
+
+    function addAiPlanToCart() {
+      if (!ui.lastAiPlan.length) calculateAiPlan(true);
+      let added = 0;
+      ui.lastAiPlan.forEach(item => {
+        if (item.product && item.product.stock > 0 && item.kg > 0) {
+          addToCart(item.product.sku, item.kg, true);
+          added++;
+        }
+      });
+      if (added > 0) {
+        showToast('تمت إضافة خطة الـ AI للسلة', `أُضيفت ${added} أصناف جاهزة لتأكيد التوريد.`, 'ok');
+        openOmsModal();
+      }
+    }
+
+    // Catalog Rendering
+    function setCatalogFilter(filter) {
+      ui.filter = filter;
+      document.querySelectorAll('.filter-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.filter === filter));
+      renderCatalog();
+    }
+
+    function selectSkuQty(sku, kg) {
+      ui.qtyBySku[sku] = kg;
+      renderCatalog();
+    }
+
+    function renderCatalog() {
+      const grid = document.getElementById('catalog-grid');
+      const items = sharedState.products.filter(p => ui.filter === 'all' || p.tempType === ui.filter);
+      const weights = [10, 25, 50, 100];
+
+      grid.innerHTML = items.map(p => {
+        const selQty = ui.qtyBySku[p.sku] || 25;
+        const stockClass = p.stock < 100 ? 'stock-low' : p.stock < 200 ? 'stock-mid' : 'stock-ok';
+        const isShort = p.shelfLifeDays <= 4;
+
+        return `
+          <article class="card product-card">
+            <div>
+              <div class="product-stage">
+                <span class="sku-tag tabular">${p.sku}</span>
+                <span class="temp-tag ${p.tempType === 'chilled' ? 'temp-chilled' : 'temp-frozen'}">${p.tempLabel}</span>
+                ${PRODUCT_SVGS[p.sku] || ''}
+              </div>
+
+              <div class="product-body">
+                <div>
+                  <h3 class="product-name">${p.name}</h3>
+                  <p class="product-desc">${p.desc}</p>
+                </div>
+
+                <div class="meta-row">
+                  <span class="origin-badge">
+                    <span style="width:7px;height:7px;border-radius:50%;background:var(--gold);"></span>
+                    ${p.origin}
+                  </span>
+                  <span class="shelf-badge ${isShort ? 'shelf-urgent' : 'shelf-safe'}">
+                    صلاحية: ${p.shelfLifeDays} ${p.shelfLifeDays <= 10 ? 'أيام' : 'يوم'}
+                  </span>
+                </div>
+
+                <div class="price-stock-box">
+                  <div>
+                    <div style="font-size:11px;font-weight:700;color:var(--muted);">سعر الجملة</div>
+                    <div><span class="price-main tabular">${fmtNum(p.price)}</span> <span class="price-unit">ج.م / كجم</span></div>
+                  </div>
+                  <div style="text-align:left;">
+                    <div style="font-size:11px;font-weight:700;color:var(--muted);">المتاح بالعبور</div>
+                    <div class="stock-val tabular ${stockClass}">${fmtNum(p.stock)} كجم</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="qty-label-row">
+                    <span>اختر كمية التوريد:</span>
+                    <span class="tabular" style="color:var(--ice);font-weight:900;">${fmtEGP(selQty * p.price)}</span>
+                  </div>
+                  <div class="qty-grid">
+                    ${weights.map(w => `
+                      <button type="button" class="qty-btn tabular ${selQty === w ? 'active' : ''}" onclick="selectSkuQty('${p.sku}', ${w})">${w} كجم</button>
+                    `).join('')}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-footer">
+              <button type="button" class="add-order-btn" ${p.stock <= 0 ? 'disabled' : ''} onclick="addToCart('${p.sku}')">
+                <span>${p.stock <= 0 ? 'نفد المخزون مؤقتاً' : '+ إضافة لطلب التوريد'}</span>
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // Cart & OMS Modal Logic
+    function addToCart(sku, customKg = null, silent = false) {
+      const p = findProduct(sku);
+      if (!p) return;
+      const qty = customKg !== null ? customKg : (ui.qtyBySku[sku] || 25);
+      const existing = ui.cart.find(c => c.sku === sku);
+      const totalRequested = (existing ? existing.kg : 0) + qty;
+
+      if (totalRequested > p.stock) {
+        if (!silent) showToast('الكمية تتجاوز المتاح', `المتاح حالياً من ${p.name} هو ${fmtNum(p.stock)} كجم فقط.`, 'warn');
+        return;
+      }
+
+      if (existing) existing.kg += qty;
+      else ui.cart.push({ sku, kg: qty });
+
+      updateCartHeader();
+      if (!silent) showToast('تمت الإضافة لطلب التوريد', `أُضيف ${fmtNum(qty)} كجم من ${p.name} للسلة.`, 'ok');
+    }
+
+    function updateCartHeader() {
+      const totalKg = ui.cart.reduce((s, i) => s + i.kg, 0);
+      document.getElementById('header-cart-count').textContent = ui.cart.length;
+      document.getElementById('header-cart-kg').textContent = `${fmtNum(totalKg)} كجم`;
+    }
+
+    function updateCartQty(sku, nextVal) {
+      const val = parseInt(nextVal, 10);
+      const p = findProduct(sku);
+      if (!p || isNaN(val) || val <= 0) {
+        ui.cart = ui.cart.filter(c => c.sku !== sku);
+      } else if (val > p.stock) {
+        showToast('تنبيه المخزون', `أقصى كمية متاحة من ${p.name} هي ${fmtNum(p.stock)} كجم.`, 'warn');
+        return;
+      } else {
+        const item = ui.cart.find(c => c.sku === sku);
+        if (item) item.kg = val;
+      }
+      updateCartHeader();
+      renderOmsModal();
+    }
+
+    function clearCart() {
+      ui.cart = [];
+      updateCartHeader();
+      renderOmsModal();
+    }
+
+    function openOmsModal() {
+      document.getElementById('oms-modal').classList.remove('hidden');
+      document.getElementById('oms-success-view').classList.add('hidden');
+      document.getElementById('oms-error').classList.add('hidden');
+      document.body.style.overflow = 'hidden';
+      renderOmsModal();
+    }
+
+    function closeOmsModal() {
+      document.getElementById('oms-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function toggleCustomVenue() {
+      const isCustom = document.getElementById('oms-client-select').value === '__custom__';
+      document.getElementById('oms-custom-venue-wrap').classList.toggle('hidden', !isCustom);
+    }
+
+    function getCartTotals() {
+      let totalKg = 0, subtotal = 0, hasFrozen = false;
+      ui.cart.forEach(item => {
+        const p = findProduct(item.sku);
+        if (!p) return;
+        totalKg += item.kg;
+        subtotal += item.kg * p.price;
+        if (p.tempType === 'frozen') hasFrozen = true;
+      });
+      const shipping = totalKg >= 50 || totalKg === 0 ? 0 : 450;
+      return { totalKg, subtotal, shipping, grandTotal: subtotal + shipping, hasFrozen };
+    }
+
+    function renderOmsModal() {
+      const emptyV = document.getElementById('oms-empty-view');
+      const activeV = document.getElementById('oms-active-view');
+      const successV = document.getElementById('oms-success-view');
+      if (!successV.classList.contains('hidden')) return;
+
+      if (ui.cart.length === 0) {
+        emptyV.classList.remove('hidden');
+        activeV.classList.add('hidden');
+        return;
+      }
+      emptyV.classList.add('hidden');
+      activeV.classList.remove('hidden');
+
+      const { totalKg, subtotal, shipping, grandTotal } = getCartTotals();
+      const zone = document.getElementById('oms-zone-select').value;
+      const logi = ZONE_LOGISTICS[zone] || ZONE_LOGISTICS['التجمع الخامس'];
+      const van = totalKg >= 100 ? logi.vanHeavy : logi.vanStd;
+
+      document.getElementById('oms-total-kg').textContent = `${fmtNum(totalKg)} كجم`;
+      document.getElementById('oms-subtotal').textContent = fmtEGP(subtotal);
+      const shipEl = document.getElementById('oms-shipping');
+      shipEl.textContent = shipping === 0 ? 'مجاني (فوق 50 كجم)' : fmtEGP(shipping);
+      shipEl.style.color = shipping === 0 ? 'var(--emerald)' : 'var(--navy)';
+      document.getElementById('oms-grand-total').textContent = fmtEGP(grandTotal);
+
+      document.getElementById('oms-ai-saving').textContent = `توفير ${logi.saving} وقت ووقود`;
+      document.getElementById('oms-ai-van').textContent = van;
+      document.getElementById('oms-ai-route').textContent = logi.route;
+      document.getElementById('oms-ai-eta').textContent = logi.eta;
+
+      document.getElementById('oms-cart-items').innerHTML = ui.cart.map(item => {
+        const p = findProduct(item.sku);
+        return `
+          <div class="cart-row">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="mini-svg-box">${PRODUCT_SVGS[p.sku]}</div>
+              <div>
+                <div style="font-size:14px;font-weight:900;color:var(--navy);">${p.name}</div>
+                <div style="font-size:12px;font-weight:700;color:var(--muted);">${p.sku} • ${fmtNum(p.price)} ج.م/كجم</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div class="cart-qty-ctrl">
+                <button type="button" onclick="updateCartQty('${p.sku}', ${item.kg - 5})">-</button>
+                <input type="number" min="1" max="${p.stock}" value="${item.kg}" onchange="updateCartQty('${p.sku}', this.value)" class="tabular" />
+                <button type="button" onclick="updateCartQty('${p.sku}', ${item.kg + 5})">+</button>
+              </div>
+              <span class="tabular" style="font-size:13px;font-weight:900;color:var(--navy);min-width:74px;text-align:left;">${fmtEGP(item.kg * p.price)}</span>
+              <button type="button" onclick="updateCartQty('${p.sku}', 0)" style="border:none;background:none;color:#94A3B8;font-size:18px;font-weight:900;" aria-label="حذف">×</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function confirmOmsOrder() {
+      const errEl = document.getElementById('oms-error');
+      errEl.classList.add('hidden');
+      if (ui.cart.length === 0) return;
+
+      const selVal = document.getElementById('oms-client-select').value;
+      const client = selVal === '__custom__'
+        ? document.getElementById('oms-custom-venue').value.trim()
+        : selVal;
+
+      if (!client) {
+        errEl.textContent = 'يرجى إدخال اسم الفندق أو المطعم الجديد لإتمام التعاقد.';
+        errEl.classList.remove('hidden');
+        return;
+      }
+
+      // Reload latest shared state right before committing to avoid stale writes
+      sharedState = loadSharedState();
+
+      for (const item of ui.cart) {
+        const p = findProduct(item.sku);
+        if (!p || item.kg > p.stock) {
+          errEl.textContent = `الكمية المطلوبة من (${p ? p.name : item.sku}) تتجاوز المخزون المتاح (${p ? p.stock : 0} كجم).`;
+          errEl.classList.remove('hidden');
+          return;
+        }
+      }
+
+      const { totalKg, shipping, grandTotal, hasFrozen } = getCartTotals();
+      const zone = document.getElementById('oms-zone-select').value;
+      const logi = ZONE_LOGISTICS[zone] || ZONE_LOGISTICS['التجمع الخامس'];
+      const van = totalKg >= 100 ? logi.vanHeavy : logi.vanStd;
+
+      // Prepare WhatsApp summary before clearing cart
+      const lines = ui.cart.map((c, i) => {
+        const p = findProduct(c.sku);
+        return `${i + 1}. ${p.name} (${c.kg} كجم × ${fmtNum(p.price)} ج.م)`;
+      }).join('\n');
+
+      // Deduct stock
+      ui.cart.forEach(item => {
+        const p = findProduct(item.sku);
+        if (p) p.stock -= item.kg;
+      });
+
+      // Add revenue + create live shipment
+      sharedState.totalRevenue += grandTotal;
+      const shipId = `GS-SHP-${sharedState.shipmentSeq++}`;
+      const nowTime = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
+
+      sharedState.shipments.unshift({
+        id: shipId,
+        client,
+        zone,
+        weight: totalKg,
+        value: grandTotal,
+        van,
+        route: logi.route,
+        boxTemp: hasFrozen ? '-18.2°C' : '0.4°C',
+        status: 'loading',
+        createdAt: `الآن (${nowTime})`
+      });
+
+      // Persist to localStorage (instantly triggers 'storage' event in admin.html!)
+      saveSharedState(sharedState);
+
+      ui.lastConfirmedText = [
+        `📋 تأكيد طلب توريد جولدن سي (${shipId})`,
+        `العميل: ${client} — ${zone}`,
+        lines,
+        `إجمالي الوزن: ${fmtNum(totalKg)} كجم | الشحن: ${shipping === 0 ? 'مجاني' : fmtEGP(shipping)}`,
+        `الإجمالي النهائي: ${fmtEGP(grandTotal)}`
+      ].join('\n');
+
+      ui.cart = [];
+      document.getElementById('oms-custom-venue').value = '';
+      updateCartHeader();
+      renderCatalog();
+      calculateAiPlan(true);
+
+      document.getElementById('oms-active-view').classList.add('hidden');
+      document.getElementById('oms-empty-view').classList.add('hidden');
+      document.getElementById('oms-success-text').innerHTML =
+        `رقم الشحنة: <strong style="color:var(--navy);">${shipId}</strong> — لصالح <strong>${client}</strong> (${zone}) بوزن <strong style="color:var(--ice);">${fmtNum(totalKg)} كجم</strong> وإجمالي <strong style="color:var(--gold);">${fmtEGP(grandTotal)}</strong>. تم حجز الكمية من ثلاجات العبور وتخصيص <strong>${van}</strong>.`;
+      document.getElementById('oms-wa-confirm-btn').onclick = () => {
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(ui.lastConfirmedText)}`, '_blank', 'noopener,noreferrer');
+      };
+      document.getElementById('oms-success-view').classList.remove('hidden');
+    }
+
+    document.getElementById('oms-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'oms-modal') closeOmsModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !document.getElementById('oms-modal').classList.contains('hidden')) closeOmsModal();
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      sharedState = loadSharedState();
+      renderCatalog();
+      calculateAiPlan(true);
+      updateCartHeader();
+    });
+  </script>
+</body>
+</html>
